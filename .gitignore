@@ -2,6 +2,8 @@
 .vscode
 
 *_Spoiler.txt
+*.bat
+*.zip
 *.bmbp
 *.apbp
 *.apl2ac

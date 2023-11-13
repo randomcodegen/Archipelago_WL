@@ -1,0 +1,299 @@
+import os
+import typing
+import math
+import settings
+import threading
+import random
+
+from BaseClasses import Item, MultiWorld, Tutorial, ItemClassification
+from .Items import WLItem, ItemData, item_table
+from .Locations import WLLocation, all_locations, setup_locations
+from .Options import wl_options
+from .Regions import create_regions, connect_regions
+from .Levels import full_level_list, generate_level_list, location_id_to_level_id
+from .Rules import set_rules
+from worlds.generic.Rules import add_rule, exclusion_rules
+from .Names import ItemName, LocationName
+from worlds.AutoWorld import WebWorld, World
+from .Rom import Rom, patch_rom, get_base_rom_path, WLDeltaPatch
+#from Utils import visualize_regions
+from .Client import WarioLandClient
+
+class WLSettings(settings.Group):
+    class RomFile(settings.UserFilePath):
+        """File name of the WL World rom"""
+        description = "Wario Land ROM File"
+        copy_to = "Wario Land - Super Mario Land 3 (World).gb"
+        md5s = [WLDeltaPatch.hash]
+
+    rom_file: RomFile = RomFile(RomFile.copy_to)
+
+
+class WLWeb(WebWorld):
+    theme = "grass"
+
+    setup_en = Tutorial(
+        "Multiworld Setup Guide",
+        "A guide to setting up the Wario Land randomizer connected to an Archipelago Multiworld.",
+        "English",
+        "setup_en.md",
+        "setup/en",
+        ["rand(0)"]
+    )
+    
+    tutorials = [setup_en]
+
+
+class WLWorld(World):
+    # TODO: proper game description
+    """
+    Wario Land: Super Mario Land 3 is a 1994 platform game developed and published by Nintendo for the Game Boy.
+    """
+    game: str = "Wario Land"
+    option_definitions = wl_options
+    settings: typing.ClassVar[WLSettings]
+    topology_present = False
+    data_version = 0
+    required_client_version = (0, 4, 3)
+
+    item_name_to_id = {name: data.code for name, data in item_table.items()}
+    location_name_to_id = all_locations
+
+    active_level_dict: typing.Dict[int,int]
+    web = WLWeb()
+    
+    def __init__(self, world: MultiWorld, player: int):
+        self.rom_name_available_event = threading.Event()
+        super().__init__(world, player)
+
+    @classmethod
+    def stage_assert_generate(cls, multiworld: MultiWorld):
+        rom_file = get_base_rom_path()
+        if not os.path.exists(rom_file):
+            raise FileNotFoundError(rom_file)
+
+    def _get_slot_data(self):
+        return {
+            #"death_link": self.multiworld.death_link[self.player].value,
+            "active_levels": self.active_level_dict,
+        }
+
+    def fill_slot_data(self) -> dict:
+        slot_data = self._get_slot_data()
+        for option_name in wl_options:
+            option = getattr(self.multiworld, option_name)[self.player]
+            slot_data[option_name] = option.value
+        return slot_data
+
+    def create_regions(self):
+
+        location_table = setup_locations(self.multiworld, self.player)
+        create_regions(self.multiworld, self.player, location_table)
+
+        itempool: typing.List[WLItem] = []
+        start_inventory = self.multiworld.start_inventory[self.player].value.copy()
+        self.active_level_dict = dict(zip(generate_level_list(self.multiworld, self.player), full_level_list))
+        #TODO: Implement level shuffle
+        #self.topology_present = self.multiworld.level_shuffle[self.player]
+        self.topology_present = 0
+        connect_regions(self.multiworld, self.player, self.active_level_dict)
+
+        # Locations - 7 fixed boss locations
+        total_required_locations = len(location_table)-7
+
+        if self.multiworld.progressive_powerup[self.player]:
+            itempool += [self.create_item(ItemName.progressive_powerup) for _ in range(4)]
+        else:    
+            itempool += [self.create_item(ItemName.wario_garlic)]
+            itempool += [self.create_item(ItemName.wario_bull)]
+            itempool += [self.create_item(ItemName.wario_jet)]
+            itempool += [self.create_item(ItemName.wario_dragon)]
+        
+        itempool += [self.create_item(ItemName.wario_climb)]
+        itempool += [self.create_item(ItemName.wario_duck)]
+        itempool += [self.create_item(ItemName.wario_createcoin)]
+        itempool += [self.create_item(ItemName.wario_dash)]
+
+        # Handle start with HJ
+        hj = self.create_item(ItemName.wario_highjump)
+        if self.multiworld.start_with_hj[self.player]:
+            start_inventory[hj] = 1
+            self.multiworld.push_precollected(hj)
+        else:
+            itempool += [hj]
+
+        # Place the world-unlock items into the pool
+        world_unlocks=[self.create_item(ItemName.ricebeach),self.create_item(ItemName.mtteapot),
+                       self.create_item(ItemName.stovecanyon),self.create_item(ItemName.parsleywoods),
+                       self.create_item(ItemName.ssteacup),self.create_item(ItemName.sherbetland),
+                       self.create_item(ItemName.syrupcastle)]
+        
+        if self.multiworld.world_unlocks[self.player]:
+            # Player always starts with a random world unlocked if there is more than one player
+            if self.multiworld.players>1:
+                random.shuffle(world_unlocks)
+                list_pick=world_unlocks.pop()
+                start_inventory[list_pick] = 1
+                self.multiworld.push_precollected(list_pick)
+            # If there is only one player, a specific world unlock is forced for seed gen
+            # This is due to the fact that very few levels are accessable without items at the start
+            else:
+                # Parlsey Woods should be enough
+                list_pick=world_unlocks.pop(3)
+                start_inventory[list_pick] = 1
+                self.multiworld.push_precollected(list_pick)
+            for unlock in world_unlocks:
+                itempool += [unlock]
+        else:
+            for unlock in world_unlocks:
+                start_inventory[unlock.name] = 1
+                self.multiworld.push_precollected(unlock)
+
+        # Place the boss-unlock items into the pool
+        boss_unlocks=[self.create_item(ItemName.ricebeach_bossunlock),self.create_item(ItemName.mtteapot_bossunlock),
+                      self.create_item(ItemName.stovecanyon_bossunlock),self.create_item(ItemName.parsleywoods_bossunlock),
+                      self.create_item(ItemName.ssteacup_bossunlock),self.create_item(ItemName.sherbetland_bossunlock),]
+        
+        if self.multiworld.boss_unlocks[self.player]:
+            for unlock in boss_unlocks:
+                itempool += [unlock]
+        else:
+            for unlock in boss_unlocks:
+                start_inventory[unlock.name] = 1
+                self.multiworld.push_precollected(unlock)
+
+        if self.multiworld.goal[self.player] == "garlic_hunt":
+            itempool += [self.create_item(ItemName.garlic_clove)
+                         for _ in range(self.multiworld.number_of_garlic_cloves[self.player])]
+            self.multiworld.get_location(LocationName.garlic_goal, self.player).place_locked_item(self.create_item(ItemName.victory))
+            total_required_locations -= 1
+        else:
+            self.multiworld.get_location(LocationName.syrupcastle_boss, self.player).place_locked_item(self.create_item(ItemName.victory))
+
+        junk_count = total_required_locations - len(itempool)
+        trap_weights = []
+        trap_weights += ([ItemName.wario_grease_trap] * self.multiworld.grease_trap_weight[self.player].value)
+        trap_weights += ([ItemName.wario_stun_trap] * self.multiworld.stun_trap_weight[self.player].value)
+        trap_weights += ([ItemName.wario_death_trap] * self.multiworld.death_trap_weight[self.player].value)
+        trap_weights += ([ItemName.wario_timer_trap] * self.multiworld.timer_trap_weight[self.player].value)
+        trap_count = 0 if (len(trap_weights) == 0) else math.ceil(junk_count * (self.multiworld.trap_fill_percentage[self.player].value / 100.0))
+        junk_count -= trap_count
+
+        trap_pool = []
+        for i in range(trap_count):
+            trap_item = self.multiworld.random.choice(trap_weights)
+            trap_pool.append(self.create_item(trap_item))
+
+        itempool += trap_pool
+
+        itempool += [self.create_item(ItemName.stinky_1up) for _ in range(junk_count)]
+
+        boss_location_names = [LocationName.ricebeach_boss, LocationName.mtteapot_boss, LocationName.sherbetland_boss,
+                               LocationName.stovecanyon_boss, LocationName.ssteacup_boss, LocationName.parsleywoods_boss]
+
+        for location_name in boss_location_names:
+            self.multiworld.get_location(location_name, self.player).place_locked_item(self.create_item(ItemName.boss_token))
+        self.multiworld.itempool += itempool
+        #visualize_regions(self.multiworld.get_region(LocationName.menu_region, self.player),"WL_Region_out.puml")
+
+
+    def generate_output(self, output_directory: str):
+        rompath = ""  # if variable is not declared finally clause may fail
+        try:
+            world = self.multiworld
+            player = self.player
+
+            rom = Rom(get_base_rom_path())
+            patch_rom(self.multiworld, rom, self.player)
+
+            rompath = os.path.join(output_directory, f"{self.multiworld.get_out_file_name_base(self.player)}.gb")
+            rom.write_to_file(rompath)
+            self.rom_name = rom.name
+
+            patch = WLDeltaPatch(os.path.splitext(rompath)[0]+WLDeltaPatch.patch_file_ending, player=player,
+                                  player_name=world.player_name[player], patched_path=rompath)
+            patch.write()
+        except:
+            raise
+        finally:
+            self.rom_name_available_event.set()  # make sure threading continues and errors are collected
+            if os.path.exists(rompath):
+                os.unlink(rompath)
+
+    def modify_multidata(self, multidata: dict):
+        import base64
+        # wait for self.rom_name to be available.
+        self.rom_name_available_event.wait()
+        rom_name = getattr(self, "rom_name", None)
+        # we skip in case of error, so that the original error in the output thread is the one that gets raised
+        if rom_name:
+            new_name = base64.b64encode(bytes(self.rom_name)).decode()
+            multidata["connect_names"][new_name] = multidata["connect_names"][self.multiworld.player_name[self.player]]
+    """
+    def extend_hint_information(self, hint_data: typing.Dict[int, typing.Dict[int, str]]):
+        if self.topology_present:
+            world_names = [
+                LocationName.ricebeach_region,
+                LocationName.mtteapot_region,
+                LocationName.sherbetland_region,
+                LocationName.stovecanyon_region,
+                LocationName.ssteacup_region,
+                LocationName.parsleywoods_region,
+                LocationName.syrupcastle_region,
+            ]
+            world_cutoffs = [
+                0x07,
+                0x13,
+                0x1F,
+                0x26,
+                0x30,
+                0x39,
+                0x44,
+                0x4F,
+                0x59
+            ]
+            er_hint_data = {}
+            for loc_name, level_data in location_id_to_level_id.items():
+                level_id = level_data[0]
+
+                if level_id not in self.active_level_dict:
+                    continue
+
+                keys_list = list(self.active_level_dict.keys())
+                level_index = keys_list.index(level_id)
+                for i in range(len(world_cutoffs)):
+                    if level_index >= world_cutoffs[i]:
+                        continue
+
+                    if self.multiworld.treasure_checks[self.player].value == 0 and "Treasure" in loc_name:
+                        continue
+
+                    location = self.multiworld.get_location(loc_name, self.player)
+                    er_hint_data[location.address] = world_names[i]
+                    break
+
+            hint_data[self.player] = er_hint_data
+    """
+    def create_item(self, name: str, force_non_progression=False) -> Item:
+        data = item_table[name]
+
+        if force_non_progression:
+            classification = ItemClassification.filler
+        elif name == ItemName.garlic_clove:
+            classification = ItemClassification.progression_skip_balancing
+        elif data.progression:
+            classification = ItemClassification.progression
+        elif data.trap:
+            classification = ItemClassification.trap
+        else:
+            classification = ItemClassification.filler
+
+        created_item = WLItem(name, classification, data.code, self.player)
+
+        return created_item
+
+    def get_filler_item_name(self) -> str:
+        return ItemName.stinky_1up
+
+    def set_rules(self):
+        set_rules(self.multiworld, self.player)
