@@ -748,7 +748,10 @@ def patch_rom(world, rom, player):
     speedups(rom)
     apply_fixes(rom)
     patch_world_enter(rom)
-
+    
+    # TODO: Add option for new feature
+    new_feature(rom)
+    
     if world.remove_autoscrollers[player]:
         remove_autoscrolling(rom)
     if world.music_shuffle[player]:

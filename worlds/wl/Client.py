@@ -8,6 +8,7 @@ from worlds.wl.Locations import checkable_locations
 from worlds.wl.Items import lookup_trapid_to_name,lookup_eventid_to_name
 
 powerup_list=[0xA40000,0xA40100,0xA40200,0xA40300,0xA41100]
+trap_queue=[]
 
 if TYPE_CHECKING:
     from worlds._bizhawk.context import BizHawkClientContext
@@ -140,26 +141,11 @@ class WarioLandClient(BizHawkClient):
                         if item.item in lookup_trapid_to_name:
                             local_received+=1
                             if sync_required:
-                                # Don't activate Traps in resync
+                                # Don't activate Traps in resync and clear queue
+                                trap_queue.clear()
                                 pass
-                            #TODO: Handle traps via queue
-                            if demo_mode==0 and game_mode==3 and paused==0:
-                                if item.item == 0xA38400:
-                                    # Stun trap, 0xA384 = 0xFF
-                                    await bizhawk.write(ctx.bizhawk_ctx,
-                                                    [(0xA384, b'\xFF' , "System Bus")])
-                                elif item.item == 0xA96400:
-                                    # Timer trap
-                                    await bizhawk.write(ctx.bizhawk_ctx,
-                                                    [(0xA964, b'\x01\x01' , "System Bus")])
-                                elif item.item == 0xA91A00:
-                                    # Death trap
-                                    await bizhawk.write(ctx.bizhawk_ctx,
-                                                    [(0xA91A, b'\x09' , "System Bus")])
-                                else:
-                                    # Grease trap
-                                    await bizhawk.write(ctx.bizhawk_ctx,
-                                                    [(0xA61C, b'\x22' , "System Bus")])
+                            else:
+                                trap_queue.append(item)
                         # Everything else
                         else:
                             item_addr=item.item>>8
@@ -252,7 +238,28 @@ class WarioLandClient(BizHawkClient):
                     }])
                     ctx.finished_game=True
 
-                # TODO: Send Tracker Data
+                # Handle traps if queue is not empty
+                if len(trap_queue)>0:
+                    if demo_mode==0 and game_mode==3 and paused==0:
+                        # Pop a trap
+                        trap_pick=trap_queue.pop()
+                        logger.info("Triggering trap: "+str(trap_pick))
+                        if trap_pick.item == 0xA38400:
+                            # Stun trap, 0xA384 = 0xFF
+                            await bizhawk.write(ctx.bizhawk_ctx,
+                                            [(0xA384, b'\xFF' , "System Bus")])
+                        elif trap_pick.item == 0xA96400:
+                            # Timer trap
+                            await bizhawk.write(ctx.bizhawk_ctx,
+                                            [(0xA964, b'\x01\x01' , "System Bus")])
+                        elif trap_pick.item == 0xA91A00:
+                            # Death trap
+                            await bizhawk.write(ctx.bizhawk_ctx,
+                                            [(0xA91A, b'\x09' , "System Bus")])
+                        else:
+                            # Grease trap
+                            await bizhawk.write(ctx.bizhawk_ctx,
+                                            [(0xA61C, b'\x22' , "System Bus")])
 
             except bizhawk.RequestFailedError:
                 # Exit handler and return to main loop to reconnect

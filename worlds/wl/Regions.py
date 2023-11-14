@@ -1,7 +1,7 @@
 import typing
 
 from BaseClasses import MultiWorld, Region, Entrance, CollectionState
-from .Locations import WLLocation
+from .Locations import WLLocation,checkable_locations
 from .Levels import level_info_dict
 from .Names import LocationName, ItemName
 from worlds.generic.Rules import add_rule, set_rule
@@ -621,7 +621,7 @@ def connect_regions(world, player, level_to_tile_dict):
         
         # Block world/boss entry if option is active
         if world.world_unlocks[player]==1:
-                for location in world.regions.location_cache[player]:
+                for location in checkable_locations:
                         if "Rice Beach" in location:
                                 add_rule(world.get_location(location, player),
                                          lambda state: state.has(ItemName.ricebeach, player))
