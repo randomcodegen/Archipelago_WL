@@ -63,15 +63,20 @@ class WarioLandClient(BizHawkClient):
     async def game_watcher(self, ctx: BizHawkClientContext) -> None:
         from CommonClient import logger
         connected=False
+        data_present=False
         game_clear=False
 
         if ctx.server_version.build > 0:
             connected=True
         else:
             connected=False
-        #TODO: Catch version mismatch which throws an error
 
-        if connected:    
+        if ctx.slot_data != None:
+            data_present=True
+        else:
+            data_present=False
+
+        if connected and data_present:    
             try:
                 # Santity check game state, these bytes represent the first bytes of savefile1
                 sanity_check_savefile = b'\x19d9W'
