@@ -123,3 +123,10 @@ def setup_locations(world, player: int):
 
 
 lookup_id_to_name: typing.Dict[int, str] = {id: name for name, _ in all_locations.items()}
+
+"""
+# Generating data for the tracker
+for location in checkable_locations:
+    locations_split=location.split('-')
+    print("["+str(hex(checkable_locations[location]))+"] = {\""+locations_split[0]+"\", \""+locations_split[1]+"\"},")
+"""
