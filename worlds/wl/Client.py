@@ -158,7 +158,7 @@ class WarioLandClient(BizHawkClient):
                                 ctx.bizhawk_ctx,
                                 [(item_addr, 1, "System Bus")])
                             if item.item==0xA80900 and (read_result[0][0]) & 0xF == 9:
-                                if ((read_result[0][0])>>4) == 9:
+                                if (read_result[0][0]) == 0x99:
                                     #if 0x99, do nothing
                                     new_value=read_result[0][0]
                                 else:

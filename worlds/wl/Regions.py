@@ -397,11 +397,9 @@ def create_regions(world, player: int, active_locations):
         syrupcastle_boss,
         ]
 
-
     if world.treasure_checks[player]:
         add_location_to_region(world, player, active_locations, LocationName.ricebeach_3_region, LocationName.ricebeach_3_treasure,
                                lambda state: ((can_jet(player, state) or (can_dragon(player, state) and can_duck(player, state))) and state.can_reach(LocationName.ricebeach_boss, "", player)))
-        
         add_location_to_region(world, player, active_locations, LocationName.mtteapot_9_region, LocationName.mtteapot_9_treasure,
                                lambda state: (can_open_treasure(player, state) and (can_jet(player, state) or can_climb(player, state))))
         add_location_to_region(world, player, active_locations, LocationName.mtteapot_11_region, LocationName.mtteapot_11_treasure,
@@ -436,6 +434,47 @@ def create_regions(world, player: int, active_locations):
         add_location_to_region(world, player, active_locations, LocationName.syrupcastle_39_region, LocationName.syrupcastle_39_treasure,
                                lambda state: (can_dash(player, state) and can_duck(player, state) and can_bull(player, state)))
 
+    # Block world/boss entry if option is active
+    if world.world_unlocks[player]==1:
+            for location in checkable_locations:
+                    if world.treasure_checks[player]==0 and "Treasure" in location:
+                          pass
+                    elif "Rice Beach" in location:
+                            add_rule(world.get_location(location, player),
+                                            lambda state: state.has(ItemName.ricebeach, player))
+                    elif "Mt. Teapot" in location:
+                            add_rule(world.get_location(location, player),
+                                            lambda state: state.has(ItemName.mtteapot, player))
+                    elif "Sherbet Land" in location:
+                            add_rule(world.get_location(location, player),
+                                            lambda state: state.has(ItemName.sherbetland, player))
+                    elif "Stove Canyon" in location:
+                            add_rule(world.get_location(location, player),
+                                            lambda state: state.has(ItemName.stovecanyon, player))
+                    elif "SS Tea Cup" in location:
+                            add_rule(world.get_location(location, player),
+                                            lambda state: state.has(ItemName.ssteacup, player))
+                    elif "Parsley Woods" in location:
+                            add_rule(world.get_location(location, player),
+                                            lambda state: state.has(ItemName.parsleywoods, player))
+                    elif "Syrup Castle" in location:
+                            add_rule(world.get_location(location, player),
+                                            lambda state: state.has(ItemName.syrupcastle, player))
+    if world.boss_unlocks[player]==1:
+            add_rule(world.get_location(LocationName.ricebeach_boss, player),
+                            lambda state: state.has(ItemName.ricebeach_bossunlock, player))
+            add_rule(world.get_location(LocationName.mtteapot_boss, player),
+                            lambda state: state.has(ItemName.mtteapot_bossunlock, player))
+            add_rule(world.get_location(LocationName.sherbetland_boss, player),
+                            lambda state: state.has(ItemName.sherbetland_bossunlock, player))
+            add_rule(world.get_location(LocationName.stovecanyon_boss, player),
+                            lambda state: state.has(ItemName.stovecanyon_bossunlock, player))
+            add_rule(world.get_location(LocationName.ssteacup_boss, player),
+                            lambda state: state.has(ItemName.ssteacup_bossunlock, player))
+            add_rule(world.get_location(LocationName.parsleywoods_boss, player),
+                            lambda state: state.has(ItemName.parsleywoods_bossunlock, player))
+            #add_rule(world.get_location(LocationName.syrupcastle_boss, player),
+            #         lambda state: state.has(ItemName.syrupcastle_bossunlock, player))
 
 
 def connect_regions(world, player, level_to_tile_dict):
@@ -618,46 +657,6 @@ def connect_regions(world, player, level_to_tile_dict):
             #    next_tile_name += " - Tile"
             #    current_exit_name = (current_level_data.levelName + " - Secret Exit")
             #    connect(world, player, names, current_exit_name, next_tile_name)
-        
-        # Block world/boss entry if option is active
-        if world.world_unlocks[player]==1:
-                for location in checkable_locations:
-                        if "Rice Beach" in location:
-                                add_rule(world.get_location(location, player),
-                                         lambda state: state.has(ItemName.ricebeach, player))
-                        if "Mt. Teapot" in location:
-                                add_rule(world.get_location(location, player),
-                                         lambda state: state.has(ItemName.mtteapot, player))
-                        if "Sherbet Land" in location:
-                                add_rule(world.get_location(location, player),
-                                         lambda state: state.has(ItemName.sherbetland, player))
-                        if "Stove Canyon" in location:
-                                add_rule(world.get_location(location, player),
-                                         lambda state: state.has(ItemName.stovecanyon, player))
-                        if "SS Tea Cup" in location:
-                                add_rule(world.get_location(location, player),
-                                         lambda state: state.has(ItemName.ssteacup, player))
-                        if "Parsley Woods" in location:
-                                add_rule(world.get_location(location, player),
-                                         lambda state: state.has(ItemName.parsleywoods, player))
-                        if "Syrup Castle" in location:
-                                add_rule(world.get_location(location, player),
-                                         lambda state: state.has(ItemName.syrupcastle, player))
-        if world.boss_unlocks[player]==1:
-                add_rule(world.get_location(LocationName.ricebeach_boss, player),
-                         lambda state: state.has(ItemName.ricebeach_bossunlock, player))
-                add_rule(world.get_location(LocationName.mtteapot_boss, player),
-                         lambda state: state.has(ItemName.mtteapot_bossunlock, player))
-                add_rule(world.get_location(LocationName.sherbetland_boss, player),
-                         lambda state: state.has(ItemName.sherbetland_bossunlock, player))
-                add_rule(world.get_location(LocationName.stovecanyon_boss, player),
-                         lambda state: state.has(ItemName.stovecanyon_bossunlock, player))
-                add_rule(world.get_location(LocationName.ssteacup_boss, player),
-                         lambda state: state.has(ItemName.ssteacup_bossunlock, player))
-                add_rule(world.get_location(LocationName.parsleywoods_boss, player),
-                         lambda state: state.has(ItemName.parsleywoods_bossunlock, player))
-                #add_rule(world.get_location(LocationName.syrupcastle_boss, player),
-                #         lambda state: state.has(ItemName.syrupcastle_bossunlock, player))
 
 def create_region(world: MultiWorld, player: int, active_locations, name: str, locations=None):
     ret = Region(name, player, world)
@@ -679,8 +678,6 @@ def add_location_to_region(world: MultiWorld, player: int, active_locations, reg
         region.locations.append(location)
         if rule:
             add_rule(location, rule)
-
-
 
 def connect(world: MultiWorld, player: int, used_names: typing.Dict[str, int], source: str, target: str,
             rule: typing.Optional[typing.Callable] = None):
