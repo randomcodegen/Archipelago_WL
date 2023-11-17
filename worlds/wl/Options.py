@@ -120,7 +120,6 @@ class StunTrapWeight(BaseTrapWeight):
     Likelihood of a receiving a trap which briefly stuns Wario
     """
     display_name = "Stun Trap Weight"
-    default = False
 
 
 class TimerTrapWeight(BaseTrapWeight):
@@ -128,7 +127,6 @@ class TimerTrapWeight(BaseTrapWeight):
     Likelihood of a receiving a trap which causes the timer to get set to 100
     """
     display_name = "Timer Trap Weight"
-    default = False
 
 
 class DeathTrapWeight(BaseTrapWeight):
@@ -136,14 +134,12 @@ class DeathTrapWeight(BaseTrapWeight):
     Likelihood of receiving a trap which causes the player to die
     """
     display_name = "Death Trap Weight"
-    default = False
 
 class GreaseTrapWeight(BaseTrapWeight):
     """
     Likelihood of receiving a greasy trap
     """
     display_name = "Grease Trap Weight"
-    default = False
 
 class MusicShuffle(Toggle):
     """
@@ -184,5 +180,5 @@ wl_options: typing.Dict[str, type(Option)] = {
     "grease_trap_weight": GreaseTrapWeight,
     "music_shuffle": MusicShuffle,
     "starting_life_count": StartingLifeCount,
-    "death_link": DeathLink,
+    #"death_link": DeathLink,
 }
