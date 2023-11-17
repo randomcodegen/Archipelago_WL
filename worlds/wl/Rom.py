@@ -83,444 +83,454 @@ class Rom:
 # Block basic movement abilities
 def patch_basic_abilities(rom):
     # Climb
-    rom.write_byte(0x34a1b,0xc3) #d:4a1b    jp 7462
-    rom.write_byte(0x34a1c,0x62) #d:4a1c    
-    rom.write_byte(0x34a1d,0x74) #d:4a1d    
+    rom.write_byte(0x34a1b,0xc3) #d:4a1b    jp 7B00
+    rom.write_byte(0x34a1c,0x00) #d:4a1c
+    rom.write_byte(0x34a1d,0x7b) #d:4a1d
     #---
-    rom.write_byte(0x37462,0xea) #d:7462    ld (A490),a
-    rom.write_byte(0x37463,0x90) #d:7463    
-    rom.write_byte(0x37464,0xa4) #d:7464    
-    rom.write_byte(0x37465,0xfa) #d:7465    ld a,(A407)
-    rom.write_byte(0x37466,0x07) #d:7466    
-    rom.write_byte(0x37467,0xa4) #d:7467    
-    rom.write_byte(0x37468,0xa7) #d:7468    and a
-    rom.write_byte(0x37469,0x28) #d:7469    jr z,04
-    rom.write_byte(0x3746a,0x04) #d:746a    
-    rom.write_byte(0x3746b,0xfa) #d:746b    ld a,(A490)
-    rom.write_byte(0x3746c,0x90) #d:746c    
-    rom.write_byte(0x3746d,0xa4) #d:746d    
-    rom.write_byte(0x3746e,0xc3) #d:746e    jp 4A1E
-    rom.write_byte(0x3746f,0x1e) #d:746f    
-    rom.write_byte(0x37470,0x4a) #d:7470    
-    rom.write_byte(0x37471,0xc3) #d:7471    jp 4A3D
-    rom.write_byte(0x37472,0x3d) #d:7472    
-    rom.write_byte(0x37473,0x4a) #d:7473    
+    rom.write_byte(0x37b00,0xea) #d:7b00    ld (A490),a
+    rom.write_byte(0x37b01,0x90) #d:7b01
+    rom.write_byte(0x37b02,0xa4) #d:7b02
+    rom.write_byte(0x37b03,0xfa) #d:7b03    ld a,(A407)
+    rom.write_byte(0x37b04,0x07) #d:7b04
+    rom.write_byte(0x37b05,0xa4) #d:7b05
+    rom.write_byte(0x37b06,0xa7) #d:7b06    and a
+    rom.write_byte(0x37b07,0x28) #d:7b07    jr z,06
+    rom.write_byte(0x37b08,0x06) #d:7b08
+    rom.write_byte(0x37b09,0xfa) #d:7b09    ld a,(A490)
+    rom.write_byte(0x37b0a,0x90) #d:7b0a
+    rom.write_byte(0x37b0b,0xa4) #d:7b0b
+    rom.write_byte(0x37b0c,0xc3) #d:7b0c    jp 4A1E
+    rom.write_byte(0x37b0d,0x1e) #d:7b0d
+    rom.write_byte(0x37b0e,0x4a) #d:7b0e
+    rom.write_byte(0x37b0f,0xc3) #d:7b0f    jp 4A3D
+    rom.write_byte(0x37b10,0x3d) #d:7b10
+    rom.write_byte(0x37b11,0x4a) #d:7b11
 
     # Duck
-    rom.write_byte(0x34c5a,0xcd) #d:4c5a    call 7441
-    rom.write_byte(0x34c5b,0x41) #d:4c5b    
-    rom.write_byte(0x34c5c,0x74) #d:4c5c    
-    rom.write_byte(0x34a7c,0xcd) #d:4a7c    call 7441
-    rom.write_byte(0x34a7d,0x41) #d:4a7d    
-    rom.write_byte(0x34a7e,0x74) #d:4a7e    
+    rom.write_byte(0x34c5a,0xcd) #d:4c5a    call 7B13
+    rom.write_byte(0x34c5b,0x13) #d:4c5b
+    rom.write_byte(0x34c5c,0x7b) #d:4c5c
+    rom.write_byte(0x34a7c,0xcd) #d:4a7c    call 7B13
+    rom.write_byte(0x34a7d,0x13) #d:4a7d
+    rom.write_byte(0x34a7e,0x7b) #d:4a7e
     #---
-    rom.write_byte(0x37441,0xfa) #d:7441    ld a,(A408)
-    rom.write_byte(0x37442,0x08) #d:7442    
-    rom.write_byte(0x37443,0xa4) #d:7443    
-    rom.write_byte(0x37444,0xa7) #d:7444    and a
-    rom.write_byte(0x37445,0x28) #d:7445    jr z,04
-    rom.write_byte(0x37446,0x04) #d:7446    
-    rom.write_byte(0x37447,0xfa) #d:7447    ld a,(A956)
-    rom.write_byte(0x37448,0x56) #d:7448    
-    rom.write_byte(0x37449,0xa9) #d:7449    
-    rom.write_byte(0x3744a,0xc9) #d:744a    ret
-    rom.write_byte(0x3744b,0x3e) #d:744b    ld a,01
-    rom.write_byte(0x3744c,0x01) #d:744c    
-    rom.write_byte(0x3744d,0xc9) #d:744d    ret
+    rom.write_byte(0x37b13,0xfa) #d:7b13    ld a,(A408)
+    rom.write_byte(0x37b14,0x08) #d:7b14
+    rom.write_byte(0x37b15,0xa4) #d:7b15
+    rom.write_byte(0x37b16,0xa7) #d:7b16    and a
+    rom.write_byte(0x37b17,0x28) #d:7b17    jr z,04
+    rom.write_byte(0x37b18,0x04) #d:7b18
+    rom.write_byte(0x37b19,0xfa) #d:7b19    ld a,(A956)
+    rom.write_byte(0x37b1a,0x56) #d:7b1a
+    rom.write_byte(0x37b1b,0xa9) #d:7b1b
+    rom.write_byte(0x37b1c,0xc9) #d:7b1c    ret
+    rom.write_byte(0x37b1d,0x3e) #d:7b1d    ld a,01
+    rom.write_byte(0x37b1e,0x01) #d:7b1e
+    rom.write_byte(0x37b1f,0xc9) #d:7b1f    ret
 
     # High jump
-    rom.write_byte(0x34e75,0xcd) #d:4e75    call 743A
-    rom.write_byte(0x34e76,0x3a) #d:4e76    
-    rom.write_byte(0x34e77,0x74) #d:4e77    
+    rom.write_byte(0x34e75,0xcd) #d:4e75    call 7B22
+    rom.write_byte(0x34e76,0x22) #d:4e76
+    rom.write_byte(0x34e77,0x7b) #d:4e77
     #---
-    rom.write_byte(0x3743a,0xfa) #d:743a    ld a,(A405)
-    rom.write_byte(0x3743b,0x05) #d:743b    
-    rom.write_byte(0x3743c,0xa4) #d:743c    
-    rom.write_byte(0x3743d,0xea) #d:743d    ld (A92C),a
-    rom.write_byte(0x3743e,0x2c) #d:743e    
-    rom.write_byte(0x3743f,0xa9) #d:743f    
-    rom.write_byte(0x37440,0xc9) #d:7440    ret
+    rom.write_byte(0x37b22,0xfa) #d:7b22    ld a,(A405)
+    rom.write_byte(0x37b23,0x05) #d:7b23
+    rom.write_byte(0x37b24,0xa4) #d:7b24
+    rom.write_byte(0x37b25,0xea) #d:7b25    ld (A92C),a
+    rom.write_byte(0x37b26,0x2c) #d:7b26
+    rom.write_byte(0x37b27,0xa9) #d:7b27
+    rom.write_byte(0x37b28,0xc9) #d:7b28    ret
 
     # Dash
-    rom.write_byte(0x35bd3,0xcd) #d:5bd3    call 7416
-    rom.write_byte(0x35bd4,0x16) #d:5bd4    
-    rom.write_byte(0x35bd5,0x74) #d:5bd5    
+    rom.write_byte(0x35bd3,0xcd) #d:5bd3    call 7B29
+    rom.write_byte(0x35bd4,0x29) #d:5bd4
+    rom.write_byte(0x35bd5,0x7b) #d:5bd5
     #---
-    rom.write_byte(0x37416,0xfa) #d:7416    ld a,(A404)
-    rom.write_byte(0x37417,0x04) #d:7417    
-    rom.write_byte(0x37418,0xa4) #d:7418    
-    rom.write_byte(0x37419,0xa7) #d:7419    and a
-    rom.write_byte(0x3741a,0x28) #d:741a    jr z,04
-    rom.write_byte(0x3741b,0x04) #d:741b    
-    rom.write_byte(0x3741c,0xfa) #d:741c    ld a,(A34D)
-    rom.write_byte(0x3741d,0x4d) #d:741d    
-    rom.write_byte(0x3741e,0xa3) #d:741e    
-    rom.write_byte(0x3741f,0xc9) #d:741f    ret
-    rom.write_byte(0x37420,0x3e) #d:7420    ld a,01
-    rom.write_byte(0x37421,0x01) #d:7421    
-    rom.write_byte(0x37422,0xc9) #d:7422    ret
+    rom.write_byte(0x37b29,0xfa) #d:7b29    ld a,(A404)
+    rom.write_byte(0x37b2a,0x04) #d:7b2a
+    rom.write_byte(0x37b2b,0xa4) #d:7b2b
+    rom.write_byte(0x37b2c,0xa7) #d:7b2c    and a
+    rom.write_byte(0x37b2d,0x28) #d:7b2d    jr z,04
+    rom.write_byte(0x37b2e,0x04) #d:7b2e
+    rom.write_byte(0x37b2f,0xfa) #d:7b2f    ld a,(A34D)
+    rom.write_byte(0x37b30,0x4d) #d:7b30
+    rom.write_byte(0x37b31,0xa3) #d:7b31
+    rom.write_byte(0x37b32,0xc9) #d:7b32    ret
+    rom.write_byte(0x37b33,0x3e) #d:7b33    ld a,01
+    rom.write_byte(0x37b34,0x01) #d:7b34
+    rom.write_byte(0x37b35,0xc9) #d:7b35    ret
 
     # Create coin
-    rom.write_byte(0x34b74,0xcd) #d:4b74    call 742D
-    rom.write_byte(0x34b75,0x2d) #d:4b75    
-    rom.write_byte(0x34b76,0x74) #d:4b76    
+    rom.write_byte(0x34b74,0xcd) #d:4b74    call 7B36
+    rom.write_byte(0x34b75,0x36) #d:4b75
+    rom.write_byte(0x34b76,0x7b) #d:4b76
     #---
-    rom.write_byte(0x3742d,0xfa) #d:742d    ld a,(A406)
-    rom.write_byte(0x3742e,0x06) #d:742e    
-    rom.write_byte(0x3742f,0xa4) #d:742f    
-    rom.write_byte(0x37430,0xa7) #d:7430    and a
-    rom.write_byte(0x37431,0x28) #d:7431    jr z,04
-    rom.write_byte(0x37432,0x04) #d:7432    
-    rom.write_byte(0x37433,0xfa) #d:7433    ld a,(A9A4)
-    rom.write_byte(0x37434,0xa4) #d:7434    
-    rom.write_byte(0x37435,0xa9) #d:7435    
-    rom.write_byte(0x37436,0xc9) #d:7436    ret
-    rom.write_byte(0x37437,0x3e) #d:7437    ld a,01
-    rom.write_byte(0x37438,0x01) #d:7438    
-    rom.write_byte(0x37439,0xc9) #d:7439    ret
+    rom.write_byte(0x37b36,0xfa) #d:7b36    ld a,(A406)
+    rom.write_byte(0x37b37,0x06) #d:7b37
+    rom.write_byte(0x37b38,0xa4) #d:7b38
+    rom.write_byte(0x37b39,0xa7) #d:7b39    and a
+    rom.write_byte(0x37b3a,0x28) #d:7b3a    jr z,04
+    rom.write_byte(0x37b3b,0x04) #d:7b3b
+    rom.write_byte(0x37b3c,0xfa) #d:7b3c    ld a,(A9A4)
+    rom.write_byte(0x37b3d,0xa4) #d:7b3d
+    rom.write_byte(0x37b3e,0xa9) #d:7b3e
+    rom.write_byte(0x37b3f,0xc9) #d:7b3f    ret
+    rom.write_byte(0x37b40,0x3e) #d:7b40    ld a,01
+    rom.write_byte(0x37b41,0x01) #d:7b41
+    rom.write_byte(0x37b42,0xc9) #d:7b42    ret
 
     # Force small wario
-    rom.write_byte(0xec4,0xcd) #0:0ec4      call 7F72
-    rom.write_byte(0xec5,0x72) #0:0ec5
-    rom.write_byte(0xec6,0x7f) #0:0ec6
+    rom.write_byte(0xec4,0xcd) #0:ec4   call 7F65
+    rom.write_byte(0xec5,0x65) #0:ec5
+    rom.write_byte(0xec6,0x7f) #0:ec6
     #---
-    rom.write_byte(0x33f72,0xfa) #c:7f72    ld a,(A410)
-    rom.write_byte(0x33f73,0x10) #c:7f73    
-    rom.write_byte(0x33f74,0xa4) #c:7f74    
-    rom.write_byte(0x33f75,0xa7) #c:7f75    and a
-    rom.write_byte(0x33f76,0x20) #c:7f76    jr nz, 3
-    rom.write_byte(0x33f77,0x03) #c:7f77    
-    rom.write_byte(0x33f78,0xea) #c:7f78    ld (A80A),a
-    rom.write_byte(0x33f79,0x0a) #c:7f79    
-    rom.write_byte(0x33f7a,0xa8) #c:7f7a    
-    rom.write_byte(0x33f7b,0xfa) #c:7f7b    ld a, (A80A)
-    rom.write_byte(0x33f7c,0x0a) #c:7f7c    
-    rom.write_byte(0x33f7d,0xa8) #c:7f7d    
-    rom.write_byte(0x33f7e,0xc9) #c:7f7e    ret
+    rom.write_byte(0x33f65,0xfa) #c:7f65    ld a,(A410)
+    rom.write_byte(0x33f66,0x10) #c:7f66
+    rom.write_byte(0x33f67,0xa4) #c:7f67
+    rom.write_byte(0x33f68,0xa7) #c:7f68    and a
+    rom.write_byte(0x33f69,0x20) #c:7f69    jr nz, 3
+    rom.write_byte(0x33f6a,0x03) #c:7f6a
+    rom.write_byte(0x33f6b,0xea) #c:7f6b    ld (A80A),a
+    rom.write_byte(0x33f6c,0x0a) #c:7f6c
+    rom.write_byte(0x33f6d,0xa8) #c:7f6d
+    rom.write_byte(0x33f6e,0xfa) #c:7f6e    ld a, (A80A)
+    rom.write_byte(0x33f6f,0x0a) #c:7f6f
+    rom.write_byte(0x33f70,0xa8) #c:7f70
+    rom.write_byte(0x33f71,0xc9) #c:7f71    ret
     return
 
 # Block powerup usage
 def patch_powerups(rom):
-    rom.write_byte(0x364b2,0xcd) #d:64b2    call 738E
-    rom.write_byte(0x364b3,0x8e) #d:64b3    
-    rom.write_byte(0x364b4,0x73) #d:64b4    
+    rom.write_byte(0x364b2,0xc3) #d:64b2    jp 7B43
+    rom.write_byte(0x364b3,0x43) #d:64b3
+    rom.write_byte(0x364b4,0x7b) #d:64b4
     #---
-    rom.write_byte(0x3738e,0xea) #d:738e    ld (A958),a
-    rom.write_byte(0x3738f,0x58) #d:738f    
-    rom.write_byte(0x37390,0xa9) #d:7390    
-    rom.write_byte(0x37391,0xfe) #d:7391    cp a,04
-    rom.write_byte(0x37392,0x04) #d:7392    
-    rom.write_byte(0x37393,0xd2) #d:7393    jp nc, 73F5
-    rom.write_byte(0x37394,0xf5) #d:7394    
-    rom.write_byte(0x37395,0x73) #d:7395    
-    rom.write_byte(0x37396,0xfe) #d:7396    cp a,03
-    rom.write_byte(0x37397,0x03) #d:7397    
-    rom.write_byte(0x37398,0xd2) #d:7398    jp nc, 73D5
-    rom.write_byte(0x37399,0xd5) #d:7399    
-    rom.write_byte(0x3739a,0x73) #d:739a    
-    rom.write_byte(0x3739b,0xfe) #d:739b    cp a,02
-    rom.write_byte(0x3739c,0x02) #d:739c    
-    rom.write_byte(0x3739d,0xd2) #d:739d    jp nc, 73CB
-    rom.write_byte(0x3739e,0xcb) #d:739e    
-    rom.write_byte(0x3739f,0x73) #d:739f    
-    rom.write_byte(0x373a0,0xfe) #d:73a0    cp a,01
-    rom.write_byte(0x373a1,0x01) #d:73a1    
-    rom.write_byte(0x373a2,0xd2) #d:73a2    jp nc, 73C1
-    rom.write_byte(0x373a3,0xc1) #d:73a3    
-    rom.write_byte(0x373a4,0x73) #d:73a4    
+    rom.write_byte(0x37b43,0xea) #d:7b43    ld (A958),a
+    rom.write_byte(0x37b44,0x58) #d:7b44
+    rom.write_byte(0x37b45,0xa9) #d:7b45
+    rom.write_byte(0x37b46,0xfe) #d:7b46    cp a,04
+    rom.write_byte(0x37b47,0x04) #d:7b47
+    rom.write_byte(0x37b48,0xd2) #d:7b48    jp nc, 7B81
+    rom.write_byte(0x37b49,0x81) #d:7b49
+    rom.write_byte(0x37b4a,0x7b) #d:7b4a
+    rom.write_byte(0x37b4b,0xfe) #d:7b4b    cp a,03
+    rom.write_byte(0x37b4c,0x03) #d:7b4c
+    rom.write_byte(0x37b4d,0xd2) #d:7b4d    jp nc, 7B75
+    rom.write_byte(0x37b4e,0x75) #d:7b4e
+    rom.write_byte(0x37b4f,0x7b) #d:7b4f
+    rom.write_byte(0x37b50,0xfe) #d:7b50    cp a,02
+    rom.write_byte(0x37b51,0x02) #d:7b51
+    rom.write_byte(0x37b52,0xd2) #d:7b52    jp nc, 7B69
+    rom.write_byte(0x37b53,0x69) #d:7b53
+    rom.write_byte(0x37b54,0x7b) #d:7b54
+    rom.write_byte(0x37b55,0xfe) #d:7b55    cp a,01
+    rom.write_byte(0x37b56,0x01) #d:7b56
+    rom.write_byte(0x37b57,0xd2) #d:7b57    jp nc, 7B5D
+    rom.write_byte(0x37b58,0x5d) #d:7b58
+    rom.write_byte(0x37b59,0x7b) #d:7b59
+    rom.write_byte(0x37b5a,0xc3) #d:7b5a    jp 64B5
+    rom.write_byte(0x37b5b,0xb5) #d:7b5b
+    rom.write_byte(0x37b5c,0x64) #d:7b5c
     #--Check garlic
-    rom.write_byte(0x373c1,0xfa) #d:73c1    ld a,(A400)
-    rom.write_byte(0x373c2,0x00) #d:73c2    
-    rom.write_byte(0x373c3,0xa4) #d:73c3    
-    rom.write_byte(0x373c4,0xa7) #d:73c4    and a
-    rom.write_byte(0x373c5,0xca) #d:73c5    jp z,6261
-    rom.write_byte(0x373c6,0x61) #d:73c6    
-    rom.write_byte(0x373c7,0x62) #d:73c7    
-    rom.write_byte(0x373c8,0x3e) #d:73c8    ld a,01
-    rom.write_byte(0x373c9,0x01) #d:73c9    
-    rom.write_byte(0x373ca,0xc9) #d:73ca    ret
+    rom.write_byte(0x37b5d,0xfa) #d:7b5d    ld a,(A400)
+    rom.write_byte(0x37b5e,0x00) #d:7b5e
+    rom.write_byte(0x37b5f,0xa4) #d:7b5f
+    rom.write_byte(0x37b60,0xa7) #d:7b60    and a
+    rom.write_byte(0x37b61,0xca) #d:7b61    jp z,6261
+    rom.write_byte(0x37b62,0x61) #d:7b62
+    rom.write_byte(0x37b63,0x62) #d:7b63
+    rom.write_byte(0x37b64,0x3e) #d:7b64    ld a,01
+    rom.write_byte(0x37b65,0x01) #d:7b65
+    rom.write_byte(0x37b66,0xc3) #d:7b66    jp 64B5
+    rom.write_byte(0x37b67,0xb5) #d:7b67
+    rom.write_byte(0x37b68,0x64) #d:7b68
     #--Check bull
-    rom.write_byte(0x373cb,0xfa) #d:73cb    ld a,(A401)
-    rom.write_byte(0x373cc,0x01) #d:73cc    
-    rom.write_byte(0x373cd,0xa4) #d:73cd    
-    rom.write_byte(0x373ce,0xa7) #d:73ce    and a
-    rom.write_byte(0x373cf,0xca) #d:73cf    jp z,6261
-    rom.write_byte(0x373d0,0x61) #d:73d0    
-    rom.write_byte(0x373d1,0x62) #d:73d1    
-    rom.write_byte(0x373d2,0x3e) #d:73d2    ld a,02
-    rom.write_byte(0x373d3,0x02) #d:73d3    
-    rom.write_byte(0x373d4,0xc9) #d:73d4    ret
+    rom.write_byte(0x37b69,0xfa) #d:7b69    ld a,(A401)
+    rom.write_byte(0x37b6a,0x01) #d:7b6a
+    rom.write_byte(0x37b6b,0xa4) #d:7b6b
+    rom.write_byte(0x37b6c,0xa7) #d:7b6c    and a
+    rom.write_byte(0x37b6d,0xca) #d:7b6d    jp z,6261
+    rom.write_byte(0x37b6e,0x61) #d:7b6e
+    rom.write_byte(0x37b6f,0x62) #d:7b6f
+    rom.write_byte(0x37b70,0x3e) #d:7b70    ld a,02
+    rom.write_byte(0x37b71,0x02) #d:7b71
+    rom.write_byte(0x37b72,0xc3) #d:7b72    jp 64B5
+    rom.write_byte(0x37b73,0xb5) #d:7b73
+    rom.write_byte(0x37b74,0x64) #d:7b74
     #--Check jet
-    rom.write_byte(0x373d5,0xfa) #d:73d5    ld a,(A402)
-    rom.write_byte(0x373d6,0x02) #d:73d6    
-    rom.write_byte(0x373d7,0xa4) #d:73d7    
-    rom.write_byte(0x373d8,0xa7) #d:73d8    and a
-    rom.write_byte(0x373d9,0xca) #d:73d9    jp z,6261
-    rom.write_byte(0x373da,0x61) #d:73da    
-    rom.write_byte(0x373db,0x62) #d:73db    
-    rom.write_byte(0x373dc,0x3e) #d:73dc    ld a,03
-    rom.write_byte(0x373dd,0x03) #d:73dd    
-    rom.write_byte(0x373de,0xc9) #d:73de    ret
+    rom.write_byte(0x37b75,0xfa) #d:7b75    ld a,(A402)
+    rom.write_byte(0x37b76,0x02) #d:7b76
+    rom.write_byte(0x37b77,0xa4) #d:7b77
+    rom.write_byte(0x37b78,0xa7) #d:7b78    and a
+    rom.write_byte(0x37b79,0xca) #d:7b79    jp z,6261
+    rom.write_byte(0x37b7a,0x61) #d:7b7a
+    rom.write_byte(0x37b7b,0x62) #d:7b7b
+    rom.write_byte(0x37b7c,0x3e) #d:7b7c    ld a,03
+    rom.write_byte(0x37b7d,0x03) #d:7b7d
+    rom.write_byte(0x37b7e,0xc3) #d:7b7e    jp 64B5
+    rom.write_byte(0x37b7f,0xb5) #d:7b7f
+    rom.write_byte(0x37b80,0x64) #d:7b80
     #--Check dragon
-    rom.write_byte(0x373f5,0xfa) #d:73f5    ld a,(A403)
-    rom.write_byte(0x373f6,0x03) #d:73f6    
-    rom.write_byte(0x373f7,0xa4) #d:73f7    
-    rom.write_byte(0x373f8,0xa7) #d:73f8    and a
-    rom.write_byte(0x373f9,0xca) #d:73f9    jp z,6261
-    rom.write_byte(0x373fa,0x61) #d:73fa    
-    rom.write_byte(0x373fb,0x62) #d:73fb    
-    rom.write_byte(0x373fc,0x3e) #d:73fc    ld a,04
-    rom.write_byte(0x373fd,0x04) #d:73fd    
-    rom.write_byte(0x373fe,0xc9) #d:73fe    ret
+    rom.write_byte(0x37b81,0xfa) #d:7b81    ld a,(A403)
+    rom.write_byte(0x37b82,0x03) #d:7b82
+    rom.write_byte(0x37b83,0xa4) #d:7b83
+    rom.write_byte(0x37b84,0xa7) #d:7b84    and a
+    rom.write_byte(0x37b85,0xca) #d:7b85    jp z,6261
+    rom.write_byte(0x37b86,0x61) #d:7b86
+    rom.write_byte(0x37b87,0x62) #d:7b87
+    rom.write_byte(0x37b88,0x3e) #d:7b88    ld a,04
+    rom.write_byte(0x37b89,0x04) #d:7b89
+    rom.write_byte(0x37b8a,0xc3) #d:7b8a    jp 64B5
+    rom.write_byte(0x37b8b,0xb5) #d:7b8b
+    rom.write_byte(0x37b8c,0x64) #d:7b8c
     return
 
 # Patch Map Movement
 def patch_world_enter(rom):
-    # Blocking the world entering is only required if the setting is active.
-
-    rom.write_byte(0x20187,0xc3) #8:4187    jp 664F
-    rom.write_byte(0x20188,0x4f) #8:4188    
-    rom.write_byte(0x20189,0x66) #8:4189    
+    # Block world entering
+    rom.write_byte(0x20187,0xc3) #8:4187    jp 7EE1
+    rom.write_byte(0x20188,0xe1) #8:4188
+    rom.write_byte(0x20189,0x7e) #8:4189
     #--
-    rom.write_byte(0x2264f,0xfa) #8:664f    ld a,(A79F)
-    rom.write_byte(0x22650,0x9f) #8:6650    
-    rom.write_byte(0x22651,0xa7) #8:6651    
-    rom.write_byte(0x22652,0xfe) #8:6652    cp a,07
-    rom.write_byte(0x22653,0x07) #8:6653    
-    rom.write_byte(0x22654,0xd2) #8:6654    jp nc, 4B5E
-    rom.write_byte(0x22655,0x5e) #8:6655    
-    rom.write_byte(0x22656,0x4b) #8:6656    
-    rom.write_byte(0x22657,0xfe) #8:6657    cp a,06
-    rom.write_byte(0x22658,0x06) #8:6658    
-    rom.write_byte(0x22659,0xd2) #8:6659    jp nc, 4B52
-    rom.write_byte(0x2265a,0x52) #8:665a    
-    rom.write_byte(0x2265b,0x4b) #8:665b    
-    rom.write_byte(0x2265c,0xfe) #8:665c    cp a,05
-    rom.write_byte(0x2265d,0x05) #8:665d    
-    rom.write_byte(0x2265e,0xd2) #8:665e    jp nc, 4B46
-    rom.write_byte(0x2265f,0x46) #8:665f    
-    rom.write_byte(0x22660,0x4b) #8:6660    
-    rom.write_byte(0x22661,0xfe) #8:6661    cp a,04
-    rom.write_byte(0x22662,0x04) #8:6662    
-    rom.write_byte(0x22663,0xd2) #8:6663    jp nc, 4AEC
-    rom.write_byte(0x22664,0xec) #8:6664    
-    rom.write_byte(0x22665,0x4a) #8:6665    
-    rom.write_byte(0x22666,0xfe) #8:6666    cp a,03
-    rom.write_byte(0x22667,0x03) #8:6667    
-    rom.write_byte(0x22668,0xd2) #8:6668    jp nc, 4A2F
-    rom.write_byte(0x22669,0x2f) #8:6669    
-    rom.write_byte(0x2266a,0x4a) #8:666a    
-    rom.write_byte(0x2266b,0xfe) #8:666b    cp a,02
-    rom.write_byte(0x2266c,0x02) #8:666c    
-    rom.write_byte(0x2266d,0xd2) #8:666d    jp nc, 4A23
-    rom.write_byte(0x2266e,0x23) #8:666e    
-    rom.write_byte(0x2266f,0x4a) #8:666f    
-    rom.write_byte(0x22670,0xfe) #8:6670    cp a,01
-    rom.write_byte(0x22671,0x01) #8:6671    
-    rom.write_byte(0x22672,0xd2) #8:6672    jp nc, 49CC
-    rom.write_byte(0x22673,0xcc) #8:6673    
-    rom.write_byte(0x22674,0x49) #8:6674    
-    rom.write_byte(0x22675,0xfe) #8:6675    cp a,00
-    rom.write_byte(0x22676,0x00) #8:6676    
-    rom.write_byte(0x22677,0xd2) #8:6677    jp nc, 49C0
-    rom.write_byte(0x22678,0xc0) #8:6678    
-    rom.write_byte(0x22679,0x49) #8:6679    
+    rom.write_byte(0x23ee1,0xfa) #8:7ee1    ld a,(A79F)
+    rom.write_byte(0x23ee2,0x9f) #8:7ee2
+    rom.write_byte(0x23ee3,0xa7) #8:7ee3
+    rom.write_byte(0x23ee4,0xfe) #8:7ee4    cp a,07
+    rom.write_byte(0x23ee5,0x07) #8:7ee5
+    rom.write_byte(0x23ee6,0xd2) #8:7ee6    jp nc, 7F60
+    rom.write_byte(0x23ee7,0x60) #8:7ee7
+    rom.write_byte(0x23ee8,0x7f) #8:7ee8
+    rom.write_byte(0x23ee9,0xfe) #8:7ee9    cp a,06
+    rom.write_byte(0x23eea,0x06) #8:7eea
+    rom.write_byte(0x23eeb,0xd2) #8:7eeb    jp nc, 7F54
+    rom.write_byte(0x23eec,0x54) #8:7eec
+    rom.write_byte(0x23eed,0x7f) #8:7eed
+    rom.write_byte(0x23eee,0xfe) #8:7eee    cp a,05
+    rom.write_byte(0x23eef,0x05) #8:7eef
+    rom.write_byte(0x23ef0,0xd2) #8:7ef0    jp nc, 7F48
+    rom.write_byte(0x23ef1,0x48) #8:7ef1
+    rom.write_byte(0x23ef2,0x7f) #8:7ef2
+    rom.write_byte(0x23ef3,0xfe) #8:7ef3    cp a,04
+    rom.write_byte(0x23ef4,0x04) #8:7ef4
+    rom.write_byte(0x23ef5,0xd2) #8:7ef5    jp nc, 7F3C
+    rom.write_byte(0x23ef6,0x3c) #8:7ef6
+    rom.write_byte(0x23ef7,0x7f) #8:7ef7
+    rom.write_byte(0x23ef8,0xfe) #8:7ef8    cp a,03
+    rom.write_byte(0x23ef9,0x03) #8:7ef9
+    rom.write_byte(0x23efa,0xd2) #8:7efa    jp nc, 7F30
+    rom.write_byte(0x23efb,0x30) #8:7efb
+    rom.write_byte(0x23efc,0x7f) #8:7efc
+    rom.write_byte(0x23efd,0xfe) #8:7efd    cp a,02
+    rom.write_byte(0x23efe,0x02) #8:7efe
+    rom.write_byte(0x23eff,0xd2) #8:7eff    jp nc, 7F24
+    rom.write_byte(0x23f00,0x24) #8:7f00
+    rom.write_byte(0x23f01,0x7f) #8:7f01
+    rom.write_byte(0x23f02,0xfe) #8:7f02    cp a,01
+    rom.write_byte(0x23f03,0x01) #8:7f03
+    rom.write_byte(0x23f04,0xd2) #8:7f04    jp nc, 7F18
+    rom.write_byte(0x23f05,0x18) #8:7f05
+    rom.write_byte(0x23f06,0x7f) #8:7f06
+    rom.write_byte(0x23f07,0xfe) #8:7f07    cp a,00
+    rom.write_byte(0x23f08,0x00) #8:7f08
+    rom.write_byte(0x23f09,0xd2) #8:7f09    jp nc, 7F0C
+    rom.write_byte(0x23f0a,0x0c) #8:7f0a
+    rom.write_byte(0x23f0b,0x7f) #8:7f0b
     #--
-    rom.write_byte(0x209c0,0xfa) #8:49c0    ld a,(A409)
-    rom.write_byte(0x209c1,0x09) #8:49c1    
-    rom.write_byte(0x209c2,0xa4) #8:49c2    
-    rom.write_byte(0x209c3,0xa7) #8:49c3    and a
-    rom.write_byte(0x209c4,0xca) #8:49c4    jp z,41C4
-    rom.write_byte(0x209c5,0xc4) #8:49c5    
-    rom.write_byte(0x209c6,0x41) #8:49c6    
-    rom.write_byte(0x209c7,0x3e) #8:49c7    ld a,23
-    rom.write_byte(0x209c8,0x23) #8:49c8    
-    rom.write_byte(0x209c9,0xc3) #8:49c9    jp 418A
-    rom.write_byte(0x209ca,0x8a) #8:49ca    
-    rom.write_byte(0x209cb,0x41) #8:49cb    
+    rom.write_byte(0x23f0c,0xfa) #8:7f0c    ld a,(A409)
+    rom.write_byte(0x23f0d,0x09) #8:7f0d
+    rom.write_byte(0x23f0e,0xa4) #8:7f0e
+    rom.write_byte(0x23f0f,0xa7) #8:7f0f    and a
+    rom.write_byte(0x23f10,0xca) #8:7f10    jp z,41C4
+    rom.write_byte(0x23f11,0xc4) #8:7f11
+    rom.write_byte(0x23f12,0x41) #8:7f12
+    rom.write_byte(0x23f13,0x3e) #8:7f13    ld a,23
+    rom.write_byte(0x23f14,0x23) #8:7f14
+    rom.write_byte(0x23f15,0xc3) #8:7f15    jp 418A
+    rom.write_byte(0x23f16,0x8a) #8:7f16
+    rom.write_byte(0x23f17,0x41) #8:7f17
     #--
-    rom.write_byte(0x209cc,0xfa) #8:49cc    ld a,(A40A)
-    rom.write_byte(0x209cd,0x0a) #8:49cd    
-    rom.write_byte(0x209ce,0xa4) #8:49ce    
-    rom.write_byte(0x209cf,0xa7) #8:49cf    and a
-    rom.write_byte(0x209d0,0xca) #8:49d0    jp z,41C4
-    rom.write_byte(0x209d1,0xc4) #8:49d1    
-    rom.write_byte(0x209d2,0x41) #8:49d2    
-    rom.write_byte(0x209d3,0x3e) #8:49d3    ld a,23
-    rom.write_byte(0x209d4,0x23) #8:49d4    
-    rom.write_byte(0x209d5,0xc3) #8:49d5    jp 418A
-    rom.write_byte(0x209d6,0x8a) #8:49d6    
-    rom.write_byte(0x209d7,0x41) #8:49d7    
+    rom.write_byte(0x23f18,0xfa) #8:7f18    ld a,(A40A)
+    rom.write_byte(0x23f19,0x0a) #8:7f19
+    rom.write_byte(0x23f1a,0xa4) #8:7f1a
+    rom.write_byte(0x23f1b,0xa7) #8:7f1b    and a
+    rom.write_byte(0x23f1c,0xca) #8:7f1c    jp z,41C4
+    rom.write_byte(0x23f1d,0xc4) #8:7f1d
+    rom.write_byte(0x23f1e,0x41) #8:7f1e
+    rom.write_byte(0x23f1f,0x3e) #8:7f1f    ld a,23
+    rom.write_byte(0x23f20,0x23) #8:7f20
+    rom.write_byte(0x23f21,0xc3) #8:7f21    jp 418A
+    rom.write_byte(0x23f22,0x8a) #8:7f22
+    rom.write_byte(0x23f23,0x41) #8:7f23
     #--
-    rom.write_byte(0x20a23,0xfa) #8:4a23    ld a,(A40B)
-    rom.write_byte(0x20a24,0x0b) #8:4a24    
-    rom.write_byte(0x20a25,0xa4) #8:4a25    
-    rom.write_byte(0x20a26,0xa7) #8:4a26    and a
-    rom.write_byte(0x20a27,0xca) #8:4a27    jp z,41C4
-    rom.write_byte(0x20a28,0xc4) #8:4a28    
-    rom.write_byte(0x20a29,0x41) #8:4a29    
-    rom.write_byte(0x20a2a,0x3e) #8:4a2a    ld a,23
-    rom.write_byte(0x20a2b,0x23) #8:4a2b    
-    rom.write_byte(0x20a2c,0xc3) #8:4a2c    jp 418A
-    rom.write_byte(0x20a2d,0x8a) #8:4a2d    
-    rom.write_byte(0x20a2e,0x41) #8:4a2e    
+    rom.write_byte(0x23f24,0xfa) #8:7f24    ld a,(A40B)
+    rom.write_byte(0x23f25,0x0b) #8:7f25
+    rom.write_byte(0x23f26,0xa4) #8:7f26
+    rom.write_byte(0x23f27,0xa7) #8:7f27    and a
+    rom.write_byte(0x23f28,0xca) #8:7f28    jp z,41C4
+    rom.write_byte(0x23f29,0xc4) #8:7f29
+    rom.write_byte(0x23f2a,0x41) #8:7f2a
+    rom.write_byte(0x23f2b,0x3e) #8:7f2b    ld a,23
+    rom.write_byte(0x23f2c,0x23) #8:7f2c
+    rom.write_byte(0x23f2d,0xc3) #8:7f2d    jp 418A
+    rom.write_byte(0x23f2e,0x8a) #8:7f2e
+    rom.write_byte(0x23f2f,0x41) #8:7f2f
     #--
-    rom.write_byte(0x20a2f,0xfa) #8:4a2f    ld a,(A40C)
-    rom.write_byte(0x20a30,0x0c) #8:4a30    
-    rom.write_byte(0x20a31,0xa4) #8:4a31    
-    rom.write_byte(0x20a32,0xa7) #8:4a32    and a
-    rom.write_byte(0x20a33,0xca) #8:4a33    jp z,41C4
-    rom.write_byte(0x20a34,0xc4) #8:4a34    
-    rom.write_byte(0x20a35,0x41) #8:4a35    
-    rom.write_byte(0x20a36,0x3e) #8:4a36    ld a,23
-    rom.write_byte(0x20a37,0x23) #8:4a37    
-    rom.write_byte(0x20a38,0xc3) #8:4a38    jp 418A
-    rom.write_byte(0x20a39,0x8a) #8:4a39    
-    rom.write_byte(0x20a3a,0x41) #8:4a3a    
+    rom.write_byte(0x23f30,0xfa) #8:7f30    ld a,(A40C)
+    rom.write_byte(0x23f31,0x0c) #8:7f31
+    rom.write_byte(0x23f32,0xa4) #8:7f32
+    rom.write_byte(0x23f33,0xa7) #8:7f33    and a
+    rom.write_byte(0x23f34,0xca) #8:7f34    jp z,41C4
+    rom.write_byte(0x23f35,0xc4) #8:7f35
+    rom.write_byte(0x23f36,0x41) #8:7f36
+    rom.write_byte(0x23f37,0x3e) #8:7f37    ld a,23
+    rom.write_byte(0x23f38,0x23) #8:7f38
+    rom.write_byte(0x23f39,0xc3) #8:7f39    jp 418A
+    rom.write_byte(0x23f3a,0x8a) #8:7f3a
+    rom.write_byte(0x23f3b,0x41) #8:7f3b
     #--
-    rom.write_byte(0x20aec,0xfa) #8:4aec    ld a,(A40D)
-    rom.write_byte(0x20aed,0x0d) #8:4aed    
-    rom.write_byte(0x20aee,0xa4) #8:4aee    
-    rom.write_byte(0x20aef,0xa7) #8:4aef    and a
-    rom.write_byte(0x20af0,0xca) #8:4af0    jp z,41C4
-    rom.write_byte(0x20af1,0xc4) #8:4af1    
-    rom.write_byte(0x20af2,0x41) #8:4af2    
-    rom.write_byte(0x20af3,0x3e) #8:4af3    ld a,23
-    rom.write_byte(0x20af4,0x23) #8:4af4    
-    rom.write_byte(0x20af5,0xc3) #8:4af5    jp 418A
-    rom.write_byte(0x20af6,0x8a) #8:4af6    
-    rom.write_byte(0x20af7,0x41) #8:4af7    
+    rom.write_byte(0x23f3c,0xfa) #8:7f3c    ld a,(A40D)
+    rom.write_byte(0x23f3d,0x0d) #8:7f3d
+    rom.write_byte(0x23f3e,0xa4) #8:7f3e
+    rom.write_byte(0x23f3f,0xa7) #8:7f3f    and a
+    rom.write_byte(0x23f40,0xca) #8:7f40    jp z,41C4
+    rom.write_byte(0x23f41,0xc4) #8:7f41
+    rom.write_byte(0x23f42,0x41) #8:7f42
+    rom.write_byte(0x23f43,0x3e) #8:7f43    ld a,23
+    rom.write_byte(0x23f44,0x23) #8:7f44
+    rom.write_byte(0x23f45,0xc3) #8:7f45    jp 418A
+    rom.write_byte(0x23f46,0x8a) #8:7f46
+    rom.write_byte(0x23f47,0x41) #8:7f47
     #--
-    rom.write_byte(0x20b46,0xfa) #8:4b46    ld a,(A40E)
-    rom.write_byte(0x20b47,0x0e) #8:4b47    
-    rom.write_byte(0x20b48,0xa4) #8:4b48    
-    rom.write_byte(0x20b49,0xa7) #8:4b49    and a
-    rom.write_byte(0x20b4a,0xca) #8:4b4a    jp z,41C4
-    rom.write_byte(0x20b4b,0xc4) #8:4b4b    
-    rom.write_byte(0x20b4c,0x41) #8:4b4c    
-    rom.write_byte(0x20b4d,0x3e) #8:4b4d    ld a,23
-    rom.write_byte(0x20b4e,0x23) #8:4b4e    
-    rom.write_byte(0x20b4f,0xc3) #8:4b4f    jp 418A
-    rom.write_byte(0x20b50,0x8a) #8:4b50    
-    rom.write_byte(0x20b51,0x41) #8:4b51    
+    rom.write_byte(0x23f48,0xfa) #8:7f48    ld a,(A40E)
+    rom.write_byte(0x23f49,0x0e) #8:7f49
+    rom.write_byte(0x23f4a,0xa4) #8:7f4a
+    rom.write_byte(0x23f4b,0xa7) #8:7f4b    and a
+    rom.write_byte(0x23f4c,0xca) #8:7f4c    jp z,41C4
+    rom.write_byte(0x23f4d,0xc4) #8:7f4d
+    rom.write_byte(0x23f4e,0x41) #8:7f4e
+    rom.write_byte(0x23f4f,0x3e) #8:7f4f    ld a,23
+    rom.write_byte(0x23f50,0x23) #8:7f50
+    rom.write_byte(0x23f51,0xc3) #8:7f51    jp 418A
+    rom.write_byte(0x23f52,0x8a) #8:7f52
+    rom.write_byte(0x23f53,0x41) #8:7f53
     #--
-    rom.write_byte(0x20b52,0xfa) #8:4b52    ld a,(A40F)
-    rom.write_byte(0x20b53,0x0f) #8:4b53    
-    rom.write_byte(0x20b54,0xa4) #8:4b54    
-    rom.write_byte(0x20b55,0xa7) #8:4b55    and a
-    rom.write_byte(0x20b56,0xca) #8:4b56    jp z,41C4
-    rom.write_byte(0x20b57,0xc4) #8:4b57    
-    rom.write_byte(0x20b58,0x41) #8:4b58    
-    rom.write_byte(0x20b59,0x3e) #8:4b59    ld a,23
-    rom.write_byte(0x20b5a,0x23) #8:4b5a    
-    rom.write_byte(0x20b5b,0xc3) #8:4b5b    jp 418A
-    rom.write_byte(0x20b5c,0x8a) #8:4b5c    
-    rom.write_byte(0x20b5d,0x41) #8:4b5d    
+    rom.write_byte(0x23f54,0xfa) #8:7f54    ld a,(A40F)
+    rom.write_byte(0x23f55,0x0f) #8:7f55
+    rom.write_byte(0x23f56,0xa4) #8:7f56
+    rom.write_byte(0x23f57,0xa7) #8:7f57    and a
+    rom.write_byte(0x23f58,0xca) #8:7f58    jp z,41C4
+    rom.write_byte(0x23f59,0xc4) #8:7f59
+    rom.write_byte(0x23f5a,0x41) #8:7f5a
+    rom.write_byte(0x23f5b,0x3e) #8:7f5b    ld a,23
+    rom.write_byte(0x23f5c,0x23) #8:7f5c
+    rom.write_byte(0x23f5d,0xc3) #8:7f5d    jp 418A
+    rom.write_byte(0x23f5e,0x8a) #8:7f5e
+    rom.write_byte(0x23f5f,0x41) #8:7f5f
     #--
-    rom.write_byte(0x20b5e,0xca) #8:4b5e    jp z,41C4
-    rom.write_byte(0x20b5f,0xc4) #8:4b5f    
-    rom.write_byte(0x20b60,0x41) #8:4b60    
+    rom.write_byte(0x23f60,0xc3) #8:7f60    jp 41C4
+    rom.write_byte(0x23f61,0xc4) #8:7f61
+    rom.write_byte(0x23f62,0x41) #8:7f62
 
 def patch_world_movement(rom):
     # Block boss level entry
-    rom.write_byte(0x21d76,0xc3) #8:5d76    jp 7f18
-    rom.write_byte(0x21d77,0x18) #8:5d77    
-    rom.write_byte(0x21d78,0x7f) #8:5d78    
+    rom.write_byte(0x21d76,0xc3) #8:5d76    jp 7f63
+    rom.write_byte(0x21d77,0x63) #8:5d77
+    rom.write_byte(0x21d78,0x7f) #8:5d78
     #--
-    rom.write_byte(0x23f18,0xfa) #8:7f18    ld a,(A79E)
-    rom.write_byte(0x23f19,0x9e) #8:7f19    
-    rom.write_byte(0x23f1a,0xa7) #8:7f1a    
-    rom.write_byte(0x23f1b,0xfe) #8:7f1b    cp a,19
-    rom.write_byte(0x23f1c,0x19) #8:7f1c
-    rom.write_byte(0x23f1d,0xfa) #8:7f1d    ld a,(A421)
-    rom.write_byte(0x23f1e,0x21) #8:7f1e
-    rom.write_byte(0x23f1f,0xa4) #8:7f1f
-    rom.write_byte(0x23f20,0xca) #8:7f20    jp z, 7F67
-    rom.write_byte(0x23f21,0x67) #8:7f21
-    rom.write_byte(0x23f22,0x7f) #8:7f22
-    rom.write_byte(0x23f23,0xfa) #8:7f23    ld a,(A79E)
-    rom.write_byte(0x23f24,0x9e) #8:7f24
-    rom.write_byte(0x23f25,0xa7) #8:7f25
-    rom.write_byte(0x23f26,0xfe) #8:7f26    cp a,0A
-    rom.write_byte(0x23f27,0x0a) #8:7f27
-    rom.write_byte(0x23f28,0xfa) #8:7f28    ld a,(A422)
-    rom.write_byte(0x23f29,0x22) #8:7f29
-    rom.write_byte(0x23f2a,0xa4) #8:7f2a
-    rom.write_byte(0x23f2b,0xca) #8:7f2b    jp z, 7F67
-    rom.write_byte(0x23f2c,0x67) #8:7f2c
-    rom.write_byte(0x23f2d,0x7f) #8:7f2d
-    rom.write_byte(0x23f2e,0xfa) #8:7f2e    ld a,(A79E)
-    rom.write_byte(0x23f2f,0x9e) #8:7f2f
-    rom.write_byte(0x23f30,0xa7) #8:7f30
-    rom.write_byte(0x23f31,0xfe) #8:7f31    cp a,18
-    rom.write_byte(0x23f32,0x18) #8:7f32
-    rom.write_byte(0x23f33,0xfa) #8:7f33    ld a,(A426)
-    rom.write_byte(0x23f34,0x26) #8:7f34
-    rom.write_byte(0x23f35,0xa4) #8:7f35
-    rom.write_byte(0x23f36,0xca) #8:7f36    jp z, 7F67
-    rom.write_byte(0x23f37,0x67) #8:7f37
-    rom.write_byte(0x23f38,0x7f) #8:7f38
-    rom.write_byte(0x23f39,0xfa) #8:7f39    ld a,(A79E)
-    rom.write_byte(0x23f3a,0x9e) #8:7f3a
-    rom.write_byte(0x23f3b,0xa7) #8:7f3b
-    rom.write_byte(0x23f3c,0xfe) #8:7f3c    cp a,1C
-    rom.write_byte(0x23f3d,0x1c) #8:7f3d
-    rom.write_byte(0x23f3e,0xfa) #8:7f3e    ld a,(A423)
-    rom.write_byte(0x23f3f,0x23) #8:7f3f
-    rom.write_byte(0x23f40,0xa4) #8:7f40
-    rom.write_byte(0x23f41,0xca) #8:7f41    jp z, 7F67
-    rom.write_byte(0x23f42,0x67) #8:7f42
-    rom.write_byte(0x23f43,0x7f) #8:7f43
-    rom.write_byte(0x23f44,0xfa) #8:7f44    ld a,(A79E)
-    rom.write_byte(0x23f45,0x9e) #8:7f45
-    rom.write_byte(0x23f46,0xa7) #8:7f46
-    rom.write_byte(0x23f47,0xfe) #8:7f47    cp a,14
-    rom.write_byte(0x23f48,0x14) #8:7f48
-    rom.write_byte(0x23f49,0xfa) #8:7f49    ld a,(A425)
-    rom.write_byte(0x23f4a,0x25) #8:7f4a
-    rom.write_byte(0x23f4b,0xa4) #8:7f4b
-    rom.write_byte(0x23f4c,0xca) #8:7f4c    jp z, 7F67
-    rom.write_byte(0x23f4d,0x67) #8:7f4d
-    rom.write_byte(0x23f4e,0x7f) #8:7f4e
-    rom.write_byte(0x23f4f,0xfa) #8:7f4f    ld a,(A79E)
-    rom.write_byte(0x23f50,0x9e) #8:7f50
-    rom.write_byte(0x23f51,0xa7) #8:7f51
-    rom.write_byte(0x23f52,0xfe) #8:7f52    cp a,1A
-    rom.write_byte(0x23f53,0x1a) #8:7f53
-    rom.write_byte(0x23f54,0xfa) #8:7f54    ld a,(A424)
-    rom.write_byte(0x23f55,0x24) #8:7f55
-    rom.write_byte(0x23f56,0xa4) #8:7f56
-    rom.write_byte(0x23f57,0xca) #8:7f57    jp z, 7F67
-    rom.write_byte(0x23f58,0x67) #8:7f58
-    rom.write_byte(0x23f59,0x7f) #8:7f59
-    rom.write_byte(0x23f5a,0xfa) #8:7f5a    ld a,(A79E)
-    rom.write_byte(0x23f5b,0x9e) #8:7f5b
-    rom.write_byte(0x23f5c,0xa7) #8:7f5c
-    rom.write_byte(0x23f5d,0xfe) #8:7f5d    cp a,28
-    rom.write_byte(0x23f5e,0x28) #8:7f5e
-    rom.write_byte(0x23f5f,0xfa) #8:7f5f    ld a,(A427)
-    rom.write_byte(0x23f60,0x27) #8:7f60
-    rom.write_byte(0x23f61,0xa4) #8:7f61
-    rom.write_byte(0x23f62,0xca) #8:7f62    jp z, 7F67
-    rom.write_byte(0x23f63,0x67) #8:7f63
-    rom.write_byte(0x23f64,0x7f) #8:7f64
-    rom.write_byte(0x23f65,0x3e) #8:7f65    ld a,1
-    rom.write_byte(0x23f66,0x01) #8:7f66
-    rom.write_byte(0x23f67,0xa7) #8:7f67    and a
-    rom.write_byte(0x23f68,0xca) #8:7f68    jp z, 7F73
-    rom.write_byte(0x23f69,0x73) #8:7f69
-    rom.write_byte(0x23f6a,0x7f) #8:7f6a
-    rom.write_byte(0x23f6b,0x3e) #8:7f6b    ld a,2b
-    rom.write_byte(0x23f6c,0x2b) #8:7f6c
-    rom.write_byte(0x23f6d,0xea) #8:7f6d    ld (A61C),a
-    rom.write_byte(0x23f6e,0x1c) #8:7f6e
-    rom.write_byte(0x23f6f,0xa6) #8:7f6f
-    rom.write_byte(0x23f70,0xc3) #8:7f70    jp 5D79
-    rom.write_byte(0x23f71,0x79) #8:7f71
-    rom.write_byte(0x23f72,0x5d) #8:7f72
-    rom.write_byte(0x23f73,0xc3) #8:7f73    jp 5D7D
-    rom.write_byte(0x23f74,0x7d) #8:7f74
-    rom.write_byte(0x23f75,0x5d) #8:7f75
+    rom.write_byte(0x23f63,0xfa) #8:7f63    ld a,(A79E)
+    rom.write_byte(0x23f64,0x9e) #8:7f64
+    rom.write_byte(0x23f65,0xa7) #8:7f65
+    rom.write_byte(0x23f66,0xfe) #8:7f66    cp a,19
+    rom.write_byte(0x23f67,0x19) #8:7f67
+    rom.write_byte(0x23f68,0xfa) #8:7f68    ld a,(A421)
+    rom.write_byte(0x23f69,0x21) #8:7f69
+    rom.write_byte(0x23f6a,0xa4) #8:7f6a
+    rom.write_byte(0x23f6b,0xca) #8:7f6b    jp z, 7FB2
+    rom.write_byte(0x23f6c,0xb2) #8:7f6c
+    rom.write_byte(0x23f6d,0x7f) #8:7f6d
+    rom.write_byte(0x23f6e,0xfa) #8:7f6e    ld a,(A79E)
+    rom.write_byte(0x23f6f,0x9e) #8:7f6f
+    rom.write_byte(0x23f70,0xa7) #8:7f70
+    rom.write_byte(0x23f71,0xfe) #8:7f71    cp a,0A
+    rom.write_byte(0x23f72,0x0a) #8:7f72
+    rom.write_byte(0x23f73,0xfa) #8:7f73    ld a,(A422)
+    rom.write_byte(0x23f74,0x22) #8:7f74
+    rom.write_byte(0x23f75,0xa4) #8:7f75
+    rom.write_byte(0x23f76,0xca) #8:7f76    jp z, 7FB2
+    rom.write_byte(0x23f77,0xb2) #8:7f77
+    rom.write_byte(0x23f78,0x7f) #8:7f78
+    rom.write_byte(0x23f79,0xfa) #8:7f79    ld a,(A79E)
+    rom.write_byte(0x23f7a,0x9e) #8:7f7a
+    rom.write_byte(0x23f7b,0xa7) #8:7f7b
+    rom.write_byte(0x23f7c,0xfe) #8:7f7c    cp a,18
+    rom.write_byte(0x23f7d,0x18) #8:7f7d
+    rom.write_byte(0x23f7e,0xfa) #8:7f7e    ld a,(A426)
+    rom.write_byte(0x23f7f,0x26) #8:7f7f
+    rom.write_byte(0x23f80,0xa4) #8:7f80
+    rom.write_byte(0x23f81,0xca) #8:7f81    jp z, 7FB2
+    rom.write_byte(0x23f82,0xb2) #8:7f82
+    rom.write_byte(0x23f83,0x7f) #8:7f83
+    rom.write_byte(0x23f84,0xfa) #8:7f84    ld a,(A79E)
+    rom.write_byte(0x23f85,0x9e) #8:7f85
+    rom.write_byte(0x23f86,0xa7) #8:7f86
+    rom.write_byte(0x23f87,0xfe) #8:7f87    cp a,1C
+    rom.write_byte(0x23f88,0x1c) #8:7f88
+    rom.write_byte(0x23f89,0xfa) #8:7f89    ld a,(A423)
+    rom.write_byte(0x23f8a,0x23) #8:7f8a
+    rom.write_byte(0x23f8b,0xa4) #8:7f8b
+    rom.write_byte(0x23f8c,0xca) #8:7f8c    jp z, 7FB2
+    rom.write_byte(0x23f8d,0xb2) #8:7f8d
+    rom.write_byte(0x23f8e,0x7f) #8:7f8e
+    rom.write_byte(0x23f8f,0xfa) #8:7f8f    ld a,(A79E)
+    rom.write_byte(0x23f90,0x9e) #8:7f90
+    rom.write_byte(0x23f91,0xa7) #8:7f91
+    rom.write_byte(0x23f92,0xfe) #8:7f92    cp a,14
+    rom.write_byte(0x23f93,0x14) #8:7f93
+    rom.write_byte(0x23f94,0xfa) #8:7f94    ld a,(A425)
+    rom.write_byte(0x23f95,0x25) #8:7f95
+    rom.write_byte(0x23f96,0xa4) #8:7f96
+    rom.write_byte(0x23f97,0xca) #8:7f97    jp z, 7FB2
+    rom.write_byte(0x23f98,0xb2) #8:7f98
+    rom.write_byte(0x23f99,0x7f) #8:7f99
+    rom.write_byte(0x23f9a,0xfa) #8:7f9a    ld a,(A79E)
+    rom.write_byte(0x23f9b,0x9e) #8:7f9b
+    rom.write_byte(0x23f9c,0xa7) #8:7f9c
+    rom.write_byte(0x23f9d,0xfe) #8:7f9d    cp a,1A
+    rom.write_byte(0x23f9e,0x1a) #8:7f9e
+    rom.write_byte(0x23f9f,0xfa) #8:7f9f    ld a,(A424)
+    rom.write_byte(0x23fa0,0x24) #8:7fa0
+    rom.write_byte(0x23fa1,0xa4) #8:7fa1
+    rom.write_byte(0x23fa2,0xca) #8:7fa2    jp z, 7FB2
+    rom.write_byte(0x23fa3,0xb2) #8:7fa3
+    rom.write_byte(0x23fa4,0x7f) #8:7fa4
+    rom.write_byte(0x23fa5,0xfa) #8:7fa5    ld a,(A79E)
+    rom.write_byte(0x23fa6,0x9e) #8:7fa6
+    rom.write_byte(0x23fa7,0xa7) #8:7fa7
+    rom.write_byte(0x23fa8,0xfe) #8:7fa8    cp a,28
+    rom.write_byte(0x23fa9,0x28) #8:7fa9
+    rom.write_byte(0x23faa,0xfa) #8:7faa    ld a,(A427)
+    rom.write_byte(0x23fab,0x27) #8:7fab
+    rom.write_byte(0x23fac,0xa4) #8:7fac
+    rom.write_byte(0x23fad,0xca) #8:7fad    jp z, 7FB2
+    rom.write_byte(0x23fae,0xb2) #8:7fae
+    rom.write_byte(0x23faf,0x7f) #8:7faf
+    rom.write_byte(0x23fb0,0x3e) #8:7fb0    ld a,1
+    rom.write_byte(0x23fb1,0x01) #8:7fb1
+    rom.write_byte(0x23fb2,0xa7) #8:7fb2    and a
+    rom.write_byte(0x23fb3,0xca) #8:7fb3    jp z, 7FBE
+    rom.write_byte(0x23fb4,0xbe) #8:7fb4
+    rom.write_byte(0x23fb5,0x7f) #8:7fb5
+    rom.write_byte(0x23fb6,0x3e) #8:7fb6    ld a,2b
+    rom.write_byte(0x23fb7,0x2b) #8:7fb7
+    rom.write_byte(0x23fb8,0xea) #8:7fb8    ld (A61C),a
+    rom.write_byte(0x23fb9,0x1c) #8:7fb9
+    rom.write_byte(0x23fba,0xa6) #8:7fba
+    rom.write_byte(0x23fbb,0xc3) #8:7fbb    jp 5D79
+    rom.write_byte(0x23fbc,0x79) #8:7fbc
+    rom.write_byte(0x23fbd,0x5d) #8:7fbd
+    rom.write_byte(0x23fbe,0xc3) #8:7fbe    jp 5D7D
+    rom.write_byte(0x23fbf,0x7d) #8:7fbf
+    rom.write_byte(0x23fc0,0x5d) #8:7fc0
 
     # Overworld movement
 
@@ -640,68 +650,65 @@ def custom_level_table(rom):
     rom.write_byte(0x04aa0,0xa7) #1:4aa0    
 
     # Hook into level loading method
-    rom.write_byte(0x21dac,0xcd) #8:5dac    call 7EDF
-    rom.write_byte(0x21dad,0xdf) #8:5dad    
-    rom.write_byte(0x21dae,0x7e) #8:5dae    
+    rom.write_byte(0x21dac,0xcd) #8:5dac    call 7FC1
+    rom.write_byte(0x21dad,0xc1) #8:5dad
+    rom.write_byte(0x21dae,0x7f) #8:5dae
 
-    rom.write_byte(0x23edf,0xfa) #8:7edf    ld a,(A79E)
-    rom.write_byte(0x23ee0,0x9e) #8:7ee0    
-    rom.write_byte(0x23ee1,0xa7) #8:7ee1    
-    rom.write_byte(0x23ee2,0x4f) #8:7ee2    ld c,a
-    rom.write_byte(0x23ee3,0x06) #8:7ee3    ld b,00
-    rom.write_byte(0x23ee4,0x00) #8:7ee4    
-    rom.write_byte(0x23ee5,0x21) #8:7ee5    ld hl,7EEB
-    rom.write_byte(0x23ee6,0xeb) #8:7ee6    
-    rom.write_byte(0x23ee7,0x7e) #8:7ee7    
-    rom.write_byte(0x23ee8,0x09) #8:7ee8    add hl,bc
-    rom.write_byte(0x23ee9,0x7e) #8:7ee9    ld a,[hl]
-    rom.write_byte(0x23eea,0xc9) #8:7eea    ret
+    rom.write_byte(0x23fc1,0xfa) #8:7fc1    ld	a,(A79E)
+    rom.write_byte(0x23fc2,0x9e) #8:7fc2
+    rom.write_byte(0x23fc3,0xa7) #8:7fc3
+    rom.write_byte(0x23fc4,0x4f) #8:7fc4    ld	c, a
+    rom.write_byte(0x23fc5,0x06) #8:7fc5    ld	b, 00
+    rom.write_byte(0x23fc6,0x00) #8:7fc6
+    rom.write_byte(0x23fc7,0x21) #8:7fc7    ld	hl, 7FCD
+    rom.write_byte(0x23fc8,0xcd) #8:7fc8
+    rom.write_byte(0x23fc9,0x7f) #8:7fc9
+    rom.write_byte(0x23fca,0x09) #8:7fca    add	hl, bc
+    rom.write_byte(0x23fcb,0x7e) #8:7fcb    ld	a, [hl]
+    rom.write_byte(0x23fcc,0xc9) #8:7fcc    ret
 
     # Start of custom level table
-    rom.write_byte(0x23eeb,0x00) #8:7eeb
-    rom.write_byte(0x23eec,0x01) #8:7eec
-    rom.write_byte(0x23eed,0x02) #8:7eed
-    rom.write_byte(0x23eee,0x03) #8:7eee
-    rom.write_byte(0x23eef,0x04) #8:7eef
-    rom.write_byte(0x23ef0,0x05) #8:7ef0
-    rom.write_byte(0x23ef1,0x06) #8:7ef1
-    rom.write_byte(0x23ef2,0x07) #8:7ef2
-    rom.write_byte(0x23ef3,0x08) #8:7ef3
-    rom.write_byte(0x23ef4,0x09) #8:7ef4
-    rom.write_byte(0x23ef5,0x0a) #8:7ef5
-    rom.write_byte(0x23ef6,0x0b) #8:7ef6
-    rom.write_byte(0x23ef7,0x0c) #8:7ef7
-    rom.write_byte(0x23ef8,0x0d) #8:7ef8
-    rom.write_byte(0x23ef9,0x0e) #8:7ef9
-    rom.write_byte(0x23efa,0x0f) #8:7efa
-    rom.write_byte(0x23efb,0x10) #8:7efb
-    rom.write_byte(0x23efc,0x11) #8:7efc
-    rom.write_byte(0x23efd,0x12) #8:7efd
-    rom.write_byte(0x23efe,0x13) #8:7efe
-    rom.write_byte(0x23eff,0x14) #8:7eff
-    rom.write_byte(0x23f00,0x15) #8:7f00
-    rom.write_byte(0x23f01,0x16) #8:7f01
-    rom.write_byte(0x23f02,0x17) #8:7f02
-    rom.write_byte(0x23f03,0x18) #8:7f03
-    rom.write_byte(0x23f04,0x19) #8:7f04
-    rom.write_byte(0x23f05,0x1a) #8:7f05
-    rom.write_byte(0x23f06,0x1b) #8:7f06
-    rom.write_byte(0x23f07,0x1c) #8:7f07
-    rom.write_byte(0x23f08,0x1d) #8:7f08
-    rom.write_byte(0x23f09,0x1e) #8:7f09
-    rom.write_byte(0x23f0a,0x1f) #8:7f0a
-    rom.write_byte(0x23f0b,0x20) #8:7f0b
-    rom.write_byte(0x23f0c,0x21) #8:7f0c
-    rom.write_byte(0x23f0d,0x22) #8:7f0d
-    rom.write_byte(0x23f0e,0x23) #8:7f0e
-    rom.write_byte(0x23f0f,0x24) #8:7f0f
-    rom.write_byte(0x23f10,0x25) #8:7f10
-    rom.write_byte(0x23f11,0x26) #8:7f11
-    rom.write_byte(0x23f12,0x27) #8:7f12
-    rom.write_byte(0x23f13,0x28) #8:7f13
-    rom.write_byte(0x23f14,0x29) #8:7f14
-    rom.write_byte(0x23f15,0x2A) #8:7f15
-    rom.write_byte(0x23f16,0x2B) #8:7f16     
+    rom.write_byte(0x23fcd,0x00) #8:7fcd
+    rom.write_byte(0x23fce,0x01) #8:7fce
+    rom.write_byte(0x23fcf,0x02) #8:7fcf
+    rom.write_byte(0x23fd0,0x03) #8:7fd0
+    rom.write_byte(0x23fd1,0x04) #8:7fd1
+    rom.write_byte(0x23fd2,0x05) #8:7fd2
+    rom.write_byte(0x23fd3,0x06) #8:7fd3
+    rom.write_byte(0x23fd4,0x07) #8:7fd4
+    rom.write_byte(0x23fd5,0x08) #8:7fd5
+    rom.write_byte(0x23fd6,0x09) #8:7fd6
+    rom.write_byte(0x23fd7,0x0a) #8:7fd7
+    rom.write_byte(0x23fd8,0x0b) #8:7fd8
+    rom.write_byte(0x23fd9,0x0c) #8:7fd9
+    rom.write_byte(0x23fda,0x0d) #8:7fda
+    rom.write_byte(0x23fdb,0x0e) #8:7fdb
+    rom.write_byte(0x23fdc,0x0f) #8:7fdc
+    rom.write_byte(0x23fdd,0x10) #8:7fdd
+    rom.write_byte(0x23fde,0x11) #8:7fde
+    rom.write_byte(0x23fdf,0x12) #8:7fdf
+    rom.write_byte(0x23fe0,0x13) #8:7fe0
+    rom.write_byte(0x23fe1,0x14) #8:7fe1
+    rom.write_byte(0x23fe2,0x15) #8:7fe2
+    rom.write_byte(0x23fe3,0x16) #8:7fe3
+    rom.write_byte(0x23fe4,0x17) #8:7fe4
+    rom.write_byte(0x23fe5,0x18) #8:7fe5
+    rom.write_byte(0x23fe6,0x19) #8:7fe6
+    rom.write_byte(0x23fe7,0x1a) #8:7fe7
+    rom.write_byte(0x23fe8,0x1b) #8:7fe8
+    rom.write_byte(0x23fe9,0x1c) #8:7fe9
+    rom.write_byte(0x23fea,0x1d) #8:7fea
+    rom.write_byte(0x23feb,0x1e) #8:7feb
+    rom.write_byte(0x23fec,0x1f) #8:7fec
+    rom.write_byte(0x23fed,0x20) #8:7fed
+    rom.write_byte(0x23fee,0x21) #8:7fee
+    rom.write_byte(0x23fef,0x22) #8:7fef
+    rom.write_byte(0x23ff0,0x23) #8:7ff0
+    rom.write_byte(0x23ff1,0x24) #8:7ff1
+    rom.write_byte(0x23ff2,0x25) #8:7ff2
+    rom.write_byte(0x23ff3,0x26) #8:7ff3
+    rom.write_byte(0x23ff4,0x27) #8:7ff4
+    rom.write_byte(0x23ff5,0x28) #8:7ff5
     # End of custom level table
 
 # Shuffles the level music in vanilla limitations
