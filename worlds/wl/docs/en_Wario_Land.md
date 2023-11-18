@@ -12,6 +12,8 @@ This is a side effect of the locked worlds code. Simply move left and then down 
 - The Jet powerup will let you dash without having the dash item.\
 This is not the case for the Bull powerup.
 
+- Overworld and Subworld movement will be activated once a connection to an Archipelago Server has been established.
+
 ## What does randomization do to this game?
 
 The game starts with all worlds available (unless World Unlocks is activated).
