@@ -747,7 +747,7 @@ def new_feature(rom):
 def patch_rom(world, rom, player):
 
     # Starting Life Count, hex equals displayed value directly
-    rom.write_byte(0x7B7D, bytes.fromhex(str(world.starting_life_count[player].value))[0])
+    rom.write_byte(0x7B7D, int(str(world.starting_life_count[player].value),16))
 
     patch_basic_abilities(rom)
     patch_powerups(rom)
