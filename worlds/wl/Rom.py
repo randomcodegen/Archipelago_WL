@@ -714,11 +714,11 @@ def custom_level_table(rom):
 # Shuffles the level music in vanilla limitations
 def shuffle_music(rom):
     level_music=[0x03,0x04,0x09,0x0A,0x0B,0x0E,0x10,0x16,0x17,0x1B,0x1E,0x22,0x27]
-    shuffled_level_music=random.shuffle(level_music)
+    random.shuffle(level_music)
     level_music_addr=[0x33ECD,0x33ED9,0x33EE5,0x33EF1,0x33EFD,0x33F09,0x33F15,0x33F21,0x33F2D,0x33F39,0x33F45,0x33F51,0x33F5D]
     # Second address always + 0x03 away
     for music_offset in level_music_addr:
-        music_pick=shuffled_level_music.pop()
+        music_pick=level_music.pop()
         rom.write_byte(music_offset,music_pick)
         rom.write_byte(music_offset+0x03,music_pick)
 
