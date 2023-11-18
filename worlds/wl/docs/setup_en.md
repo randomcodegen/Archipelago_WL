@@ -28,6 +28,7 @@ clear it.
 
 1. Download the [WarioLand.yaml](https://github.com/randomcodegen/Archipelago_WL/releases/latest) and put it in the C:\ProgramData\Archipelago\Players folder
 2. Download [wl.apworld](https://github.com/randomcodegen/Archipelago_WL/releases/latest) and put it in C:\ProgramData\Archipelago\lib\worlds
+3. Download [_bizhawk.apworld](https://github.com/Zunawe/Archipelago/releases/tag/bizhawk_beta-2) and put it in C:\ProgramData\Archipelago\lib\worlds (This step is not required when using Archipelago 0.4.4)
 3. Follow the general Archipelago instructions for [generating a game](../../Archipelago/setup/en#generating-a-game).
 This will generate an output file for you. Your patch file will have the `.apwl` file extension.
 4. Open `ArchipelagoLauncher.exe`
