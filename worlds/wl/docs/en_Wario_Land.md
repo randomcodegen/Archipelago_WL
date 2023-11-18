@@ -50,5 +50,4 @@ Some quality of life improvements have been added to the game:
 
 - Movement in the level-end screens have been sped up
 - Some cutscenes have been removed from the game
-- Trade evolutions have been changed to level or item evolutions
 - Autoscrollers can be turned into normal levels
