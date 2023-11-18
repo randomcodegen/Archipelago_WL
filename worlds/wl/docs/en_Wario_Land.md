@@ -12,6 +12,9 @@ This is a side effect of the locked worlds code. Simply move left and then down 
 - The Jet powerup will let you dash without having the dash item.\
 This is not the case for the Bull powerup.
 
+- Turning off autoscrollers messes with stage graphics and can lead to the cart stopping if it goes off screen.\
+Use at your own risk.
+
 - Overworld and Subworld movement will be activated once a connection to an Archipelago Server has been established.
 
 ## What does randomization do to this game?

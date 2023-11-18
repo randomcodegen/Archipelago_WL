@@ -43,7 +43,7 @@ class RemoveAutoscrollers(Toggle):
     Turn autoscrollers into normal scrolling stages.
     """
     display_name = "Remove Autoscrollers"
-    default = True
+    default = False
 
 class BossUnlocks(Toggle):
     """
