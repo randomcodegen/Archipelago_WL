@@ -35,6 +35,12 @@ if TYPE_CHECKING:
 else:
     BizHawkClientContext = object
 
+# Add .apwl suffix to bizhawk client
+from worlds.LauncherComponents import SuffixIdentifier, components
+for component in components:
+    if component.script_name == "BizHawkClient":
+        component.file_identifier = SuffixIdentifier(*(*component.file_identifier.suffixes, ".apwl"))
+        break
 
 EXPECTED_ROM_NAME = "WARIOLANDAP"
 
@@ -42,7 +48,7 @@ class WarioLandClient(BizHawkClient):
     
     game = "Wario Land"
     system = "GB"
-    patch_suffix = ".apwl"
+    #patch_suffix = ".apwl"
 
     def __init__(self) -> None:
         super().__init__()

@@ -31,8 +31,7 @@ clear it.
 3. Download [_bizhawk.apworld](https://github.com/Zunawe/Archipelago/releases/tag/bizhawk_beta-2) and put it in C:\ProgramData\Archipelago\lib\worlds (This step is not required when using Archipelago 0.4.4)
 3. Follow the general Archipelago instructions for [generating a game](../../Archipelago/setup/en#generating-a-game).
 This will generate an output file for you. Your patch file will have the `.apwl` file extension.
-4. Open `ArchipelagoLauncher.exe`
-5. Select "Open Patch" on the left side and select your patch file.
+4. Drag&Drop the *.apwl Patch-File onto ArchipelagoLauncher.exe (or onto ArchipelagoBizHawkClient.exe on AP 0.4.4)
 6. If this is your first time patching, you will be prompted to locate your vanilla ROM.
 7. A patched `.gb` file will be created in the same place as the patch file.
 8. On your first time opening a patch with BizHawk Client, you will also be asked to locate `EmuHawk.exe` in your
