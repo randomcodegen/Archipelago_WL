@@ -278,11 +278,12 @@ def patch_powerups(rom):
     rom.write_byte(0x37b85,0xca) #d:7b85    jp z,6261
     rom.write_byte(0x37b86,0x61) #d:7b86
     rom.write_byte(0x37b87,0x62) #d:7b87
-    rom.write_byte(0x37b88,0x3e) #d:7b88    ld a,04
-    rom.write_byte(0x37b89,0x04) #d:7b89
-    rom.write_byte(0x37b8a,0xc3) #d:7b8a    jp 64B5
-    rom.write_byte(0x37b8b,0xb5) #d:7b8b
-    rom.write_byte(0x37b8c,0x64) #d:7b8c
+    rom.write_byte(0x37b88,0xfa) #d:7b88    ld (A958),a
+    rom.write_byte(0x37b89,0x58) #d:7b89
+    rom.write_byte(0x37b8a,0xa9) #d:7b8a
+    rom.write_byte(0x37b8b,0xc3) #d:7b8b
+    rom.write_byte(0x37b8c,0xb5) #d:7b8c
+    rom.write_byte(0x37b8d,0x64) #d:7b8d
     return
 
 # Patch Map Movement
