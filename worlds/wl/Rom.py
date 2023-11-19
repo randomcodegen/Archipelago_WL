@@ -281,7 +281,7 @@ def patch_powerups(rom):
     rom.write_byte(0x37b88,0xfa) #d:7b88    ld (A958),a
     rom.write_byte(0x37b89,0x58) #d:7b89
     rom.write_byte(0x37b8a,0xa9) #d:7b8a
-    rom.write_byte(0x37b8b,0xc3) #d:7b8b
+    rom.write_byte(0x37b8b,0xc3) #d:7b8b    jp 64B5
     rom.write_byte(0x37b8c,0xb5) #d:7b8c
     rom.write_byte(0x37b8d,0x64) #d:7b8d
     return

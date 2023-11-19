@@ -458,7 +458,10 @@ def create_regions(world, player: int, active_locations):
                             add_rule(world.get_location(location, player),
                                             lambda state: state.has(ItemName.parsleywoods, player))
                     elif "Syrup Castle" in location:
-                            add_rule(world.get_location(location, player),
+                            if location == LocationName.syrupcastle_boss and world.goal[player] == "garlic_hunt":
+                                  pass
+                            else:
+                                add_rule(world.get_location(location, player),
                                             lambda state: state.has(ItemName.syrupcastle, player))
     if world.boss_unlocks[player]==1:
             add_rule(world.get_location(LocationName.ricebeach_boss, player),
