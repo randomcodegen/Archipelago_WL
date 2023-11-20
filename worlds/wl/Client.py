@@ -126,7 +126,6 @@ class WarioLandClient(BizHawkClient):
                     ctx.refresh_connect = False
                 if sync_required:
                     # Clear trap queue
-                    logger.info("Clearing trap queue because sync is required.")
                     ctx.trap_queue.clear()
                     await bizhawk.write(ctx.bizhawk_ctx,
                                                     [(0xA4FD, b'\x00', "System Bus")])
@@ -175,7 +174,6 @@ class WarioLandClient(BizHawkClient):
                 
     
                 # Update local items if the client received new ones
-                logger.info("Check local items "+str(len(ctx.items_received))+" > "+str(local_received))
                 if len(ctx.items_received)>local_received:
                     for item in ctx.items_received[local_received:]:
                         local_received+=1
@@ -236,7 +234,6 @@ class WarioLandClient(BizHawkClient):
                                 if read_result[0][0]+1>=ctx.slot_data['number_of_garlic_cloves'] * (ctx.slot_data['percentage_of_garlic_cloves']/ 100.0):
                                     ctx.game_clear=True
                     # Write new local received value to RAM
-                    logger.info("Finished processing local: "+str(local_received))
                     await bizhawk.write(ctx.bizhawk_ctx,
                                             [(0xA4FF, local_received.to_bytes(1, 'little') , "System Bus")])
                 # Update locations if we checked a new one
@@ -264,7 +261,6 @@ class WarioLandClient(BizHawkClient):
                     ctx.finished_game=True
 
                 # Handle traps if queue is not empty
-                logger.info("Handle trap queue with "+str(len(ctx.trap_queue))+" > "+str(ctx.traps_activated))
                 if len(ctx.trap_queue)>ctx.traps_activated:
                     if demo_mode==0 and game_mode==3 and paused==0 and time.time()-ctx.last_trap_time>5:
                         # Grab a trap
@@ -288,7 +284,6 @@ class WarioLandClient(BizHawkClient):
                                                 [(0xA61C, b'\x22' , "System Bus")])
                         # Mark one more trap as activated
                         ctx.traps_activated+=1
-                        logger.info("Triggered Trap.Writing traps activated: "+str(ctx.traps_activated))
                         await bizhawk.write(ctx.bizhawk_ctx,
                                             [(0xA4FD, ctx.traps_activated.to_bytes(1, 'little') , "System Bus")])
                 
@@ -302,8 +297,8 @@ class WarioLandClient(BizHawkClient):
                 
                 # Desync
                 if len(ctx.items_received)<local_received:
-                    logger.info("Detected Desync. Fix applied.")
-                    # force resync
+                    #logger.info("Detected Desync. Fix applied.")
+                    # Force resync
                     await bizhawk.write(ctx.bizhawk_ctx,
                                         [(0xA4FE, b'\x01' , "System Bus")])
                     
