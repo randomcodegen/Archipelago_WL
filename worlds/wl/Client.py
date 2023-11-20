@@ -1,5 +1,5 @@
 from typing import TYPE_CHECKING, Dict, Set
-
+import time
 # TODO:  Remove this when Archipelago 0.4.4 gets released
 import sys
 
@@ -28,7 +28,6 @@ from worlds.wl.Locations import checkable_locations
 from worlds.wl.Items import lookup_trapid_to_name,lookup_eventid_to_name
 
 powerup_list=[0xA40000,0xA40100,0xA40200,0xA40300,0xA41100]
-trap_queue=[]
 
 if TYPE_CHECKING:
     from worlds._bizhawk.context import BizHawkClientContext
@@ -77,6 +76,13 @@ class WarioLandClient(BizHawkClient):
         ctx.items_handling = 0b111
         ctx.want_slot_data = True
         ctx.watcher_timeout = 0.125
+        ctx.trap_queue=[]
+        ctx.last_trap_time=0
+        ctx.traps_activated=0
+        ctx.refresh_connect=False
+        ctx.connected=False
+        ctx.data_present=False
+        ctx.game_clear=False
 
         return True
 
@@ -88,101 +94,99 @@ class WarioLandClient(BizHawkClient):
 
     async def game_watcher(self, ctx: BizHawkClientContext) -> None:
         from CommonClient import logger
-        connected=False
-        data_present=False
-        game_clear=False
-
+        
+        
         if ctx.server_version.build > 0:
-            connected=True
+            ctx.connected=True
         else:
-            connected=False
+            ctx.connected=False
+            ctx.refresh_connect=True
 
         if ctx.slot_data != None:
-            data_present=True
+            ctx.data_present=True
         else:
-            data_present=False
+            ctx.data_present=False
 
-        if connected and data_present:    
+        if ctx.connected and ctx.data_present:    
             try:
                 # Santity check game state, these bytes represent the first bytes of savefile1
                 sanity_check_savefile = b'\x19d9W'
-                read_result = await bizhawk.guarded_read(
-                    ctx.bizhawk_ctx,
-                    [(0xA000, 4, "System Bus")],
-                    [(0xA000,sanity_check_savefile, "System Bus")])
-    
+                read_result = await bizhawk.guarded_read(ctx.bizhawk_ctx,
+                                                         [(0xA000, 4, "System Bus")],
+                                                         [(0xA000,sanity_check_savefile, "System Bus")])
                 if read_result is None:  # Game not loaded
                     return
-
                 # Check if initial sync is required
-                sync_required = await bizhawk.guarded_read(
-                    ctx.bizhawk_ctx,
-                    [(0xA4FE, 1, "System Bus")],
-                    [(0xA4FE,b'\x00', "System Bus")])
-    
+                sync_required = await bizhawk.guarded_read(ctx.bizhawk_ctx,
+                                                           [(0xA4FE, 1, "System Bus")],
+                                                           [(0xA4FE,b'\x00', "System Bus")])
+
+                if ctx.refresh_connect:
+                    sync_required = True
+                    ctx.refresh_connect = False
                 if sync_required:
+                    # Clear trap queue
+                    logger.info("Clearing trap queue because sync is required.")
+                    ctx.trap_queue.clear()
+                    await bizhawk.write(ctx.bizhawk_ctx,
+                                                    [(0xA4FD, b'\x00', "System Bus")])
                     # Activate full overworld+subworld movement
                     new_value=b'\xFF'
                     for addr in range (0xA413, 0xA421):
                         await bizhawk.write(ctx.bizhawk_ctx,
-                                                [(addr, new_value , "System Bus")])
+                                            [(addr, new_value , "System Bus")])
+                
+                read_result = await bizhawk.read(ctx.bizhawk_ctx,
+                                                    [(0xA4FD, 1, "System Bus")])
+                ctx.traps_activated = read_result[0][0]
+
                 # Check Locations for completion
                 new_checks=[]
                 for loc_name, loc_id in checkable_locations.items():
                     if loc_id not in ctx.locations_checked:
                         loc_bitmask=(loc_id)&0xFF
                         loc_addr=(loc_id>>8)
-                        read_result= await bizhawk.read(
-                            ctx.bizhawk_ctx,
-                            [(loc_addr, 1, "System Bus")])
+                        read_result= await bizhawk.read(ctx.bizhawk_ctx,
+                                                        [(loc_addr, 1, "System Bus")])
                         loc_result=(read_result[0][0])&loc_bitmask
                         if loc_result>0:
                             new_checks.append(loc_id)
                 
                 # Number of received items stored at 0xA4FF
-                read_result= await bizhawk.read(
-                        ctx.bizhawk_ctx,
-                        [(0xA4FF, 1, "System Bus")])
+                read_result= await bizhawk.read(ctx.bizhawk_ctx,
+                                                [(0xA4FF, 1, "System Bus")])
                 local_received=read_result[0][0]
     
                 # Grab important info for item activation timing
-                read_result= await bizhawk.read(
-                        ctx.bizhawk_ctx,
-                        [(0xA8C3, 1, "System Bus")])
+                read_result= await bizhawk.read(ctx.bizhawk_ctx,
+                                                [(0xA8C3, 1, "System Bus")])
                 # 0=stopped; 1=overworld; 2=level loading; 3=gameplay; 5=respawn/leave stage; 10=door transition
                 game_mode=read_result[0][0]
     
-                read_result= await bizhawk.read(
-                        ctx.bizhawk_ctx,
-                        [(0xA8C6, 1, "System Bus")])
+                read_result= await bizhawk.read(ctx.bizhawk_ctx,
+                                                [(0xA8C6, 1, "System Bus")])
                 # demo mode needs to be 0
                 demo_mode=read_result[0][0]
     
-                read_result= await bizhawk.read(
-                        ctx.bizhawk_ctx,
-                        [(0xA908, 1, "System Bus")])
+                read_result= await bizhawk.read(ctx.bizhawk_ctx,
+                                                [(0xA908, 1, "System Bus")])
                 # 0=unpaused, 1=paused
                 paused=read_result[0][0]
                 
     
                 # Update local items if the client received new ones
+                logger.info("Check local items "+str(len(ctx.items_received))+" > "+str(local_received))
                 if len(ctx.items_received)>local_received:
                     for item in ctx.items_received[local_received:]:
+                        local_received+=1
                         # Traps
                         if item.item in lookup_trapid_to_name:
-                            local_received+=1
-                            if sync_required:
-                                # Don't activate Traps in resync and clear queue
-                                trap_queue.clear()
-                                pass
-                            else:
-                                trap_queue.append(item)
+                            ctx.trap_queue.append(item)
                         # Everything else
                         else:
                             item_addr=item.item>>8
-                            read_result= await bizhawk.read(
-                                ctx.bizhawk_ctx,
-                                [(item_addr, 1, "System Bus")])
+                            read_result= await bizhawk.read(ctx.bizhawk_ctx,
+                                                            [(item_addr, 1, "System Bus")])
                             if item.item==0xA80900 and (read_result[0][0]) & 0xF == 9:
                                 if (read_result[0][0]) == 0x99:
                                     #if 0x99, do nothing
@@ -192,32 +196,31 @@ class WarioLandClient(BizHawkClient):
                                     new_value=(read_result[0][0]+7).to_bytes(1, 'little')
                             else:
                                 new_value=(read_result[0][0]+1).to_bytes(1, 'little')
-                            local_received+=1
                             await bizhawk.write(ctx.bizhawk_ctx,
                                                 [(item_addr, new_value , "System Bus")])
                             if item.item in powerup_list:
                                 # If an upgrade item is received, make sure Wario can grow.
                                 await bizhawk.write(ctx.bizhawk_ctx,
-                                                [(0xA410, b'\x01' , "System Bus")])
+                                                    [(0xA410, b'\x01' , "System Bus")])
                                 if item.item == 0xA41100:
                                     # We received a progressive powerup, handle accordingly
                                     upgrade_state=read_result[0][0]+1
                                     if upgrade_state == 1:
                                         # Garlic
                                         await bizhawk.write(ctx.bizhawk_ctx,
-                                                [(0xA400, b'\x01' , "System Bus")])
+                                                            [(0xA400, b'\x01' , "System Bus")])
                                     elif upgrade_state == 2:
                                         # Bull
                                         await bizhawk.write(ctx.bizhawk_ctx,
-                                                [(0xA401, b'\x01' , "System Bus")])
+                                                            [(0xA401, b'\x01' , "System Bus")])
                                     elif upgrade_state == 3:
                                         # Dragon
                                         await bizhawk.write(ctx.bizhawk_ctx,
-                                                [(0xA403, b'\x01' , "System Bus")])
+                                                            [(0xA403, b'\x01' , "System Bus")])
                                     elif upgrade_state == 4:
                                         # Jet
                                         await bizhawk.write(ctx.bizhawk_ctx,
-                                                [(0xA402, b'\x01' , "System Bus")])
+                                                            [(0xA402, b'\x01' , "System Bus")])
                                     else:
                                         # TODO: Report that something went wrong with progressive powerups?
                                         pass
@@ -227,18 +230,15 @@ class WarioLandClient(BizHawkClient):
                                 if item.item == 0xA41200 and read_result[0][0]+1>=ctx.slot_data['bosses_required']:
                                     # We received the required ammount of boss tokens to fight the final boss
                                     await bizhawk.write(ctx.bizhawk_ctx,
-                                                [(0xA427, b'\x01' , "System Bus")])
+                                                        [(0xA427, b'\x01' , "System Bus")])
                             # Handle garlic hunt
                             if ctx.slot_data['goal']==1 and item.item == 0xA44000 and not ctx.finished_game:
                                 if read_result[0][0]+1>=ctx.slot_data['number_of_garlic_cloves'] * (ctx.slot_data['percentage_of_garlic_cloves']/ 100.0):
-                                    game_clear=True
-                # oof
-                if len(ctx.items_received)<local_received:
-                    logger.info("Desync of local received items count. Fix applied.")
-                    local_received=len(ctx.items_received)
-                await bizhawk.write(ctx.bizhawk_ctx,
-                                                [(0xA4FF, local_received.to_bytes(1, 'little') , "System Bus")])
-                
+                                    ctx.game_clear=True
+                    # Write new local received value to RAM
+                    logger.info("Finished processing local: "+str(local_received))
+                    await bizhawk.write(ctx.bizhawk_ctx,
+                                            [(0xA4FF, local_received.to_bytes(1, 'little') , "System Bus")])
                 # Update locations if we checked a new one
                 for new_check_id in new_checks:
                     ctx.locations_checked.add(new_check_id)
@@ -251,18 +251,12 @@ class WarioLandClient(BizHawkClient):
                 # Check for genie goal if required
                 if ctx.slot_data['goal']==0 and not ctx.finished_game:
                     # Check for genie completion
-                    read_result= await bizhawk.read(
-                        ctx.bizhawk_ctx,
-                        [(0xA817, 1, "System Bus")])
+                    read_result= await bizhawk.read(ctx.bizhawk_ctx,
+                                                    [(0xA817, 1, "System Bus")])
                     if read_result[0][0]==1:
-                        game_clear=True
+                        ctx.game_clear=True
                 
-                # Resync-Loop finished
-                if sync_required:
-                    await bizhawk.write(ctx.bizhawk_ctx,
-                                                [(0xA4FE, b'\x01' , "System Bus")])
-                
-                if not ctx.finished_game and game_clear:
+                if not ctx.finished_game and ctx.game_clear:
                     await ctx.send_msgs([{
                         "cmd": "StatusUpdate",
                         "status": ClientStatus.CLIENT_GOAL
@@ -270,28 +264,49 @@ class WarioLandClient(BizHawkClient):
                     ctx.finished_game=True
 
                 # Handle traps if queue is not empty
-                if len(trap_queue)>0:
-                    if demo_mode==0 and game_mode==3 and paused==0:
-                        # Pop a trap
-                        trap_pick=trap_queue.pop()
-                        logger.info("Triggering trap: "+str(trap_pick))
+                logger.info("Handle trap queue with "+str(len(ctx.trap_queue))+" > "+str(ctx.traps_activated))
+                if len(ctx.trap_queue)>ctx.traps_activated:
+                    if demo_mode==0 and game_mode==3 and paused==0 and time.time()-ctx.last_trap_time>5:
+                        # Grab a trap
+                        ctx.last_trap_time=time.time()
+                        trap_pick=ctx.trap_queue[-1]
                         if trap_pick.item == 0xA38400:
                             # Stun trap, 0xA384 = 0xFF
                             await bizhawk.write(ctx.bizhawk_ctx,
-                                            [(0xA384, b'\xFF' , "System Bus")])
+                                                [(0xA384, b'\xFF' , "System Bus")])
                         elif trap_pick.item == 0xA96400:
                             # Timer trap
                             await bizhawk.write(ctx.bizhawk_ctx,
-                                            [(0xA964, b'\x01\x01' , "System Bus")])
+                                                [(0xA964, b'\x01\x01' , "System Bus")])
                         elif trap_pick.item == 0xA91A00:
                             # Death trap
                             await bizhawk.write(ctx.bizhawk_ctx,
-                                            [(0xA91A, b'\x09' , "System Bus")])
+                                                [(0xA91A, b'\x09' , "System Bus")])
                         else:
                             # Grease trap
                             await bizhawk.write(ctx.bizhawk_ctx,
-                                            [(0xA61C, b'\x22' , "System Bus")])
-
+                                                [(0xA61C, b'\x22' , "System Bus")])
+                        # Mark one more trap as activated
+                        ctx.traps_activated+=1
+                        logger.info("Triggered Trap.Writing traps activated: "+str(ctx.traps_activated))
+                        await bizhawk.write(ctx.bizhawk_ctx,
+                                            [(0xA4FD, ctx.traps_activated.to_bytes(1, 'little') , "System Bus")])
+                
+                # Resync-Loop finished
+                if sync_required:
+                    ctx.traps_activated=len(ctx.trap_queue)
+                    await bizhawk.write(ctx.bizhawk_ctx,
+                                        [(0xA4FD, ctx.traps_activated.to_bytes(1, 'little') , "System Bus")])
+                    await bizhawk.write(ctx.bizhawk_ctx,
+                                        [(0xA4FE, b'\x01' , "System Bus")])
+                
+                # Desync
+                if len(ctx.items_received)<local_received:
+                    logger.info("Detected Desync. Fix applied.")
+                    # force resync
+                    await bizhawk.write(ctx.bizhawk_ctx,
+                                        [(0xA4FE, b'\x01' , "System Bus")])
+                    
             except bizhawk.RequestFailedError:
                 # Exit handler and return to main loop to reconnect
                 pass

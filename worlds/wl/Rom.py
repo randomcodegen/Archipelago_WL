@@ -116,7 +116,6 @@ def patch_basic_abilities(rom):
     rom.write_byte(0x3504a,0xcd) #d:504a   call 7B13
     rom.write_byte(0x3504b,0x13) #d:504b
     rom.write_byte(0x3504c,0x7b) #d:504c
-    #D:504A
     #---
     rom.write_byte(0x37b13,0xfa) #d:7b13    ld a,(A408)
     rom.write_byte(0x37b14,0x08) #d:7b14
