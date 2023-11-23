@@ -98,8 +98,8 @@ class WLWorld(World):
         self.topology_present = 0
         connect_regions(self.multiworld, self.player, self.active_level_dict)
 
-        # Locations - 7 fixed boss locations
-        total_required_locations = len(location_table)-7
+        # Subtract 7 boss token locations - 2 mystery locations
+        total_required_locations = len(location_table) - 7 - 2
 
         if self.multiworld.progressive_powerup[self.player]:
             itempool += [self.create_item(ItemName.progressive_powerup) for _ in range(4)]
@@ -130,7 +130,8 @@ class WLWorld(World):
         
         if self.multiworld.world_unlocks[self.player]:
             # Player always starts with a random world unlocked if there is more than one player
-            if self.multiworld.players>1:
+            # or if Blocksanity is active
+            if self.multiworld.players > 1 or self.multiworld.blocksanity[self.player] == 1:
                 random.shuffle(world_unlocks)
                 list_pick=world_unlocks.pop()
                 start_inventory[list_pick] = 1
@@ -190,7 +191,6 @@ class WLWorld(World):
 
         boss_location_names = [LocationName.ricebeach_boss, LocationName.mtteapot_boss, LocationName.sherbetland_boss,
                                LocationName.stovecanyon_boss, LocationName.ssteacup_boss, LocationName.parsleywoods_boss]
-
         for location_name in boss_location_names:
             self.multiworld.get_location(location_name, self.player).place_locked_item(self.create_item(ItemName.boss_token))
         self.multiworld.itempool += itempool

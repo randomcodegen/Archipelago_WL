@@ -62,7 +62,7 @@ trap_table = {
 }
 
 collectable_table = {
-    ItemName.garlic_clove:      ItemData(0xA44000, False, True),
+    ItemName.garlic_clove:      ItemData(0xA42800, False, True),
 }
 
 #It's "free" real estate

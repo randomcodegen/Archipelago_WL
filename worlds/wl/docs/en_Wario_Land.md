@@ -17,6 +17,8 @@ Some logical access might required the lake to still be there.\
 In this case simply switch to a different savefile to grab the check.\
 The same applies to Mt Teapot 13, which overwrites Mt Teapot 10 (and is unlocked by beating Mt. Teapot 12).
 
+- In Blocksanity Parsley Woods 31 flooded and drained count as two different stages.
+
 - Turning off autoscrollers messes with stage graphics and can lead to the cart stopping if it goes off screen.\
 Use at your own risk.
 

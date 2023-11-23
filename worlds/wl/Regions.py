@@ -1,9 +1,10 @@
 import typing
 
 from BaseClasses import MultiWorld, Region, Entrance, CollectionState
-from .Locations import WLLocation,checkable_locations
+from .Locations import WLLocation,checkable_locations,block_location_table
 from .Levels import level_info_dict
 from .Names import LocationName, ItemName
+from .Blocks import block_info_dict
 from worlds.generic.Rules import add_rule, set_rule
 
 def can_defeat_final_boss(player, state: CollectionState, world: MultiWorld) -> bool:
@@ -39,6 +40,15 @@ def can_dash(player, state: CollectionState) -> bool:
 def can_open_treasure(player, state: CollectionState) -> bool:
         return (can_jet(player, state) or can_dragon(player, state) or can_dash(player, state))
 
+def can_hit_groundblock(player, state: CollectionState) -> bool:
+      return (can_jet(player, state) or (can_dragon(player, state) and can_duck(player, state)) or can_dash(player, state))
+
+def can_hit_elevated_groundblock(player, state: CollectionState) -> bool:
+      return (can_jet(player, state) or can_dragon(player, state) or can_bull(player, state) or can_dash(player, state))
+
+def can_grow(player, state: CollectionState) -> bool:
+      return (can_garlic(player, state) or can_bull(player, state) or can_dragon(player, state) or can_jet(player, state))
+
 def create_regions(world, player: int, active_locations):
     menu_region = create_region(world, player, active_locations, 'Menu', None)
 
@@ -70,7 +80,7 @@ def create_regions(world, player: int, active_locations):
     ricebeach_5_tile = create_region(world, player, active_locations, LocationName.ricebeach_5_tile, None)                              
     ricebeach_5_region = create_region(world, player, active_locations, LocationName.ricebeach_5_region, None)
     #ricebeach_5_exit_1 = create_region(world, player, active_locations, LocationName.ricebeach_5_exit_1,[LocationName.ricebeach_5_exit_1, LocationName.ricebeach_boss])
-    ricebeach_boss = create_region(world, player, active_locations, LocationName.ricebeach_boss,[LocationName.ricebeach_boss])
+    ricebeach_boss = create_region(world, player, active_locations, LocationName.ricebeach_boss,[LocationName.ricebeach_boss, LocationName.ricebeach_boss_item])
 
     ricebeach_6_tile = create_region(world, player, active_locations, LocationName.ricebeach_6_tile, None)                              
     ricebeach_6_region = create_region(world, player, active_locations, LocationName.ricebeach_6_region, None)
@@ -107,7 +117,7 @@ def create_regions(world, player: int, active_locations):
     mtteapot_13_tile = create_region(world, player, active_locations, LocationName.mtteapot_13_tile, None)                                       
     mtteapot_13_region = create_region(world, player, active_locations, LocationName.mtteapot_13_region, None)
     #mtteapot_13_exit_1 = create_region(world, player, active_locations, LocationName.mtteapot_13_exit_1,[LocationName.mtteapot_13_exit_1, LocationName.mtteapot_boss])
-    mtteapot_boss = create_region(world, player, active_locations, LocationName.mtteapot_boss,[LocationName.mtteapot_boss])
+    mtteapot_boss = create_region(world, player, active_locations, LocationName.mtteapot_boss,[LocationName.mtteapot_boss, LocationName.mtteapot_boss_item])
 
     #Sherbet Land
     sherbetland_region = create_region(world, player, active_locations, LocationName.sherbetland_region, None)
@@ -139,7 +149,7 @@ def create_regions(world, player: int, active_locations):
     sherbetland_19_tile = create_region(world, player, active_locations, LocationName.sherbetland_19_tile, None)                                       
     sherbetland_19_region = create_region(world, player, active_locations, LocationName.sherbetland_19_region, None)
     #sherbetland_19_exit_1 = create_region(world, player, active_locations, LocationName.sherbetland_19_exit_1,[LocationName.sherbetland_19_exit_1, LocationName.sherbetland_boss])
-    sherbetland_boss = create_region(world, player, active_locations, LocationName.sherbetland_boss,[LocationName.sherbetland_boss])
+    sherbetland_boss = create_region(world, player, active_locations, LocationName.sherbetland_boss,[LocationName.sherbetland_boss, LocationName.sherbetland_boss_item])
 
     #Stove Canyon
     stovecanyon_region = create_region(world, player, active_locations, LocationName.stovecanyon_region, None)
@@ -168,7 +178,7 @@ def create_regions(world, player: int, active_locations):
     stovecanyon_25_tile = create_region(world, player, active_locations, LocationName.stovecanyon_25_tile, None)                                       
     stovecanyon_25_region = create_region(world, player, active_locations, LocationName.stovecanyon_25_region, None)
     #stovecanyon_25_exit_1 = create_region(world, player, active_locations, LocationName.stovecanyon_25_exit_1,[LocationName.stovecanyon_25_exit_1, LocationName.stovecanyon_boss])
-    stovecanyon_boss = create_region(world, player, active_locations, LocationName.stovecanyon_boss,[LocationName.stovecanyon_boss])
+    stovecanyon_boss = create_region(world, player, active_locations, LocationName.stovecanyon_boss,[LocationName.stovecanyon_boss, LocationName.stovecanyon_boss_item])
 
     #SS Teacup
     ssteacup_region = create_region(world, player, active_locations, LocationName.ssteacup_region, None)
@@ -192,7 +202,7 @@ def create_regions(world, player: int, active_locations):
     ssteacup_30_tile = create_region(world, player, active_locations, LocationName.ssteacup_30_tile, None)                                       
     ssteacup_30_region = create_region(world, player, active_locations, LocationName.ssteacup_30_region, None)
     #ssteacup_30_exit_1 = create_region(world, player, active_locations, LocationName.ssteacup_30_exit_1,[LocationName.ssteacup_30_exit_1, LocationName.ssteacup_boss])
-    ssteacup_boss = create_region(world, player, active_locations, LocationName.ssteacup_boss,[LocationName.ssteacup_boss])
+    ssteacup_boss = create_region(world, player, active_locations, LocationName.ssteacup_boss,[LocationName.ssteacup_boss, LocationName.sherbetland_boss_item])
 
     #Parsley Woods
     parsleywoods_region = create_region(world, player, active_locations, LocationName.parsleywoods_region, None)
@@ -220,7 +230,7 @@ def create_regions(world, player: int, active_locations):
     parsleywoods_36_tile = create_region(world, player, active_locations, LocationName.parsleywoods_36_tile, None)
     parsleywoods_36_region = create_region(world, player, active_locations, LocationName.parsleywoods_36_region, None)
     #parsleywoods_36_exit_1 = create_region(world, player, active_locations, LocationName.parsleywoods_36_exit_1,[LocationName.parsleywoods_36_exit_1, LocationName.parsleywoods_boss])
-    parsleywoods_boss = create_region(world, player, active_locations, LocationName.parsleywoods_boss,[LocationName.parsleywoods_boss])
+    parsleywoods_boss = create_region(world, player, active_locations, LocationName.parsleywoods_boss,[LocationName.parsleywoods_boss, LocationName.parsleywoods_boss_item])
     
     #Syrup Castle
     syrupcastle_region = create_region(world, player, active_locations, LocationName.syrupcastle_region, None)
@@ -240,7 +250,7 @@ def create_regions(world, player: int, active_locations):
     syrupcastle_40_tile = create_region(world, player, active_locations, LocationName.syrupcastle_40_tile, None)
     syrupcastle_40_region = create_region(world, player, active_locations, LocationName.syrupcastle_40_region, None)
     #syrupcastle_40_exit_1 = create_region(world, player, active_locations, LocationName.syrupcastle_40_exit_1,[LocationName.syrupcastle_40_exit_1])
-    syrupcastle_boss_locations = []
+    syrupcastle_boss_locations = [LocationName.stovecanyon_boss_item]
     if world.goal[player] == "genie":
         syrupcastle_boss_locations += [LocationName.syrupcastle_boss]
     syrupcastle_boss = create_region(world, player, active_locations, LocationName.syrupcastle_boss, syrupcastle_boss_locations)
@@ -396,6 +406,499 @@ def create_regions(world, player: int, active_locations):
         #genie_region,
         syrupcastle_boss,
         ]
+     # Handle blocksanity logic
+    if world.blocksanity[player]==1:
+        for block_index in block_info_dict:
+              level_id=(block_index>>16)
+              block_data=block_info_dict[block_index]
+              level_data=level_info_dict[level_id]
+              add_location_to_region(world, player, active_locations, level_data.levelName, block_data.blockName)
+        # Handle blocks that require logic for access
+        # Rice Beach Blocks
+        add_rule(world.get_location(LocationName.ricebeach_1_block3, player),
+                                        lambda state: can_hit_groundblock(player, state))
+        add_rule(world.get_location(LocationName.ricebeach_1_block10, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ricebeach_1_block11, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ricebeach_1_block12, player),
+                                        lambda state: ( (state.can_reach(LocationName.ricebeach_boss, "", player) and can_dash(player, state) and can_climb(player, state)) 
+                                                       or (can_bull(player, state) and can_dash(player, state)) 
+                                                       or (can_dragon(player, state) and can_duck(player, state)) ))
+        add_rule(world.get_location(LocationName.ricebeach_1_block18, player),
+                                        lambda state: can_climb(player, state) and (can_highjump(player, state) and can_grow(player, state)) 
+                                        or state.can_reach(LocationName.ricebeach_boss, "", player) )
+        add_rule(world.get_location(LocationName.ricebeach_2_block2, player),
+                                        lambda state: can_hit_groundblock(player, state) or can_dragon(player, state))
+        add_rule(world.get_location(LocationName.ricebeach_2_block4, player),
+                                        lambda state: can_hit_elevated_groundblock(player, state))
+        add_rule(world.get_location(LocationName.ricebeach_2_block5, player),
+                                        lambda state: can_hit_elevated_groundblock(player, state))
+        add_rule(world.get_location(LocationName.ricebeach_2_block19, player),
+                                        lambda state: can_climb(player, state) or can_hit_elevated_groundblock(player, state))
+        add_rule(world.get_location(LocationName.ricebeach_3_block4, player),
+                                        lambda state: ( (can_dragon(player, state) and can_duck(player, state)) or can_jet(player, state)))
+        add_rule(world.get_location(LocationName.ricebeach_3_block7, player),
+                                        lambda state: can_hit_groundblock(player, state))
+        add_rule(world.get_location(LocationName.ricebeach_4_block1, player),
+                                        lambda state: can_hit_groundblock(player, state))
+        add_rule(world.get_location(LocationName.ricebeach_4_block2, player),
+                                        lambda state: can_hit_groundblock(player, state))
+        add_rule(world.get_location(LocationName.ricebeach_4_block3, player),
+                                        lambda state: can_hit_groundblock(player, state))
+        add_rule(world.get_location(LocationName.ricebeach_4_block4, player),
+                                        lambda state: can_hit_groundblock(player, state))
+        add_rule(world.get_location(LocationName.ricebeach_4_block5, player),
+                                        lambda state: can_hit_groundblock(player, state))
+        add_rule(world.get_location(LocationName.ricebeach_4_block6, player),
+                                        lambda state: can_hit_groundblock(player, state))
+        
+        # Mt Teapot Blocks
+        add_rule(world.get_location(LocationName.mtteapot_7_block1, player),
+                                        lambda state: can_jet(player, state) or can_dragon(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_7_block23, player),
+                                        lambda state: can_jet(player, state) or (can_climb(player, state) and can_dragon(player, state)))
+        add_rule(world.get_location(LocationName.mtteapot_7_block24, player),
+                                        lambda state: can_jet(player, state) or (can_climb(player, state) and can_dragon(player, state)))
+        add_rule(world.get_location(LocationName.mtteapot_8_block22, player),
+                                        lambda state: can_hit_elevated_groundblock(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_9_block6, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_9_block7, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_9_block8, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_9_block9, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_9_block10, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_9_block11, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_9_block12, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_9_block13, player),
+                                        lambda state: can_climb(player, state) and can_hit_groundblock(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_9_block14, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_9_block15, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_10_block5, player),
+                                        lambda state: can_highjump(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_10_block7, player),
+                                        lambda state: can_bull(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_10_block10, player),
+                                        lambda state: can_dragon(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_10_block11, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_10_block12, player),
+                                        lambda state: (can_climb(player, state) or can_jet(player, state)) and can_bull(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_10_block13, player),
+                                        lambda state: (can_climb(player, state) or can_jet(player, state)) and can_bull(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_10_block14, player),
+                                        lambda state: (can_climb(player, state) or can_jet(player, state)) and can_bull(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_10_block15, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_10_block16, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_10_block17, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_10_block18, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_10_block19, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_10_block20, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_10_block21, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_10_block22, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_11_block15, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_11_block16, player),
+                                        lambda state: can_climb(player, state) and can_jet(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_11_block17, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_11_block18, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.mtteapot_13_block1, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block2, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block3, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block4, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block5, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block6, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block7, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block8, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block9, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player)
+                                        and can_hit_groundblock(player, state)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block10, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player)
+                                        and can_hit_groundblock(player, state)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block11, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player) and can_climb(player, state)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block12, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player) and can_climb(player, state)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block13, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player) and can_climb(player, state)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block14, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player) and can_climb(player, state)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block15, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player) and can_climb(player, state)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block16, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player) and can_climb(player, state)
+                                                       and can_hit_groundblock(player, state)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block17, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player) and can_climb(player, state)
+                                                       and can_hit_groundblock(player, state)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block18, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player) and can_climb(player, state)
+                                                       and can_hit_groundblock(player, state)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block19, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player) and can_climb(player, state)
+                                                       and can_hit_groundblock(player, state)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block20, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player) and can_climb(player, state)
+                                                       and can_hit_groundblock(player, state)))
+        add_rule(world.get_location(LocationName.mtteapot_13_block21, player),
+                                        lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player) and can_climb(player, state)
+                                                       and can_hit_groundblock(player, state)))
+        add_rule(world.get_location(LocationName.sherbetland_15_block1, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_15_block2, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_15_block3, player),
+                                        lambda state: can_climb(player, state) and (can_dash(player, state) or can_dragon(player, state)))
+        add_rule(world.get_location(LocationName.sherbetland_15_block4, player),
+                                        lambda state: can_climb(player, state) and (can_dash(player, state) 
+                                                        or can_dragon(player, state) or can_jet(player, state)))
+        add_rule(world.get_location(LocationName.sherbetland_15_block5, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_15_block6, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_15_block7, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_15_block8, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_15_block9, player),
+                                        lambda state: can_climb(player, state) and can_hit_groundblock(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_15_block10, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_15_block11, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_15_block12, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_15_block13, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_16_block4, player),
+                                        lambda state: can_hit_groundblock(player, state) or can_bull(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_16_block8, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_17_block6, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_17_block7, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_17_block8, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_17_block9, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_17_block10, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_17_block11, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_17_block12, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_17_block13, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_17_block14, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_17_block15, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_18_block5, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_18_block6, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_18_block7, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_18_block8, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_18_block9, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_19_block1, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_19_block2, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_19_block3, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_19_block4, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_19_block5, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_19_block6, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_19_block7, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_19_block8, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_19_block9, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_19_block10, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_19_block11, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_19_block12, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_19_block13, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.sherbetland_19_block14, player),
+                                        lambda state: can_climb(player, state))
+        
+        add_rule(world.get_location(LocationName.stovecanyon_20_block2, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_20_block3, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_20_block4, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_20_block5, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_20_block6, player),
+                                        lambda state: can_hit_groundblock(player, state) and (can_climb(player, state) or can_jet(player, state)))
+        add_rule(world.get_location(LocationName.stovecanyon_20_block7, player),
+                                        lambda state: can_hit_groundblock(player, state) and (can_climb(player, state) or can_jet(player, state)))
+        add_rule(world.get_location(LocationName.stovecanyon_20_block8, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_20_block9, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_20_block10, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_20_block11, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_21_block3, player),
+                                        lambda state: can_dragon(player, state) and can_duck(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_21_block4, player),
+                                        lambda state: can_dragon(player, state) and can_duck(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_22_block1, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_22_block2, player),
+                                        lambda state: (can_climb(player, state) and (can_dash(player, state) or can_dragon(player, state))) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_22_block3, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_22_block4, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_22_block5, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_22_block6, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_22_block7, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_23_block7, player),
+                                        lambda state: can_hit_groundblock(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_24_block2, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_24_block3, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_24_block4, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_24_block5, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_24_block6, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_24_block7, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.stovecanyon_24_block8, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_26_block8, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_26_block9, player),
+                                        lambda state: can_climb(player, state) and can_hit_groundblock(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_26_block10, player),
+                                        lambda state: can_climb(player, state) and can_hit_groundblock(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_26_block11, player),
+                                        lambda state: can_climb(player, state) and can_hit_groundblock(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_27_block1, player),
+                                        lambda state: can_dragon(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_27_block11, player),
+                                        lambda state: (can_climb(player, state) and ((can_dash(player, state) and can_bull(player, state)) or can_jet(player, state))))
+        add_rule(world.get_location(LocationName.ssteacup_27_block12, player),
+                                        lambda state: can_grow(player, state) and can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_27_block13, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_27_block14, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_27_block15, player),
+                                        lambda state: can_climb(player, state) 
+                                        and (can_duck(player, state) and can_dragon(player, state)))
+        add_rule(world.get_location(LocationName.ssteacup_27_block16, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_27_block17, player),
+                                        lambda state: can_climb(player, state) and can_grow(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_27_block18, player),
+                                        lambda state: can_climb(player, state) and can_grow(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_27_block19, player),
+                                        lambda state: can_climb(player, state) and can_grow(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_27_block20, player),
+                                        lambda state: can_climb(player, state) and can_grow(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_27_block21, player),
+                                        lambda state: can_climb(player, state) and can_grow(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_27_block22, player),
+                                        lambda state: can_climb(player, state) and can_grow(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_27_block23, player),
+                                        lambda state: can_climb(player, state) and can_grow(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_27_block24, player),
+                                        lambda state: can_climb(player, state) and can_grow(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_27_block25, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_29_block2, player),
+                                        lambda state: can_climb(player, state) or can_highjump(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_29_block3, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_29_block4, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_29_block5, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_29_block6, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_29_block7, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_29_block8, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_29_block9, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_29_block10, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_29_block11, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block2, player),
+                                        lambda state: can_dash(player, state) or can_bull(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block3, player),
+                                        lambda state: can_dash(player, state) or can_bull(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block4, player),
+                                        lambda state: can_dash(player, state) or can_bull(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block7, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block8, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block9, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block10, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block11, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block12, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block13, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block14, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block15, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block16, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block17, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block18, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block19, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block20, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block21, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block22, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.ssteacup_30_block23, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_31_drained_block2, player),
+                                        lambda state: can_hit_elevated_groundblock(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_31_drained_block3, player),
+                                        lambda state: can_hit_elevated_groundblock(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_31_drained_block4, player),
+                                        lambda state: can_jet(player, state) or can_highjump(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_31_drained_block5, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_31_drained_block6, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_31_drained_block7, player),
+                                        lambda state: (can_climb(player, state) and can_dragon(player, state)) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_31_drained_block8, player),
+                                        lambda state: (can_climb(player, state) and can_dragon(player, state)) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_31_drained_block9, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_31_drained_block10, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_31_drained_block11, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_31_drained_block12, player),
+                                        lambda state: can_climb(player, state) or can_jet(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_31_drained_block13, player),
+                                        lambda state: can_jet(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_33_block6, player),
+                                        lambda state: can_hit_elevated_groundblock(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_33_block7, player),
+                                        lambda state: can_hit_elevated_groundblock(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_33_block8, player),
+                                        lambda state: can_hit_elevated_groundblock(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_33_block9, player),
+                                        lambda state: can_hit_elevated_groundblock(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_34_block3, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_34_block4, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_34_block5, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_34_block6, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_34_block7, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_34_block8, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_34_block9, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_34_block10, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_34_block11, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.parsleywoods_34_block12, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.syrupcastle_37_block20, player),
+                                        lambda state: can_grow(player, state))
+        add_rule(world.get_location(LocationName.syrupcastle_38_block4, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.syrupcastle_38_block5, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.syrupcastle_38_block6, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.syrupcastle_38_block7, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.syrupcastle_38_block8, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.syrupcastle_38_block9, player),
+                                        lambda state: can_climb(player, state))
+        add_rule(world.get_location(LocationName.syrupcastle_39_block3, player),
+                                        lambda state: can_hit_elevated_groundblock(player, state))
+        add_rule(world.get_location(LocationName.syrupcastle_39_block4, player),
+                                        lambda state: can_hit_elevated_groundblock(player, state))
+        add_rule(world.get_location(LocationName.syrupcastle_39_block5, player),
+                                        lambda state: can_bull(player, state) or (can_dragon(player, state) and can_duck(player, state)))
+        add_rule(world.get_location(LocationName.syrupcastle_39_block8, player),
+                                        lambda state: can_bull(player, state))
+        add_rule(world.get_location(LocationName.syrupcastle_39_block9, player),
+                                        lambda state: can_bull(player, state))
+        add_rule(world.get_location(LocationName.syrupcastle_39_block10, player),
+                                        lambda state: can_bull(player, state) and can_dash(player, state))
+        add_rule(world.get_location(LocationName.syrupcastle_40_block7, player),
+                                        lambda state: can_dragon(player, state) or (can_bull(player, state) and can_dash(player, state)))
+        add_rule(world.get_location(LocationName.syrupcastle_40_block8, player),
+                                        lambda state: can_dragon(player, state) or (can_bull(player, state) and can_dash(player, state)))
+        add_rule(world.get_location(LocationName.syrupcastle_40_block18, player),
+                                        lambda state: can_climb(player, state))
 
     if world.treasure_checks[player]:
         add_location_to_region(world, player, active_locations, LocationName.ricebeach_3_region, LocationName.ricebeach_3_treasure,
@@ -478,7 +981,6 @@ def create_regions(world, player: int, active_locations):
                             lambda state: state.has(ItemName.parsleywoods_bossunlock, player))
             #add_rule(world.get_location(LocationName.syrupcastle_boss, player),
             #         lambda state: state.has(ItemName.syrupcastle_bossunlock, player))
-
 
 def connect_regions(world, player, level_to_tile_dict):
         names: typing.Dict[str, int] = {}

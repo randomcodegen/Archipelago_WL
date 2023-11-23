@@ -86,6 +86,14 @@ class TreasureChecks(Toggle):
     display_name = "Treasure Checks"
     default = True
 
+class Blocksanity(Toggle):
+    """
+    Whether blocks with a face sprite count as checks
+    !Warning! Hitting blocks in quick succession can cause only a single block to register.
+    This does include hidden blocks and adds around 550 checks to the game
+    """
+    display_name = "Blocksanity"
+    default = False
 
 #class LevelShuffle(Toggle):
 #    """
@@ -102,7 +110,7 @@ class TrapFillPercentage(Range):
     display_name = "Trap Fill Percentage"
     range_start = 0
     range_end = 100
-    default = 0
+    default = 10
 
 
 class BaseTrapWeight(Choice):
@@ -172,6 +180,7 @@ wl_options: typing.Dict[str, type(Option)] = {
     "number_of_garlic_cloves": NumberOfGarlicCloves,
     "percentage_of_garlic_cloves": PercentageOfGarlicCloves,
     "treasure_checks": TreasureChecks,
+    "blocksanity": Blocksanity,
     #"level_shuffle": LevelShuffle,
     "trap_fill_percentage": TrapFillPercentage,
     "stun_trap_weight": StunTrapWeight,

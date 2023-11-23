@@ -59,7 +59,7 @@ level_info_dict = {
 
     # TODO: Special case for level shuffle?
     # Drained Parsley Woods
-    # 0x2A:       WLLevel(LocationName.ricebeach_1_region, 0x23f02, 0x17,),
+    0x2A:       WLLevel(LocationName.parsleywoods_31_region, 0x23f02, 0x17,),
     0x26:       WLLevel(LocationName.parsleywoods_31_region, 0x23f11, 0x26,0x1D),
     0x1D:       WLLevel(LocationName.parsleywoods_32_region, 0x23f08, 0x1D,0x01),
     0x01:       WLLevel(LocationName.parsleywoods_33_region, 0x23eec, 0x01,0x13),

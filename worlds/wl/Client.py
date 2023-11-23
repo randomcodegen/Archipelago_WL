@@ -24,7 +24,8 @@ from NetUtils import ClientStatus
 import worlds._bizhawk as bizhawk
 from worlds._bizhawk.client import BizHawkClient
 import time
-from worlds.wl.Locations import checkable_locations
+from worlds.wl.Locations import checkable_locations, boss_location_dict
+from worlds.wl.Blocks import block_info_dict
 from worlds.wl.Items import lookup_trapid_to_name,lookup_eventid_to_name
 
 powerup_list=[0xA40000,0xA40100,0xA40200,0xA40300,0xA41100]
@@ -83,6 +84,7 @@ class WarioLandClient(BizHawkClient):
         ctx.connected=False
         ctx.data_present=False
         ctx.game_clear=False
+        ctx.last_block_read=0xA430
 
         return True
 
@@ -129,6 +131,10 @@ class WarioLandClient(BizHawkClient):
                     ctx.trap_queue.clear()
                     await bizhawk.write(ctx.bizhawk_ctx,
                                                     [(0xA4FD, b'\x00', "System Bus")])
+                    # Clear blocksanity data
+                    await bizhawk.write(ctx.bizhawk_ctx,
+                                        [(0xA42E,bytes(64),"System Bus")])
+                    ctx.last_block_read=0xA430
                     # Activate full overworld+subworld movement
                     new_value=b'\xFF'
                     for addr in range (0xA413, 0xA421):
@@ -139,18 +145,6 @@ class WarioLandClient(BizHawkClient):
                                                     [(0xA4FD, 1, "System Bus")])
                 ctx.traps_activated = read_result[0][0]
 
-                # Check Locations for completion
-                new_checks=[]
-                for loc_name, loc_id in checkable_locations.items():
-                    if loc_id not in ctx.locations_checked:
-                        loc_bitmask=(loc_id)&0xFF
-                        loc_addr=(loc_id>>8)
-                        read_result= await bizhawk.read(ctx.bizhawk_ctx,
-                                                        [(loc_addr, 1, "System Bus")])
-                        loc_result=(read_result[0][0])&loc_bitmask
-                        if loc_result>0:
-                            new_checks.append(loc_id)
-                
                 # Number of received items stored at 0xA4FF
                 read_result= await bizhawk.read(ctx.bizhawk_ctx,
                                                 [(0xA4FF, 1, "System Bus")])
@@ -171,8 +165,64 @@ class WarioLandClient(BizHawkClient):
                                                 [(0xA908, 1, "System Bus")])
                 # 0=unpaused, 1=paused
                 paused=read_result[0][0]
+
+                # Check Locations for completion
+                new_checks=[]
+                for loc_name, loc_id in checkable_locations.items():
+                    if loc_id not in ctx.locations_checked:
+                        loc_bitmask=(loc_id)&0xFF
+                        loc_addr=(loc_id>>8)
+                        read_result= await bizhawk.read(ctx.bizhawk_ctx,
+                                                        [(loc_addr, 1, "System Bus")])
+                        loc_result=(read_result[0][0])&loc_bitmask
+                        if loc_result>0:
+                            if loc_id in boss_location_dict:
+                                # Also award boss item on boss token received
+                                new_checks.append(loc_id)
+                                new_checks.append(boss_location_dict[loc_id])
+                            else:
+                                new_checks.append(loc_id)
+
                 
-    
+                if ctx.slot_data['blocksanity']==1:
+                    if game_mode==3:
+                        # Check blocksanity pointer address
+                        read_result = await bizhawk.read(ctx.bizhawk_ctx,
+                                                         [(0xA42E, 2, "System Bus")])
+                        pointer_addr = (int.from_bytes(read_result[0],"little"))
+                        read_addr = ctx.last_block_read
+                        # Start with a sanity check
+                        if pointer_addr > 0xA42F:
+                            while read_addr < pointer_addr:
+                                read_result = await bizhawk.read(ctx.bizhawk_ctx,
+                                                                [(read_addr, 2, "System Bus")])
+                                lower_byte=int.from_bytes(read_result[0],"big")
+
+                                read_result = await bizhawk.read(ctx.bizhawk_ctx,
+                                                                [(0xA804, 2, "System Bus")])
+                                # Handle special cases for flooded rice beach
+                                if read_result[0][0]==0x17:
+                                    upper_byte=0x07<<16
+                                elif read_result[0][0]==0x24:
+                                    upper_byte=0x0E<<16
+                                else:
+                                    upper_byte=read_result[0][0]<<16
+                                # level id appended by block ptr addr
+                                block_id=upper_byte+lower_byte
+                                if lower_byte>0x00 and block_info_dict[block_id].locationID not in ctx.locations_checked:
+                                    new_checks.append( block_info_dict[block_id].locationID )
+                                ctx.last_block_read=read_addr
+                                read_addr+=2
+                    elif game_mode < 3:
+                        #stage over, clear blocksanity data if necessary
+                        read_result = await bizhawk.read(ctx.bizhawk_ctx,
+                                                         [(0xA42E, 1, "System Bus")])
+                        if read_result[0][0] > 0x00:
+                            #[b'%c' % i for i in bytes(64)]
+                            await bizhawk.write(ctx.bizhawk_ctx,
+                                                [(0xA42E,bytes(64),"System Bus")])
+                        ctx.last_block_read=0xA430
+
                 # Update local items if the client received new ones
                 if len(ctx.items_received)>local_received:
                     for item in ctx.items_received[local_received:]:
@@ -230,7 +280,7 @@ class WarioLandClient(BizHawkClient):
                                     await bizhawk.write(ctx.bizhawk_ctx,
                                                         [(0xA427, b'\x01' , "System Bus")])
                             # Handle garlic hunt
-                            if ctx.slot_data['goal']==1 and item.item == 0xA44000 and not ctx.finished_game:
+                            if ctx.slot_data['goal']==1 and item.item == 0xA42800 and not ctx.finished_game:
                                 if read_result[0][0]+1>=ctx.slot_data['number_of_garlic_cloves'] * (ctx.slot_data['percentage_of_garlic_cloves']/ 100.0):
                                     ctx.game_clear=True
                     # Write new local received value to RAM

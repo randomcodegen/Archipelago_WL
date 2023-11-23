@@ -113,10 +113,31 @@ def patch_basic_abilities(rom):
     rom.write_byte(0x34a7c,0xcd) #d:4a7c    call 7B13
     rom.write_byte(0x34a7d,0x13) #d:4a7d
     rom.write_byte(0x34a7e,0x7b) #d:4a7e
-    rom.write_byte(0x3504a,0xcd) #d:504a   call 7B13
+    rom.write_byte(0x3504a,0xcd) #d:504a    call 7B13
     rom.write_byte(0x3504b,0x13) #d:504b
     rom.write_byte(0x3504c,0x7b) #d:504c
-    #---
+    rom.write_byte(0x35fa2,0xc3) #d:5fa2    jp 7B8E
+    rom.write_byte(0x35fa3,0x8e) #d:5fa3
+    rom.write_byte(0x35fa4,0x7b) #d:5fa4
+    #---quicksand duck hook
+    rom.write_byte(0x37b8e,0xfa) #d:7b8e    ld a,(A408)
+    rom.write_byte(0x37b8f,0x08) #d:7b8f
+    rom.write_byte(0x37b90,0xa4) #d:7b90
+    rom.write_byte(0x37b91,0xa7) #d:7b91    and a
+    rom.write_byte(0x37b92,0x20) #d:7b92    jr nz,03
+    rom.write_byte(0x37b93,0x03) #d:7b93
+    rom.write_byte(0x37b94,0xc3) #d:7b94    jp 5FB4
+    rom.write_byte(0x37b95,0xb4) #d:7b95
+    rom.write_byte(0x37b96,0x5f) #d:7b96
+    rom.write_byte(0x37b97,0x3e) #d:7b97    ld a,01
+    rom.write_byte(0x37b98,0x01) #d:7b98
+    rom.write_byte(0x37b99,0xea) #d:7b99    ld (A93E),a
+    rom.write_byte(0x37b9a,0x3e) #d:7b9a
+    rom.write_byte(0x37b9b,0xa9) #d:7b9b
+    rom.write_byte(0x37b9c,0xc3) #d:7b9c    jp 5FA5
+    rom.write_byte(0x37b9d,0xa5) #d:7b9d
+    rom.write_byte(0x37b9e,0x5f) #d:7b9e
+    #---normal duck hook
     rom.write_byte(0x37b13,0xfa) #d:7b13    ld a,(A408)
     rom.write_byte(0x37b14,0x08) #d:7b14
     rom.write_byte(0x37b15,0xa4) #d:7b15
@@ -726,27 +747,65 @@ def shuffle_music(rom):
         rom.write_byte(music_offset,music_pick)
         rom.write_byte(music_offset+0x03,music_pick)
 
-def new_feature(rom):
-    rom.write_byte(0x153a,0xc3) #0:153a jp 3C00
+def blocksanity(rom):
+    rom.write_byte(0x153a,0xc3) #0:153a    jp 3C00
     rom.write_byte(0x153b,0x00) #0:153b
     rom.write_byte(0x153c,0x3c) #0:153c
-    rom.write_byte(0x3c00,0xfa) #0:3c00 ld a,(A918)
-    rom.write_byte(0x3c01,0x18) #0:3c01
-    rom.write_byte(0x3c02,0xa9) #0:3c02
-    rom.write_byte(0x3c03,0xea) #0:3c03 ld (A4F0),a
-    rom.write_byte(0x3c04,0xf0) #0:3c04
-    rom.write_byte(0x3c05,0xa4) #0:3c05
-    rom.write_byte(0x3c06,0x67) #0:3c06 ld h,a
-    rom.write_byte(0x3c07,0xfa) #0:3c07 ld a,(A919)
-    rom.write_byte(0x3c08,0x19) #0:3c08
-    rom.write_byte(0x3c09,0xa9) #0:3c09
-    rom.write_byte(0x3c0a,0xea) #0:3c0a ld (A4F1),a
-    rom.write_byte(0x3c0b,0xf1) #0:3c0b
-    rom.write_byte(0x3c0c,0xa4) #0:3c0c
-    rom.write_byte(0x3c0d,0x6f) #0:3c0d ld l,a
-    rom.write_byte(0x3c0e,0xc3) #0:3c0e jp 1542
-    rom.write_byte(0x3c0f,0x42) #0:3c0f
-    rom.write_byte(0x3c10,0x15) #0:3c10
+    #---
+    rom.write_byte(0x3c00,0xfa) #0:3c00    ld a,(A42F)
+    rom.write_byte(0x3c01,0x2f) #0:3c01
+    rom.write_byte(0x3c02,0xa4) #0:3c02
+    rom.write_byte(0x3c03,0xfe) #0:3c03    cp a,0
+    rom.write_byte(0x3c04,0x00) #0:3c04
+    rom.write_byte(0x3c05,0xc2) #0:3c05    jp nz, 3C0E
+    rom.write_byte(0x3c06,0x0e) #0:3c06
+    rom.write_byte(0x3c07,0x3c) #0:3c07
+    rom.write_byte(0x3c08,0x21) #0:3c08    ld hl,A430
+    rom.write_byte(0x3c09,0x30) #0:3c09
+    rom.write_byte(0x3c0a,0xa4) #0:3c0a
+    rom.write_byte(0x3c0b,0xc3) #0:3c0b    jp 3C1B
+    rom.write_byte(0x3c0c,0x1b) #0:3c0c
+    rom.write_byte(0x3c0d,0x3c) #0:3c0d
+    rom.write_byte(0x3c0e,0xfa) #0:3c0e    ld a,(A42E)
+    rom.write_byte(0x3c0f,0x2e) #0:3c0f
+    rom.write_byte(0x3c10,0xa4) #0:3c10
+    rom.write_byte(0x3c11,0xfe) #0:3c11    cp a,6C
+    rom.write_byte(0x3c12,0x6c) #0:3c12
+    rom.write_byte(0x3c13,0xd2) #0:3c13    jp nc, 3C08
+    rom.write_byte(0x3c14,0x08) #0:3c14
+    rom.write_byte(0x3c15,0x3c) #0:3c15
+    rom.write_byte(0x3c16,0x6f) #0:3c16    ld l, a
+    rom.write_byte(0x3c17,0xfa) #0:3c17    ld a,(A42F)
+    rom.write_byte(0x3c18,0x2f) #0:3c18
+    rom.write_byte(0x3c19,0xa4) #0:3c19
+    rom.write_byte(0x3c1a,0x67) #0:3c1a    ld h, a
+    rom.write_byte(0x3c1b,0xfa) #0:3c1b    ld a,(A918)
+    rom.write_byte(0x3c1c,0x18) #0:3c1c
+    rom.write_byte(0x3c1d,0xa9) #0:3c1d
+    rom.write_byte(0x3c1e,0x22) #0:3c1e    ldi (hl),a
+    rom.write_byte(0x3c1f,0xfa) #0:3c1f    ld a,(A919)
+    rom.write_byte(0x3c20,0x19) #0:3c20
+    rom.write_byte(0x3c21,0xa9) #0:3c21
+    rom.write_byte(0x3c22,0x22) #0:3c22    ldi (hl),a
+    rom.write_byte(0x3c23,0x7c) #0:3c23    ld a, h
+    rom.write_byte(0x3c24,0xea) #0:3c24    ld (A42F),a
+    rom.write_byte(0x3c25,0x2f) #0:3c25
+    rom.write_byte(0x3c26,0xa4) #0:3c26
+    rom.write_byte(0x3c27,0x7d) #0:3c27    ld a, l
+    rom.write_byte(0x3c28,0xea) #0:3c28    ld (A42E),a
+    rom.write_byte(0x3c29,0x2e) #0:3c29
+    rom.write_byte(0x3c2a,0xa4) #0:3c2a
+    rom.write_byte(0x3c2b,0xfa) #0:3c2b    ld a,(A918)
+    rom.write_byte(0x3c2c,0x18) #0:3c2c
+    rom.write_byte(0x3c2d,0xa9) #0:3c2d
+    rom.write_byte(0x3c2e,0x67) #0:3c2e    ld h, a
+    rom.write_byte(0x3c2f,0xfa) #0:3c2f    ld a,(A919)
+    rom.write_byte(0x3c30,0x19) #0:3c30
+    rom.write_byte(0x3c31,0xa9) #0:3c31
+    rom.write_byte(0x3c32,0x6f) #0:3c32    ld l, a
+    rom.write_byte(0x3c33,0xc3) #0:3c33    jp 1542
+    rom.write_byte(0x3c34,0x42) #0:3c34
+    rom.write_byte(0x3c35,0x15) #0:3c35
 
 def patch_rom(world, rom, player):
 
@@ -760,9 +819,8 @@ def patch_rom(world, rom, player):
     apply_fixes(rom)
     patch_world_enter(rom)
     
-    # TODO: Add option for new feature
-    new_feature(rom)
-    
+    if world.blocksanity[player]:
+        blocksanity(rom)
     if world.remove_autoscrollers[player]:
         remove_autoscrolling(rom)
     if world.music_shuffle[player]:
