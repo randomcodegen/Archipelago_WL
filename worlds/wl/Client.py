@@ -249,7 +249,6 @@ class WarioLandClient(BizHawkClient):
                                 await bizhawk.write(ctx.bizhawk_ctx,
                                                 [(item_addr, new_value , "System Bus")])
                             else:
-                                logger.info("Emtpy filler item, do nothing.")
                                 pass
                         # Everything else
                         else:

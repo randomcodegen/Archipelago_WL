@@ -89,8 +89,9 @@ class TreasureChecks(Toggle):
 class Blocksanity(Toggle):
     """
     Whether blocks with a face sprite count as checks
-    !Warning! Hitting blocks in quick succession can cause only a single block to register.
     This does include hidden blocks and adds around 550 checks to the game
+    For more info check the Blocksanity Tips in:
+    https://github.com/randomcodegen/Archipelago_WL/blob/wl-dev/worlds/wl/docs/en_Wario_Land.md
     """
     display_name = "Blocksanity"
     default = False
