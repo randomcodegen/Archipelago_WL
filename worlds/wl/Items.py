@@ -14,10 +14,22 @@ class ItemData(typing.NamedTuple):
 class WLItem(Item):
     game: str = "Wario Land"
 
-
 # Uh oh
 junk_table = {
-    ItemName.stinky_1up: ItemData(0xA80900, False),
+    ItemName.stinky_1up:            ItemData(0xA80900, False),
+    ItemName.garlic_breath:         ItemData(0xA80000, False),
+    ItemName.garlic_tea:            ItemData(0xA80001, False),
+    ItemName.garlic_bread:          ItemData(0xA80002, False),
+    ItemName.noxious:               ItemData(0xA80003, False),
+    ItemName.garlic_cheesecake:     ItemData(0xA80004, False),
+    ItemName.garlic_pesto:          ItemData(0xA80005, False),
+    ItemName.garlic_sandwich:       ItemData(0xA80006, False),
+    ItemName.garlic_burger:         ItemData(0xA80007, False),
+    ItemName.garlic_cookie:         ItemData(0xA80008, False),
+    ItemName.garlic_soda:           ItemData(0xA80009, False),
+    ItemName.nothing:               ItemData(0xA800F0, False),
+    ItemName.heart:                 ItemData(0xA80800, False),
+    ItemName.coin:                  ItemData(0xA80700, False),
 }
 
 upgrade_table = {
@@ -62,7 +74,7 @@ trap_table = {
 }
 
 collectable_table = {
-    ItemName.garlic_clove:      ItemData(0xA42800, False, True),
+    ItemName.garlic_clove:      ItemData(0xA42800, True),
 }
 
 #It's "free" real estate

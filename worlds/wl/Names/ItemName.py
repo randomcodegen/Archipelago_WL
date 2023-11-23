@@ -1,8 +1,21 @@
 #Junk Items
-stinky_1up  = "1-Up Garlic"
+stinky_1up          = "Stinky 1-Up"
+garlic_breath       = "Garlic Breath"
+garlic_tea          = "Garlic Tea"
+garlic_bread        = "Garlic Bread"
+garlic_cheesecake   = "Garlic Cheesecake"
+garlic_cookie       = "Garlic Cookie"
+garlic_pesto        = "Garlic Pesto"
+garlic_sandwich     = "Garlic Sandwich"
+garlic_burger       = "Garlic Burger"
+garlic_soda         = "Garlic Soda"
+noxious             = "Noxious Fart"
+nothing             = "Nothing"
+heart               = "Heart"
+coin                = "Coin"
 
 #Collectables
-garlic_clove = "Garlic Clove"
+garlic_clove        = "Garlic Clove"
 
 #Abilities
 wario_garlic        = "Garlic"

@@ -26,9 +26,10 @@ from worlds._bizhawk.client import BizHawkClient
 import time
 from worlds.wl.Locations import checkable_locations, boss_location_dict
 from worlds.wl.Blocks import block_info_dict
-from worlds.wl.Items import lookup_trapid_to_name,lookup_eventid_to_name
+from worlds.wl.Items import lookup_trapid_to_name, lookup_eventid_to_name, lookup_junkid_to_name
 
 powerup_list=[0xA40000,0xA40100,0xA40200,0xA40300,0xA41100]
+active_junk = [0xA80900, 0xA80800, 0xA80700]
 
 if TYPE_CHECKING:
     from worlds._bizhawk.context import BizHawkClientContext
@@ -230,20 +231,32 @@ class WarioLandClient(BizHawkClient):
                         # Traps
                         if item.item in lookup_trapid_to_name:
                             ctx.trap_queue.append(item)
+                        # Junk
+                        elif item.item in lookup_junkid_to_name:
+                            if item.item in active_junk:
+                                # Lives and Hearts and Coins
+                                item_addr=item.item>>8
+                                read_result= await bizhawk.read(ctx.bizhawk_ctx,
+                                                        [(item_addr, 1, "System Bus")])
+                                new_value=(read_result[0][0]+1).to_bytes(1, 'little')
+                                if (read_result[0][0]) & 0xF == 9:
+                                    if (read_result[0][0]) == 0x99:
+                                        #if 0x99, do nothing
+                                        new_value=read_result[0][0]
+                                    else:
+                                        # Since the game directly displays hex values for lives we need to skip over A-F
+                                        new_value=(read_result[0][0]+7).to_bytes(1, 'little')
+                                await bizhawk.write(ctx.bizhawk_ctx,
+                                                [(item_addr, new_value , "System Bus")])
+                            else:
+                                logger.info("Emtpy filler item, do nothing.")
+                                pass
                         # Everything else
                         else:
                             item_addr=item.item>>8
                             read_result= await bizhawk.read(ctx.bizhawk_ctx,
                                                             [(item_addr, 1, "System Bus")])
-                            if item.item==0xA80900 and (read_result[0][0]) & 0xF == 9:
-                                if (read_result[0][0]) == 0x99:
-                                    #if 0x99, do nothing
-                                    new_value=read_result[0][0]
-                                else:
-                                    # Since the game directly displays hex values for lives we need to skip over A-F
-                                    new_value=(read_result[0][0]+7).to_bytes(1, 'little')
-                            else:
-                                new_value=(read_result[0][0]+1).to_bytes(1, 'little')
+                            new_value=(read_result[0][0]+1).to_bytes(1, 'little')
                             await bizhawk.write(ctx.bizhawk_ctx,
                                                 [(item_addr, new_value , "System Bus")])
                             if item.item in powerup_list:

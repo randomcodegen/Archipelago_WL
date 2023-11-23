@@ -6,7 +6,7 @@ import threading
 import random
 
 from BaseClasses import Item, MultiWorld, Tutorial, ItemClassification
-from .Items import WLItem, ItemData, item_table
+from .Items import WLItem, ItemData, item_table, junk_table
 from .Locations import WLLocation, all_locations, setup_locations
 from .Options import wl_options
 from .Regions import create_regions, connect_regions
@@ -136,7 +136,7 @@ class WLWorld(World):
                 list_pick=world_unlocks.pop()
                 start_inventory[list_pick] = 1
                 self.multiworld.push_precollected(list_pick)
-            # If there is only one player, a specific world unlock is forced for seed gen
+            # If there is only one player and one multiworld, a specific world unlock is forced for seed gen.
             # This is due to the fact that very few levels are accessable without items at the start
             else:
                 # Parlsey Woods should be enough
@@ -187,7 +187,10 @@ class WLWorld(World):
 
         itempool += trap_pool
 
-        itempool += [self.create_item(ItemName.stinky_1up) for _ in range(junk_count)]
+        junk_list=list(junk_table.keys())
+        for _ in range(junk_count):
+            junk_item = self.multiworld.random.choice(junk_list)
+            itempool.append(self.create_item(junk_item))
 
         boss_location_names = [LocationName.ricebeach_boss, LocationName.mtteapot_boss, LocationName.sherbetland_boss,
                                LocationName.stovecanyon_boss, LocationName.ssteacup_boss, LocationName.parsleywoods_boss]
@@ -293,7 +296,7 @@ class WLWorld(World):
         return created_item
 
     def get_filler_item_name(self) -> str:
-        return ItemName.stinky_1up
+        self.multiworld.random.choice(junk_table)
 
     def set_rules(self):
         set_rules(self.multiworld, self.player)
