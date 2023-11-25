@@ -1,0 +1,10560 @@
+{
+	"name": "Rice Beach 01 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 15",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 15",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 16",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 16",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 17",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 17",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 01 - Block 18",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 18",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.01",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 15",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 15",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 16",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 16",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 17",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 17",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 18",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 18",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 19",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 19",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 02 - Block 20",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 20",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.02",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 03 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.03",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 03 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.03",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 03 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.03",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 03 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.03",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 03 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.03",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 03 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.03",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 03 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.03",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 03 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.03",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 03 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.03",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 03 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.03",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 03 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.03",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 03 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.03",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 03 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.03",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 03 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.03",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 03 - Block 15",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 15",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.03",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 04 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.04",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 04 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.04",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 04 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.04",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 04 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.04",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 04 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.04",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 04 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.04",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 05 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.05",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 05 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.05",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 05 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.05",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 05 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.05",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 05 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.05",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 05 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.05",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 06 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.06",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 06 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.06",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 06 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.06",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 06 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.06",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 06 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.06",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 06 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.06",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 06 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.06",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Rice Beach 06 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.06",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 15",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 15",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 16",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 16",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 17",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 17",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 18",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 18",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 19",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 19",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 20",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 20",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 21",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 21",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 22",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 22",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 23",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 23",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 24",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 24",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 25",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 25",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 26",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 26",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 07 - Block 27",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 27",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.07",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 15",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 15",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 16",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 16",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 17",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 17",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 18",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 18",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 19",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 19",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 20",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 20",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 21",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 21",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 08 - Block 22",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 22",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.08",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 09 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.09",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 09 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.09",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 09 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.09",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 09 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.09",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 09 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.09",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 09 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.09",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 09 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.09",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 09 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.09",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 09 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.09",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 09 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.09",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 09 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.09",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 09 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.09",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 09 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.09",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 09 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.09",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 09 - Block 15",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 15",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.09",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 15",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 15",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 16",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 16",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 17",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 17",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 18",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 18",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 19",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 19",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 20",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 20",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 21",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 21",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 10 - Block 22",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 22",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.10",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 15",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 15",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 16",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 16",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 17",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 17",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 11 - Block 18",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 18",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.11",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 12 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.12",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 12 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.12",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 12 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.12",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 12 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.12",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 12 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.12",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 12 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.12",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 12 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.12",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 12 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.12",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 15",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 15",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 16",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 16",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 17",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 17",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 18",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 18",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 19",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 19",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 20",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 20",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Mt. Teapot 13 - Block 21",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 21",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.13",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 14 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.14",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 14 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.14",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 14 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.14",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 14 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.14",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 14 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.14",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 14 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.14",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 14 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.14",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 15 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.15",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 15 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.15",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 15 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.15",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 15 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.15",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 15 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.15",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 15 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.15",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 15 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.15",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 15 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.15",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 15 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.15",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 15 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.15",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 15 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.15",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 15 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.15",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 15 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.15",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 16 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.16",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 16 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.16",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 16 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.16",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 16 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.16",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 16 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.16",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 16 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.16",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 16 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.16",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 16 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.16",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 15",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 15",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 16",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 16",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 17",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 17",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 17 - Block 18",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 18",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.17",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 18 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.18",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 18 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.18",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 18 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.18",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 18 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.18",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 18 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.18",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 18 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.18",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 18 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.18",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 18 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.18",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 18 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.18",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 19 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.19",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 19 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.19",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 19 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.19",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 19 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.19",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 19 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.19",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 19 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.19",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 19 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.19",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 19 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.19",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 19 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.19",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 19 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.19",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 19 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.19",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 19 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.19",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 19 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.19",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Sherbet Land 19 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.19",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 20 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.20",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 20 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.20",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 20 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.20",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 20 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.20",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 20 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.20",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 20 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.20",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 20 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.20",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 20 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.20",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 20 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.20",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 20 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.20",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 20 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.20",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 21 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.21",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 21 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.21",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 21 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.21",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 21 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.21",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 21 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.21",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 21 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.21",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 21 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.21",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 22 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.22",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 22 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.22",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 22 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.22",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 22 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.22",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 22 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.22",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 22 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.22",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 22 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.22",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 23 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.23",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 23 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.23",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 23 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.23",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 23 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.23",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 23 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.23",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 23 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.23",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 23 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.23",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 23 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.23",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 24 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.24",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 24 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.24",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 24 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.24",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 24 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.24",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 24 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.24",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 24 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.24",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 24 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.24",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 24 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.24",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 25 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.25",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 25 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.25",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 25 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.25",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 25 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.25",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 25 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.25",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 25 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.25",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Stove Canyon 25 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.25",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 26 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.26",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 26 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.26",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 26 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.26",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 26 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.26",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 26 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.26",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 26 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.26",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 26 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.26",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 26 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.26",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 26 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.26",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 26 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.26",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 26 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.26",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 15",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 15",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 16",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 16",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 17",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 17",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 18",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 18",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 19",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 19",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 20",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 20",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 21",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 21",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 22",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 22",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 23",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 23",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 24",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 24",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 27 - Block 25",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 25",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.27",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 28 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.28",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 28 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.28",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 28 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.28",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 28 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.28",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 28 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.28",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 28 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.28",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 28 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.28",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 28 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.28",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 28 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.28",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 28 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.28",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 29 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.29",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 29 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.29",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 29 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.29",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 29 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.29",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 29 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.29",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 29 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.29",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 29 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.29",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 29 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.29",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 29 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.29",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 29 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.29",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 29 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.29",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 15",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 15",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 16",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 16",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 17",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 17",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 18",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 18",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 19",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 19",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 20",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 20",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 21",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 21",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 22",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 22",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "SS Tea Cup 30 - Block 23",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 23",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.30",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 1 (drained)",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1 (drained)",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 2 (drained)",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2 (drained)",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 3 (drained)",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3 (drained)",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 4 (drained)",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4 (drained)",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 5 (drained)",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5 (drained)",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 6 (drained)",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6 (drained)",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 7 (drained)",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7 (drained)",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 8 (drained)",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8 (drained)",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 9 (drained)",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9 (drained)",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 10 (drained)",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10 (drained)",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 11 (drained)",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11 (drained)",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 12 (drained)",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12 (drained)",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 31 - Block 13 (drained)",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13 (drained)",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.31",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 32 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.32",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 32 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.32",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 32 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.32",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 32 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.32",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 33 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.33",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 33 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.33",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 33 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.33",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 33 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.33",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 33 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.33",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 33 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.33",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 33 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.33",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 33 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.33",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 33 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.33",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 33 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.33",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 34 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.34",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 34 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.34",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 34 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.34",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 34 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.34",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 34 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.34",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 34 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.34",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 34 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.34",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 34 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.34",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 34 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.34",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 34 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.34",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 34 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.34",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 34 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.34",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 35 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.35",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 35 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.35",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 35 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.35",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 35 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.35",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 35 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.35",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 36 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.36",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 36 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.36",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 36 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.36",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 36 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.36",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 36 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.36",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 36 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.36",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 36 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.36",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 36 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.36",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Parsley Woods 36 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.36",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 15",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 15",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 16",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 16",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 17",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 17",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 18",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 18",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 19",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 19",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 20",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 20",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 37 - Block 21",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 21",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.37",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 38 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.38",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 38 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.38",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 38 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.38",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 38 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.38",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 38 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.38",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 38 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.38",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 38 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.38",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 38 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.38",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 38 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.38",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 39 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.39",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 39 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.39",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 39 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.39",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 39 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.39",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 39 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.39",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 39 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.39",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 39 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.39",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 39 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.39",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 39 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.39",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 39 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.39",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 1",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 1",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 2",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 2",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 3",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 3",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 4",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 4",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 5",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 5",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 6",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 6",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 7",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 7",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 8",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 8",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 9",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 9",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 10",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 10",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 11",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 11",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 12",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 12",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 13",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 13",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 14",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 14",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 15",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 15",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 16",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 16",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 17",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 17",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},
+{
+	"name": "Syrup Castle 40 - Block 18",
+	"access_rules": [],
+	"visibility_rules": [],
+	"sections": [
+		{
+			"name": "Block 18",
+			"chest_unopened_img": "images/checks/block.png",
+			"chest_opened_img": "images/checks/block_hit.png",
+			"item_count": 1
+		}
+	],
+	"map_locations": [
+		{
+			"map": "Course No.40",
+			"x": ,
+			"y": ,
+		}
+	]
+},

@@ -750,6 +750,7 @@ syrupcastle_39_block7 = "Syrup Castle 39 - Block 7"
 syrupcastle_39_block8 = "Syrup Castle 39 - Block 8"
 syrupcastle_39_block9 = "Syrup Castle 39 - Block 9"
 syrupcastle_39_block10 = "Syrup Castle 39 - Block 10"
+syrupcastle_39_block11 = "Syrup Castle 39 - Block 11"
 
 syrupcastle_40_block1 = "Syrup Castle 40 - Block 1"
 syrupcastle_40_block2 = "Syrup Castle 40 - Block 2"

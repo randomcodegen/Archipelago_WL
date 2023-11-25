@@ -1,7 +1,7 @@
 import typing
 
 from BaseClasses import MultiWorld, Region, Entrance, CollectionState
-from .Locations import WLLocation,checkable_locations,block_location_table
+from .Locations import WLLocation,checkable_locations,level_location_table
 from .Levels import level_info_dict
 from .Names import LocationName, ItemName
 from .Blocks import block_info_dict
@@ -887,11 +887,11 @@ def create_regions(world, player: int, active_locations):
                                         lambda state: can_hit_elevated_groundblock(player, state))
         add_rule(world.get_location(LocationName.syrupcastle_39_block5, player),
                                         lambda state: can_bull(player, state) or (can_dragon(player, state) and can_duck(player, state)))
-        add_rule(world.get_location(LocationName.syrupcastle_39_block8, player),
-                                        lambda state: can_bull(player, state))
         add_rule(world.get_location(LocationName.syrupcastle_39_block9, player),
                                         lambda state: can_bull(player, state))
         add_rule(world.get_location(LocationName.syrupcastle_39_block10, player),
+                                        lambda state: can_bull(player, state))
+        add_rule(world.get_location(LocationName.syrupcastle_39_block11, player),
                                         lambda state: can_bull(player, state) and can_dash(player, state))
         add_rule(world.get_location(LocationName.syrupcastle_40_block7, player),
                                         lambda state: can_dragon(player, state) or (can_bull(player, state) and can_dash(player, state)))
@@ -981,7 +981,7 @@ def create_regions(world, player: int, active_locations):
                             lambda state: state.has(ItemName.parsleywoods_bossunlock, player))
             #add_rule(world.get_location(LocationName.syrupcastle_boss, player),
             #         lambda state: state.has(ItemName.syrupcastle_bossunlock, player))
-
+          
 def connect_regions(world, player, level_to_tile_dict):
         names: typing.Dict[str, int] = {}
 
