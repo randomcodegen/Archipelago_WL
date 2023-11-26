@@ -687,6 +687,12 @@ checkable_locations = {
     **treasure_location_table,
 }
 
+unlock_locations = {
+    **level_location_table,
+    **treasure_location_table,
+    **block_location_table,
+}
+
 location_table = {}
 
 

@@ -1,7 +1,7 @@
 import typing
 
 from BaseClasses import MultiWorld, Region, Entrance, CollectionState
-from .Locations import WLLocation,checkable_locations,level_location_table
+from .Locations import WLLocation,unlock_locations,level_location_table
 from .Levels import level_info_dict
 from .Names import LocationName, ItemName
 from .Blocks import block_info_dict
@@ -939,8 +939,10 @@ def create_regions(world, player: int, active_locations):
 
     # Block world/boss entry if option is active
     if world.world_unlocks[player]==1:
-            for location in checkable_locations:
+            for location in unlock_locations:
                     if world.treasure_checks[player]==0 and "Treasure" in location:
+                          pass
+                    elif world.blocksanity[player]==0 and "Block" in location:
                           pass
                     elif "Rice Beach" in location:
                             add_rule(world.get_location(location, player),
