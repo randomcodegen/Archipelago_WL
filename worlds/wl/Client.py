@@ -86,6 +86,7 @@ class WarioLandClient(BizHawkClient):
         ctx.data_present=False
         ctx.game_clear=False
         ctx.last_block_read=0xA430
+        ctx.syrup_open=False
 
         return True
 
@@ -356,7 +357,12 @@ class WarioLandClient(BizHawkClient):
                                         [(0xA4FB, ctx.traps_activated.to_bytes(2, 'little') , "System Bus")])
                     await bizhawk.write(ctx.bizhawk_ctx,
                                         [(0xA4FA, b'\x01' , "System Bus")])
-                
+                # Handle 0 bosses required
+                if not ctx.syrup_open and ctx.slot_data['bosses_required']==0:
+                    # We received the required ammount of boss tokens to fight the final boss
+                    await bizhawk.write(ctx.bizhawk_ctx,
+                                        [(0xA427, b'\x01' , "System Bus")])
+                    ctx.syrup_open = True          
                 # Desync
                 if len(ctx.items_received)<local_received:
                     #logger.info("Detected Desync. Fix applied.")

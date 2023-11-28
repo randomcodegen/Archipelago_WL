@@ -1173,7 +1173,6 @@ def create_region(world: MultiWorld, player: int, active_locations, name: str, l
             if loc_id:
                 location = WLLocation(player, locationName, loc_id, ret)
                 ret.locations.append(location)
-
     return ret
 
 def add_location_to_region(world: MultiWorld, player: int, active_locations, region_name: str, location_name: str,
