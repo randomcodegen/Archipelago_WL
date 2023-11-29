@@ -461,7 +461,7 @@ def create_regions(world, player: int, active_locations):
         add_rule(world.get_location(LocationName.mtteapot_7_block24, player),
                                         lambda state: can_jet(player, state) or (can_climb(player, state) and can_dragon(player, state)))
         add_rule(world.get_location(LocationName.mtteapot_8_block22, player),
-                                        lambda state: can_hit_elevated_groundblock(player, state))
+                                        lambda state: (can_jet(player, state) or can_dragon(player, state) or can_dash(player, state)))
         add_rule(world.get_location(LocationName.mtteapot_9_block6, player),
                                         lambda state: can_climb(player, state) or can_jet(player, state))
         add_rule(world.get_location(LocationName.mtteapot_9_block7, player),
@@ -570,6 +570,8 @@ def create_regions(world, player: int, active_locations):
         add_rule(world.get_location(LocationName.mtteapot_13_block21, player),
                                         lambda state: (state.can_reach(LocationName.mtteapot_12_exit_1, "", player) and can_climb(player, state)
                                                        and can_hit_groundblock(player, state)))
+        
+        # Sherbet Land Blocks
         add_rule(world.get_location(LocationName.sherbetland_15_block1, player),
                                         lambda state: can_climb(player, state))
         add_rule(world.get_location(LocationName.sherbetland_15_block2, player),
@@ -660,6 +662,7 @@ def create_regions(world, player: int, active_locations):
         add_rule(world.get_location(LocationName.sherbetland_19_block14, player),
                                         lambda state: can_climb(player, state))
         
+        # Stove Canyon Blocks
         add_rule(world.get_location(LocationName.stovecanyon_20_block2, player),
                                         lambda state: can_climb(player, state) or can_jet(player, state))
         add_rule(world.get_location(LocationName.stovecanyon_20_block3, player),
@@ -714,6 +717,8 @@ def create_regions(world, player: int, active_locations):
                                         lambda state: can_climb(player, state) or can_jet(player, state))
         add_rule(world.get_location(LocationName.stovecanyon_24_block8, player),
                                         lambda state: can_climb(player, state) or can_jet(player, state))
+        
+        # SS Teacup Blocks
         add_rule(world.get_location(LocationName.ssteacup_26_block8, player),
                                         lambda state: can_climb(player, state))
         add_rule(world.get_location(LocationName.ssteacup_26_block9, player),
@@ -815,6 +820,8 @@ def create_regions(world, player: int, active_locations):
                                         lambda state: can_climb(player, state))
         add_rule(world.get_location(LocationName.ssteacup_30_block23, player),
                                         lambda state: can_climb(player, state))
+        
+        # Parsley Woods Blocks
         add_rule(world.get_location(LocationName.parsleywoods_31_drained_block2, player),
                                         lambda state: can_hit_elevated_groundblock(player, state))
         add_rule(world.get_location(LocationName.parsleywoods_31_drained_block3, player),
@@ -867,6 +874,8 @@ def create_regions(world, player: int, active_locations):
                                         lambda state: can_climb(player, state))
         add_rule(world.get_location(LocationName.parsleywoods_34_block12, player),
                                         lambda state: can_climb(player, state))
+        
+        # Syrup Castle Blocks
         add_rule(world.get_location(LocationName.syrupcastle_37_block20, player),
                                         lambda state: can_grow(player, state))
         add_rule(world.get_location(LocationName.syrupcastle_38_block4, player),
@@ -937,65 +946,27 @@ def create_regions(world, player: int, active_locations):
         add_location_to_region(world, player, active_locations, LocationName.syrupcastle_39_region, LocationName.syrupcastle_39_treasure,
                                lambda state: (can_dash(player, state) and can_duck(player, state) and can_bull(player, state)))
 
-    # Block world/boss entry if option is active
-    if world.world_unlocks[player]==1:
-            for location in unlock_locations:
-                    if world.treasure_checks[player]==0 and "Treasure" in location:
-                          pass
-                    elif world.blocksanity[player]==0 and "Block" in location:
-                          pass
-                    elif "Rice Beach" in location:
-                            add_rule(world.get_location(location, player),
-                                            lambda state: state.has(ItemName.ricebeach, player))
-                    elif "Mt. Teapot" in location:
-                            add_rule(world.get_location(location, player),
-                                            lambda state: state.has(ItemName.mtteapot, player))
-                    elif "Sherbet Land" in location:
-                            add_rule(world.get_location(location, player),
-                                            lambda state: state.has(ItemName.sherbetland, player))
-                    elif "Stove Canyon" in location:
-                            add_rule(world.get_location(location, player),
-                                            lambda state: state.has(ItemName.stovecanyon, player))
-                    elif "SS Tea Cup" in location:
-                            add_rule(world.get_location(location, player),
-                                            lambda state: state.has(ItemName.ssteacup, player))
-                    elif "Parsley Woods" in location:
-                            add_rule(world.get_location(location, player),
-                                            lambda state: state.has(ItemName.parsleywoods, player))
-                    elif "Syrup Castle" in location:
-                            if location == LocationName.syrupcastle_boss and world.goal[player] == "garlic_hunt":
-                                  pass
-                            else:
-                                add_rule(world.get_location(location, player),
-                                            lambda state: state.has(ItemName.syrupcastle, player))
-    if world.boss_unlocks[player]==1:
-            add_rule(world.get_location(LocationName.ricebeach_boss, player),
-                            lambda state: state.has(ItemName.ricebeach_bossunlock, player))
-            add_rule(world.get_location(LocationName.mtteapot_boss, player),
-                            lambda state: state.has(ItemName.mtteapot_bossunlock, player))
-            add_rule(world.get_location(LocationName.sherbetland_boss, player),
-                            lambda state: state.has(ItemName.sherbetland_bossunlock, player))
-            add_rule(world.get_location(LocationName.stovecanyon_boss, player),
-                            lambda state: state.has(ItemName.stovecanyon_bossunlock, player))
-            add_rule(world.get_location(LocationName.ssteacup_boss, player),
-                            lambda state: state.has(ItemName.ssteacup_bossunlock, player))
-            add_rule(world.get_location(LocationName.parsleywoods_boss, player),
-                            lambda state: state.has(ItemName.parsleywoods_bossunlock, player))
-            #add_rule(world.get_location(LocationName.syrupcastle_boss, player),
-            #         lambda state: state.has(ItemName.syrupcastle_bossunlock, player))
-          
 def connect_regions(world, player, level_to_tile_dict):
         names: typing.Dict[str, int] = {}
+        connect(world, player, names, LocationName.menu_region, LocationName.overworld_region)
 
         #Overworld -> World
-        connect(world, player, names, LocationName.menu_region, LocationName.overworld_region)
-        connect(world, player, names, LocationName.overworld_region, LocationName.ricebeach_region)
-        connect(world, player, names, LocationName.overworld_region, LocationName.mtteapot_region)
-        connect(world, player, names, LocationName.overworld_region, LocationName.sherbetland_region)
-        connect(world, player, names, LocationName.overworld_region, LocationName.stovecanyon_region)
-        connect(world, player, names, LocationName.overworld_region, LocationName.ssteacup_region)
-        connect(world, player, names, LocationName.overworld_region, LocationName.parsleywoods_region)
-        connect(world, player, names, LocationName.overworld_region, LocationName.syrupcastle_region)
+        if world.world_unlocks[player]==1:
+                connect(world, player, names, LocationName.overworld_region, LocationName.ricebeach_region, lambda state: state.has(ItemName.ricebeach, player))
+                connect(world, player, names, LocationName.overworld_region, LocationName.mtteapot_region, lambda state: state.has(ItemName.mtteapot, player))
+                connect(world, player, names, LocationName.overworld_region, LocationName.sherbetland_region, lambda state: state.has(ItemName.sherbetland, player))
+                connect(world, player, names, LocationName.overworld_region, LocationName.stovecanyon_region, lambda state: state.has(ItemName.stovecanyon, player))
+                connect(world, player, names, LocationName.overworld_region, LocationName.ssteacup_region, lambda state: state.has(ItemName.ssteacup, player))
+                connect(world, player, names, LocationName.overworld_region, LocationName.parsleywoods_region, lambda state: state.has(ItemName.parsleywoods, player))
+                connect(world, player, names, LocationName.overworld_region, LocationName.syrupcastle_region, lambda state: state.has(ItemName.syrupcastle, player))              
+        else:
+                connect(world, player, names, LocationName.overworld_region, LocationName.ricebeach_region)
+                connect(world, player, names, LocationName.overworld_region, LocationName.mtteapot_region)
+                connect(world, player, names, LocationName.overworld_region, LocationName.sherbetland_region)
+                connect(world, player, names, LocationName.overworld_region, LocationName.stovecanyon_region)
+                connect(world, player, names, LocationName.overworld_region, LocationName.ssteacup_region)
+                connect(world, player, names, LocationName.overworld_region, LocationName.parsleywoods_region)
+                connect(world, player, names, LocationName.overworld_region, LocationName.syrupcastle_region)
         
         # Level -> Level Exit
         connect(world, player, names, LocationName.ricebeach_1_region, LocationName.ricebeach_1_exit_1)
@@ -1091,11 +1062,27 @@ def connect_regions(world, player, level_to_tile_dict):
                 lambda state : (can_defeat_final_boss(player, state, world)))
         
         #Connect Worlds -> Tiles for openworld
+        if world.boss_unlocks[player]==1:
+                connect(world, player, names, LocationName.ricebeach_region, LocationName.ricebeach_5_tile, lambda state: state.has(ItemName.ricebeach_bossunlock, player))
+                connect(world, player, names, LocationName.mtteapot_region, LocationName.mtteapot_13_tile, lambda state: state.has(ItemName.mtteapot_bossunlock, player))
+                connect(world, player, names, LocationName.sherbetland_region, LocationName.sherbetland_19_tile, lambda state: state.has(ItemName.sherbetland_bossunlock, player))
+                connect(world, player, names, LocationName.stovecanyon_region, LocationName.stovecanyon_25_tile,  lambda state: state.has(ItemName.stovecanyon_bossunlock, player))
+                connect(world, player, names, LocationName.ssteacup_region, LocationName.ssteacup_30_tile,  lambda state: state.has(ItemName.ssteacup_bossunlock, player))
+                connect(world, player, names, LocationName.parsleywoods_region, LocationName.parsleywoods_36_tile,  lambda state: state.has(ItemName.parsleywoods_bossunlock, player))
+        else:
+                connect(world, player, names, LocationName.ricebeach_region, LocationName.ricebeach_5_tile)
+                connect(world, player, names, LocationName.mtteapot_region, LocationName.mtteapot_13_tile)
+                connect(world, player, names, LocationName.sherbetland_region, LocationName.sherbetland_19_tile)
+                connect(world, player, names, LocationName.stovecanyon_region, LocationName.stovecanyon_25_tile)
+                connect(world, player, names, LocationName.ssteacup_region, LocationName.ssteacup_30_tile)
+                connect(world, player, names, LocationName.parsleywoods_region, LocationName.parsleywoods_36_tile)
+        
         connect(world, player, names, LocationName.ricebeach_region, LocationName.ricebeach_1_tile)
         connect(world, player, names, LocationName.ricebeach_region, LocationName.ricebeach_2_tile)
         connect(world, player, names, LocationName.ricebeach_region, LocationName.ricebeach_3_tile)
         connect(world, player, names, LocationName.ricebeach_region, LocationName.ricebeach_4_tile)
-        connect(world, player, names, LocationName.ricebeach_region, LocationName.ricebeach_5_tile)
+
+        
         connect(world, player, names, LocationName.ricebeach_region, LocationName.ricebeach_6_tile)
         connect(world, player, names, LocationName.mtteapot_region, LocationName.mtteapot_7_tile)
         connect(world, player, names, LocationName.mtteapot_region, LocationName.mtteapot_8_tile)
@@ -1103,34 +1090,35 @@ def connect_regions(world, player, level_to_tile_dict):
         connect(world, player, names, LocationName.mtteapot_region, LocationName.mtteapot_10_tile)
         connect(world, player, names, LocationName.mtteapot_region, LocationName.mtteapot_11_tile)
         connect(world, player, names, LocationName.mtteapot_region, LocationName.mtteapot_12_tile)
-        connect(world, player, names, LocationName.mtteapot_region, LocationName.mtteapot_13_tile)
+        
         connect(world, player, names, LocationName.sherbetland_region, LocationName.sherbetland_14_tile)
         connect(world, player, names, LocationName.sherbetland_region, LocationName.sherbetland_15_tile)
         connect(world, player, names, LocationName.sherbetland_region, LocationName.sherbetland_16_tile)
         connect(world, player, names, LocationName.sherbetland_region, LocationName.sherbetland_17_tile)
         connect(world, player, names, LocationName.sherbetland_region, LocationName.sherbetland_18_tile)
-        connect(world, player, names, LocationName.sherbetland_region, LocationName.sherbetland_19_tile)
+        
         connect(world, player, names, LocationName.stovecanyon_region, LocationName.stovecanyon_20_tile)
         connect(world, player, names, LocationName.stovecanyon_region, LocationName.stovecanyon_21_tile)
         connect(world, player, names, LocationName.stovecanyon_region, LocationName.stovecanyon_22_tile)
         connect(world, player, names, LocationName.stovecanyon_region, LocationName.stovecanyon_23_tile)
         connect(world, player, names, LocationName.stovecanyon_region, LocationName.stovecanyon_24_tile)
-        connect(world, player, names, LocationName.stovecanyon_region, LocationName.stovecanyon_25_tile)
+        
         connect(world, player, names, LocationName.ssteacup_region, LocationName.ssteacup_26_tile)
         connect(world, player, names, LocationName.ssteacup_region, LocationName.ssteacup_27_tile)
         connect(world, player, names, LocationName.ssteacup_region, LocationName.ssteacup_28_tile)
         connect(world, player, names, LocationName.ssteacup_region, LocationName.ssteacup_29_tile)
-        connect(world, player, names, LocationName.ssteacup_region, LocationName.ssteacup_30_tile)
+        
         connect(world, player, names, LocationName.parsleywoods_region, LocationName.parsleywoods_31_tile)
         connect(world, player, names, LocationName.parsleywoods_region, LocationName.parsleywoods_32_tile)
         connect(world, player, names, LocationName.parsleywoods_region, LocationName.parsleywoods_33_tile)
         connect(world, player, names, LocationName.parsleywoods_region, LocationName.parsleywoods_34_tile)
         connect(world, player, names, LocationName.parsleywoods_region, LocationName.parsleywoods_35_tile)
-        connect(world, player, names, LocationName.parsleywoods_region, LocationName.parsleywoods_36_tile)
+        
         connect(world, player, names, LocationName.syrupcastle_region, LocationName.syrupcastle_37_tile)
         connect(world, player, names, LocationName.syrupcastle_region, LocationName.syrupcastle_38_tile)
         connect(world, player, names, LocationName.syrupcastle_region, LocationName.syrupcastle_39_tile)
-        connect(world, player, names, LocationName.syrupcastle_region, LocationName.syrupcastle_40_tile)
+        # Syrup Castle boss is always locked by boss tokens
+        connect(world, player, names, LocationName.syrupcastle_region, LocationName.syrupcastle_40_tile, lambda state : (can_defeat_final_boss(player, state, world)))
 
 
         # Connect levels to each other
