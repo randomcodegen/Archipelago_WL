@@ -3,8 +3,8 @@ import os
 import math
 import Utils
 import bsdiff4
-import random
 from worlds.Files import APDeltaPatch
+from BaseClasses import MultiWorld
 
 WORLDHASH = 'd9d957771484ef846d4e8d241f6f2815'
 ROM_PLAYER_LIMIT = 65535
@@ -737,9 +737,7 @@ def custom_level_table(rom):
     # End of custom level table
 
 # Shuffles the level music in vanilla limitations
-def shuffle_music(rom):
-    level_music=[0x03,0x04,0x09,0x0A,0x0B,0x0E,0x10,0x16,0x17,0x1B,0x1E,0x22,0x27]
-    random.shuffle(level_music)
+def shuffle_music(rom, level_music):
     level_music_addr=[0x33ECD,0x33ED9,0x33EE5,0x33EF1,0x33EFD,0x33F09,0x33F15,0x33F21,0x33F2D,0x33F39,0x33F45,0x33F51,0x33F5D]
     # Second address always + 0x03 away
     for music_offset in level_music_addr:
@@ -824,7 +822,9 @@ def patch_rom(world, rom, player):
     if world.remove_autoscrollers[player]:
         remove_autoscrolling(rom)
     if world.music_shuffle[player]:
-        shuffle_music(rom)
+        level_music=[0x03,0x04,0x09,0x0A,0x0B,0x0E,0x10,0x16,0x17,0x1B,0x1E,0x22,0x27]
+        world.per_slot_randoms[player].shuffle(level_music)
+        shuffle_music(rom, level_music)
 
     # TODO: This patch is not required until level shuffle mode exists
     #custom_level_table(rom)

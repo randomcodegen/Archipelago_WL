@@ -3,7 +3,6 @@ import typing
 import math
 import settings
 import threading
-import random
 
 from BaseClasses import Item, MultiWorld, Tutorial, ItemClassification
 from .Items import WLItem, ItemData, item_table, junk_table
@@ -132,7 +131,7 @@ class WLWorld(World):
             # Player always starts with a random world unlocked if there is more than one player
             # or if Blocksanity is active
             if self.multiworld.players > 1 or self.multiworld.blocksanity[self.player] == 1:
-                random.shuffle(world_unlocks)
+                self.multiworld.random.shuffle(world_unlocks)
                 list_pick=world_unlocks.pop()
                 start_inventory[list_pick] = 1
                 self.multiworld.push_precollected(list_pick)
