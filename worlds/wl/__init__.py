@@ -17,6 +17,7 @@ from .Names import ItemName, LocationName
 from worlds.AutoWorld import WebWorld, World
 from .Rom import Rom, patch_rom, get_base_rom_path, WLDeltaPatch
 #from Utils import visualize_regions
+from Utils import __version__
 from .Client import WarioLandClient
 
 class WLSettings(settings.Group):
@@ -177,7 +178,10 @@ class WLWorld(World):
         else:
             self.multiworld.get_location(LocationName.syrupcastle_boss, self.player).place_locked_item(self.create_item(ItemName.victory))
             totalLocations -= 1
-        
+
+        if __version__!="0.4.4":
+            totalLocations +=1
+
         junk_count = totalLocations - len(itempool)
         trap_weights = []
         trap_weights += ([ItemName.wario_grease_trap] * self.multiworld.grease_trap_weight[self.player].value)
