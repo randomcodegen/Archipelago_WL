@@ -202,7 +202,7 @@ def create_regions(world, player: int, active_locations):
     ssteacup_30_tile = create_region(world, player, active_locations, LocationName.ssteacup_30_tile, None)                                       
     ssteacup_30_region = create_region(world, player, active_locations, LocationName.ssteacup_30_region, None)
     #ssteacup_30_exit_1 = create_region(world, player, active_locations, LocationName.ssteacup_30_exit_1,[LocationName.ssteacup_30_exit_1, LocationName.ssteacup_boss])
-    ssteacup_boss = create_region(world, player, active_locations, LocationName.ssteacup_boss,[LocationName.ssteacup_boss, LocationName.sherbetland_boss_item])
+    ssteacup_boss = create_region(world, player, active_locations, LocationName.ssteacup_boss,[LocationName.ssteacup_boss, LocationName.ssteacup_boss_item])
 
     #Parsley Woods
     parsleywoods_region = create_region(world, player, active_locations, LocationName.parsleywoods_region, None)
