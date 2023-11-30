@@ -386,14 +386,13 @@ class WarioLandClient(BizHawkClient):
                                         [(0xA4FA, b'\x00' , "System Bus")])
                 
                 # Send level id data to tracker
-                # Overworld, can abuse block_levelid here
                 if ctx.event_update and game_mode == 0x01:
                     await ctx.send_msgs([{
                         "cmd": "Set",
                         "key": f"warioland_curlevelid_{ctx.team}_{ctx.slot}",
                         "default": 0,
                         "want_reply": False,
-                        "operations": [{"operation": "replace", "value":ctx.block_level_id}]
+                        "operations": [{"operation": "replace", "value":ctx.cur_level_id}]
                     }])
                     ctx.event_update=False
                 # In map
