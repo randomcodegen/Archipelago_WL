@@ -98,8 +98,7 @@ class WLWorld(World):
         self.topology_present = 0
         connect_regions(self.multiworld, self.player, self.active_level_dict)
 
-        # Subtract 7 boss token locations - 2 mystery locations
-        total_required_locations = len(location_table) - 7 - 2
+        totalLocations = len(location_table.items())
 
         if self.multiworld.progressive_powerup[self.player]:
             itempool += [self.create_item(ItemName.progressive_powerup) for _ in range(4)]
@@ -163,15 +162,23 @@ class WLWorld(World):
                 start_inventory[unlock.name] = 1
                 self.multiworld.push_precollected(unlock)
 
+        boss_location_names = [LocationName.ricebeach_boss, LocationName.mtteapot_boss, LocationName.sherbetland_boss,
+                               LocationName.stovecanyon_boss, LocationName.ssteacup_boss, LocationName.parsleywoods_boss]
+        for location_name in boss_location_names:
+            self.multiworld.get_location(location_name, self.player).place_locked_item(self.create_item(ItemName.boss_token))
+            totalLocations -= 1
+
         if self.multiworld.goal[self.player] == "garlic_hunt":
             itempool += [self.create_item(ItemName.garlic_clove)
                          for _ in range(self.multiworld.number_of_garlic_cloves[self.player])]
             self.multiworld.get_location(LocationName.garlic_goal, self.player).place_locked_item(self.create_item(ItemName.victory))
-            total_required_locations -= 1
+            # garlic goal and removed genie location
+            totalLocations -= 2
         else:
             self.multiworld.get_location(LocationName.syrupcastle_boss, self.player).place_locked_item(self.create_item(ItemName.victory))
-
-        junk_count = total_required_locations - len(itempool)
+            totalLocations -= 1
+        
+        junk_count = totalLocations - len(itempool)
         trap_weights = []
         trap_weights += ([ItemName.wario_grease_trap] * self.multiworld.grease_trap_weight[self.player].value)
         trap_weights += ([ItemName.wario_stun_trap] * self.multiworld.stun_trap_weight[self.player].value)
@@ -192,10 +199,6 @@ class WLWorld(World):
             junk_item = self.multiworld.random.choice(junk_list)
             itempool.append(self.create_item(junk_item))
 
-        boss_location_names = [LocationName.ricebeach_boss, LocationName.mtteapot_boss, LocationName.sherbetland_boss,
-                               LocationName.stovecanyon_boss, LocationName.ssteacup_boss, LocationName.parsleywoods_boss]
-        for location_name in boss_location_names:
-            self.multiworld.get_location(location_name, self.player).place_locked_item(self.create_item(ItemName.boss_token))
         self.multiworld.itempool += itempool
         #visualize_regions(self.multiworld.get_region(LocationName.menu_region, self.player),"WL_Region_out.puml")
 

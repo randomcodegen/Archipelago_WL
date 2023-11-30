@@ -44,7 +44,7 @@ def can_hit_groundblock(player, state: CollectionState) -> bool:
       return (can_jet(player, state) or (can_dragon(player, state) and can_duck(player, state)) or can_dash(player, state))
 
 def can_hit_elevated_groundblock(player, state: CollectionState) -> bool:
-      return (can_jet(player, state) or can_dragon(player, state) or can_bull(player, state) or can_dash(player, state))
+      return (can_jet(player, state) or can_dragon(player, state) or can_dash(player, state))
 
 def can_grow(player, state: CollectionState) -> bool:
       return (can_garlic(player, state) or can_bull(player, state) or can_dragon(player, state) or can_jet(player, state))
@@ -431,11 +431,11 @@ def create_regions(world, player: int, active_locations):
         add_rule(world.get_location(LocationName.ricebeach_2_block2, player),
                                         lambda state: can_hit_groundblock(player, state) or can_dragon(player, state))
         add_rule(world.get_location(LocationName.ricebeach_2_block4, player),
-                                        lambda state: can_hit_elevated_groundblock(player, state))
+                                        lambda state: can_hit_elevated_groundblock(player, state) or can_bull(player, state))
         add_rule(world.get_location(LocationName.ricebeach_2_block5, player),
-                                        lambda state: can_hit_elevated_groundblock(player, state))
+                                        lambda state: can_hit_elevated_groundblock(player, state) or can_bull(player, state))
         add_rule(world.get_location(LocationName.ricebeach_2_block19, player),
-                                        lambda state: can_climb(player, state) or can_hit_elevated_groundblock(player, state))
+                                        lambda state: can_climb(player, state) or can_hit_elevated_groundblock(player, state) or can_bull(player, state))
         add_rule(world.get_location(LocationName.ricebeach_3_block4, player),
                                         lambda state: ( (can_dragon(player, state) and can_duck(player, state)) or can_jet(player, state)))
         add_rule(world.get_location(LocationName.ricebeach_3_block7, player),

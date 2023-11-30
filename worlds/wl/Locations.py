@@ -17,7 +17,7 @@ boss_item_location_table = {
     LocationName.ssteacup_boss_item:    0xA8111B,
     LocationName.stovecanyon_boss_item: 0xA8104B,
     LocationName.parsleywoods_boss_item:0xA8122B,
-    LocationName.syrupcastle_boss_item: 0xA8140B,
+    #LocationName.syrupcastle_boss_item: 0xA8140B,
 }
 
 
@@ -665,9 +665,9 @@ block_location_table = {
     LocationName.syrupcastle_40_block18: 0xA82528,
 }
 
-genie_location_table = {
-    LocationName.genie: 0xA81700,
-}
+#genie_location_table = {
+#    LocationName.genie: 0xA81700,
+#}
 
 garlic_location_table = {
     LocationName.garlic_goal: 0xA41300,
@@ -678,7 +678,7 @@ all_locations = {
     **treasure_location_table,
     #**genie_location_table,
     **block_location_table,
-    **garlic_location_table,
+    #**garlic_location_table,
     **boss_item_location_table,
 }
 
