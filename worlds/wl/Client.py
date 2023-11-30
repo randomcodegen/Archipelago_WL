@@ -396,7 +396,6 @@ class WarioLandClient(BizHawkClient):
                         "operations": [{"operation": "replace", "value":ctx.block_level_id}]
                     }])
                     ctx.event_update=False
-                    logger.info("Game Mode == 1 , Level ID:"+str(hex(ctx.block_level_id)))
                 # In map
                 elif ctx.event_update and game_mode > 2:
                     await ctx.send_msgs([{
@@ -407,7 +406,6 @@ class WarioLandClient(BizHawkClient):
                             "operations": [{"operation": "replace", "value":ctx.cur_level_id}]
                         }])
                     ctx.event_update=False
-                    logger.info("Game Mode > 2 , Level ID:"+str(hex(ctx.cur_level_id)))
                     
             except bizhawk.RequestFailedError:
                 # Exit handler and return to main loop to reconnect
