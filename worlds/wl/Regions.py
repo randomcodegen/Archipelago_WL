@@ -426,8 +426,8 @@ def create_regions(world, player: int, active_locations):
                                                        or (can_bull(player, state) and can_dash(player, state)) 
                                                        or (can_dragon(player, state) and can_duck(player, state)) ))
         add_rule(world.get_location(LocationName.ricebeach_1_block18, player),
-                                        lambda state: can_climb(player, state) and (can_highjump(player, state) and can_grow(player, state)) 
-                                        or state.can_reach(LocationName.ricebeach_boss, "", player) )
+                                        lambda state: can_climb(player, state) and ((can_highjump(player, state) and can_grow(player, state)) 
+                                        or state.can_reach(LocationName.ricebeach_boss, "", player)))
         add_rule(world.get_location(LocationName.ricebeach_2_block2, player),
                                         lambda state: can_hit_groundblock(player, state) or can_dragon(player, state))
         add_rule(world.get_location(LocationName.ricebeach_2_block4, player),
@@ -477,7 +477,7 @@ def create_regions(world, player: int, active_locations):
         add_rule(world.get_location(LocationName.mtteapot_9_block12, player),
                                         lambda state: can_climb(player, state) or can_jet(player, state))
         add_rule(world.get_location(LocationName.mtteapot_9_block13, player),
-                                        lambda state: can_climb(player, state) and can_hit_groundblock(player, state))
+                                        lambda state: (can_climb(player, state) or can_jet(player, state)) and can_hit_groundblock(player, state))
         add_rule(world.get_location(LocationName.mtteapot_9_block14, player),
                                         lambda state: can_climb(player, state) or can_jet(player, state))
         add_rule(world.get_location(LocationName.mtteapot_9_block15, player),
@@ -485,7 +485,7 @@ def create_regions(world, player: int, active_locations):
         add_rule(world.get_location(LocationName.mtteapot_10_block5, player),
                                         lambda state: can_highjump(player, state) or can_jet(player, state))
         add_rule(world.get_location(LocationName.mtteapot_10_block7, player),
-                                        lambda state: can_bull(player, state))
+                                        lambda state: can_bull(player, state) or can_jet(player, state) or can_dragon(player, state))
         add_rule(world.get_location(LocationName.mtteapot_10_block10, player),
                                         lambda state: can_dragon(player, state) or can_jet(player, state))
         add_rule(world.get_location(LocationName.mtteapot_10_block11, player),
