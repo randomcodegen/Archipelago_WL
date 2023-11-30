@@ -204,7 +204,7 @@ class WarioLandClient(BizHawkClient):
 
                 
                 if ctx.slot_data['blocksanity']==1:
-                    if game_mode==3:
+                    if game_mode==3 and demo_mode==1:
                         # Check blocksanity pointer address
                         read_result = await bizhawk.read(ctx.bizhawk_ctx,
                                                          [(0xA42E, 2, "System Bus")])
