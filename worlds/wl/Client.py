@@ -78,18 +78,24 @@ class WarioLandClient(BizHawkClient):
         ctx.items_handling = 0b111
         ctx.want_slot_data = True
         ctx.watcher_timeout = 0.125
+        # Trap vars
         ctx.trap_queue=[]
         ctx.last_trap_time=0
         ctx.traps_activated=0
+        # Status vars
         ctx.refresh_connect=False
         ctx.connected=False
         ctx.data_present=False
         ctx.game_clear=False
-        ctx.last_block_read=0xA430
         ctx.syrup_open=False
-        ctx.block_level_id=0
-        ctx.cur_level_id=0xFF
         ctx.event_update=False
+        ctx.game_mode=0x00
+        ctx.demo_mode=0x00
+        ctx.paused=0x00
+        # Blocksanity vars
+        ctx.last_block_read=0xA430
+        ctx.block_level_id=0
+        ctx.ow_id=0x00
 
         return True
 
@@ -145,7 +151,7 @@ class WarioLandClient(BizHawkClient):
                     for addr in range (0xA413, 0xA421):
                         await bizhawk.write(ctx.bizhawk_ctx,
                                             [(addr, new_value , "System Bus")])
-                # Number of activated traps stored at 0xa4FB 2 bytes
+                # Number of activated traps stored at 0xA4FB 2 bytes
                 read_result = await bizhawk.read(ctx.bizhawk_ctx,
                                                     [(0xA4FB, 2, "System Bus")])
                 ctx.traps_activated = int.from_bytes(read_result[0],"little")
@@ -159,17 +165,19 @@ class WarioLandClient(BizHawkClient):
                 read_result= await bizhawk.read(ctx.bizhawk_ctx,
                                                 [(0xA8C3, 1, "System Bus")])
                 # 0=stopped; 1=overworld; 2=level loading; 3=gameplay; 5=respawn/leave stage; 10=door transition
-                game_mode=read_result[0][0]
-    
+                if read_result[0][0] != ctx.game_mode:
+                    ctx.game_mode=read_result[0][0]
+                    ctx.event_update=True
+
                 read_result= await bizhawk.read(ctx.bizhawk_ctx,
                                                 [(0xA8C6, 1, "System Bus")])
                 # demo mode needs to be 0, otherwise demo is playing
-                demo_mode=read_result[0][0]
+                ctx.demo_mode=read_result[0][0]
     
                 read_result= await bizhawk.read(ctx.bizhawk_ctx,
                                                 [(0xA908, 1, "System Bus")])
                 # 0=unpaused, 1=paused
-                paused=read_result[0][0]
+                ctx.paused=read_result[0][0]
 
                 # Level ID, matches with wl.apworld level IDs if not in overworld
                 read_result = await bizhawk.read(ctx.bizhawk_ctx,
@@ -180,9 +188,9 @@ class WarioLandClient(BizHawkClient):
                 
                 # Current Level ID: changes when new node on subworld is selected
                 read_result = await bizhawk.read(ctx.bizhawk_ctx,
-                                                                [(0xA79E, 1, "System Bus")])
-                if read_result[0][0] != ctx.cur_level_id:
-                    ctx.cur_level_id = read_result[0][0]
+                                                                [(0xA79F, 1, "System Bus")])
+                if read_result[0][0]+0x30 != ctx.ow_id:
+                    ctx.ow_id = read_result[0][0] + 0x30
                     ctx.event_update=True
 
                 # Check Locations for completion
@@ -204,7 +212,7 @@ class WarioLandClient(BizHawkClient):
 
                 
                 if ctx.slot_data['blocksanity']==1:
-                    if game_mode==3 and demo_mode==0:
+                    if ctx.game_mode==3 and ctx.demo_mode==0:
                         # Check blocksanity pointer address
                         read_result = await bizhawk.read(ctx.bizhawk_ctx,
                                                          [(0xA42E, 2, "System Bus")])
@@ -230,7 +238,7 @@ class WarioLandClient(BizHawkClient):
                                     new_checks.append( block_info_dict[block_id].locationID )
                                 ctx.last_block_read=read_addr
                                 read_addr+=2
-                    elif game_mode < 3:
+                    elif ctx.game_mode < 3:
                         #stage over, clear blocksanity data if necessary
                         read_result = await bizhawk.read(ctx.bizhawk_ctx,
                                                          [(0xA42E, 1, "System Bus")])
@@ -340,7 +348,7 @@ class WarioLandClient(BizHawkClient):
 
                 # Handle traps if queue is not empty
                 if len(ctx.trap_queue)>ctx.traps_activated:
-                    if demo_mode==0 and game_mode==3 and paused==0 and time.time()-ctx.last_trap_time>5:
+                    if ctx.demo_mode==0 and ctx.game_mode==3 and ctx.paused==0 and time.time()-ctx.last_trap_time>5:
                         # Grab a trap
                         ctx.last_trap_time=time.time()
                         trap_pick=ctx.trap_queue[-1]
@@ -380,32 +388,31 @@ class WarioLandClient(BizHawkClient):
                     ctx.syrup_open = True          
                 # Desync
                 if len(ctx.items_received)<local_received:
-                    #logger.info("Detected Desync. Fix applied.")
                     # Force resync
                     await bizhawk.write(ctx.bizhawk_ctx,
                                         [(0xA4FA, b'\x00' , "System Bus")])
                 
                 # Send level id data to tracker
-                if ctx.event_update and game_mode == 0x01:
-                    await ctx.send_msgs([{
-                        "cmd": "Set",
-                        "key": f"warioland_curlevelid_{ctx.team}_{ctx.slot}",
-                        "default": 0,
-                        "want_reply": False,
-                        "operations": [{"operation": "replace", "value":ctx.cur_level_id}]
-                    }])
-                    ctx.event_update=False
-                # In map
-                elif ctx.event_update and game_mode > 2:
-                    await ctx.send_msgs([{
+                if ctx.event_update:
+                    # In Map
+                    if ctx.game_mode >= 0x02:
+                        await ctx.send_msgs([{
                             "cmd": "Set",
                             "key": f"warioland_curlevelid_{ctx.team}_{ctx.slot}",
                             "default": 0,
                             "want_reply": False,
-                            "operations": [{"operation": "replace", "value":ctx.cur_level_id}]
+                            "operations": [{"operation": "replace", "value":ctx.block_level_id}]
+                        }])
+                    # In Overworld
+                    else:
+                        await ctx.send_msgs([{
+                            "cmd": "Set",
+                            "key": f"warioland_curlevelid_{ctx.team}_{ctx.slot}",
+                            "default": 0,
+                            "want_reply": False,
+                            "operations": [{"operation": "replace", "value":ctx.ow_id}]
                         }])
                     ctx.event_update=False
-                    
             except bizhawk.RequestFailedError:
                 # Exit handler and return to main loop to reconnect
                 pass
