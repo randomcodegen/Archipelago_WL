@@ -897,11 +897,11 @@ def create_regions(world, player: int, active_locations):
         add_rule(world.get_location(LocationName.syrupcastle_39_block5, player),
                                         lambda state: can_bull(player, state) or (can_dragon(player, state) and can_duck(player, state)))
         add_rule(world.get_location(LocationName.syrupcastle_39_block9, player),
-                                        lambda state: can_bull(player, state))
+                                        lambda state: can_bull(player, state) and can_duck(player, state))
         add_rule(world.get_location(LocationName.syrupcastle_39_block10, player),
-                                        lambda state: can_bull(player, state))
+                                        lambda state: can_bull(player, state) and can_duck(player, state))
         add_rule(world.get_location(LocationName.syrupcastle_39_block11, player),
-                                        lambda state: can_bull(player, state) and can_dash(player, state))
+                                        lambda state: can_bull(player, state) and can_dash(player, state) and can_duck(player, state))
         add_rule(world.get_location(LocationName.syrupcastle_40_block7, player),
                                         lambda state: can_dragon(player, state) or (can_bull(player, state) and can_dash(player, state)))
         add_rule(world.get_location(LocationName.syrupcastle_40_block8, player),
