@@ -48,7 +48,7 @@ EXPECTED_ROM_NAME = "WARIOLANDAP"
 class WarioLandClient(BizHawkClient):
     
     game = "Wario Land"
-    system = "GB"
+    system = ("GB", "SGB")
     #patch_suffix = ".apwl"
 
     def __init__(self) -> None:
