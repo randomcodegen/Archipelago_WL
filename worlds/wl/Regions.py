@@ -2003,7 +2003,11 @@ def create_regions(world, player: int, active_locations):
             LocationName.mtteapot_9_region,
             LocationName.mtteapot_9_treasure,
             lambda state: (
-                can_open_treasure(player, state)
+                (
+                    can_jet(player, state)
+                    or (can_dragon(player, state) and can_duck(player, state))
+                    or can_dash(player, state)
+                )
                 and (can_jet(player, state) or can_climb(player, state))
             ),
         )
