@@ -1023,6 +1023,11 @@ def ExtendedItemHandler(rom):
     rom.write_bytes(0x10B430, bytearray([0xD0, 0xF7, 0xA9, 0x01, 0x8D, 0xB6, 0x14, 0xA9, 0x0A, 0x8D, 0x18, 0x02, 0xA9, 0x16, 0x8D, 0x18]))
     rom.write_bytes(0x10B440, bytearray([0x01, 0xA9, 0x97, 0x8D, 0x53, 0x00, 0x5C, 0x0A, 0xF5, 0x0B, 0xFA, 0x5C, 0x10, 0xF5, 0x0B]))
 
+def PatchBonusRing(rom):
+    rom.write_bytes(0x127CF, bytearray([0x60, 0x04]))       # SBC #$0460 Subtract larger number from ring animation counter each frame
+    rom.write_bytes(0x12815, bytearray([0xA9, 0x00, 0x00])) # LDA #$0000 Force no bonus
+    rom.write_bytes(0x12898, bytearray([0xA9, 0x00, 0x00])) # LDA #$0000 Force no bonus
+    rom.write_bytes(0x12BF0, bytearray([0xA9, 0x90, 0x00])) # LDA #$0090 Speed up timer for yoshi exiting the stage
 
 def patch_rom(world, rom, player: int, multiworld):
     handle_items(rom) #Implement main item functionality
@@ -1166,7 +1171,10 @@ def patch_rom(world, rom, player: int, multiworld):
 
     if world.options.softlock_prevention == 1:
         rom.write_bytes(0x00C18F, bytearray([0x5C, 0x58, 0xFB, 0x0B])) #R + X Code
-
+    
+    if world.options.skip_bonus_ring == 1:
+        PatchBonusRing(rom)
+    
     if world.options.bowser_door_mode.value != 0:
         rom.write_bytes(0x07891F, bytearray(world.castle_door)) #1 Entry
         rom.write_bytes(0x078923, bytearray(world.castle_door)) #2 Entry

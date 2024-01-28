@@ -12,7 +12,7 @@ import settings
 from .Items import get_item_names_per_category, item_table, filler_items, trap_items
 from .Locations import get_locations
 from .Regions import create_regions
-from .Options import YoshisIslandOptions
+from .Options import YoshisIslandOptions, Toggle
 from .setup_game import setup_gamevars
 from .Client import YISNIClient
 from .Rules import set_easy_rules, set_normal_rules, set_hard_rules
@@ -89,7 +89,7 @@ class YIWorld(World):
         if not os.path.exists(rom_file):
             raise FileNotFoundError(rom_file)
 
-    def fill_slot_data(self):
+    def _get_slot_data(self):
         return {
             "world_1": self.world_1_stages,
             "world_2": self.world_2_stages,
@@ -98,6 +98,14 @@ class YIWorld(World):
             "world_5": self.world_5_stages,
             "world_6": self.world_6_stages
         }
+    
+    def fill_slot_data(self) -> dict:
+        slot_data = self._get_slot_data()
+        for option_name in (attr.name for attr in dataclasses.fields(YoshisIslandOptions)
+           if attr not in dataclasses.fields(PerGameCommonOptions)):
+           option = getattr(self.options, option_name)
+           slot_data[option_name] = bool(option.value) if isinstance(option, Toggle) else option.value
+        return slot_data
 
     def write_spoiler_header(self, spoiler_handle: TextIO) -> None:
         spoiler_handle.write(f"Burt The Bashful's Boss Door:      {self.boss_order[0]}\n")

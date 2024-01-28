@@ -52,6 +52,10 @@ class DisableAutoScrollers(Toggle):
     """If enabled, will disable autoscrolling during levels, except during levels which cannot function otherwise."""
     display_name = "Disable Autoscrolling"
 
+class SkipBonusRing(Toggle):
+    """Skips the bonus ring animation at the end of levels and disables the end of level bonuses."""
+    display_name = "Skip Bonus Ring"
+
 class ItemLogic(Toggle):
     """This will enable logic to expect consumables to be used from the inventory in place of some major items.
     Logic will expect you to have access to an Overworld bonus game, or a bandit game to get the necessary items.
@@ -257,6 +261,7 @@ class YoshisIslandOptions(PerGameCommonOptions):
     stage_logic: StageLogic
     item_logic: ItemLogic
     disable_autoscroll: DisableAutoScrollers
+    skip_bonus_ring: SkipBonusRing
     softlock_prevention: SoftlockPrevention
     castle_open_condition: FinalLevelBosses
     castle_clear_condition: FinalBossBosses
