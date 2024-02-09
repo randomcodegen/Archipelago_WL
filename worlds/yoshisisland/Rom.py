@@ -1023,11 +1023,25 @@ def ExtendedItemHandler(rom):
     rom.write_bytes(0x10B430, bytearray([0xD0, 0xF7, 0xA9, 0x01, 0x8D, 0xB6, 0x14, 0xA9, 0x0A, 0x8D, 0x18, 0x02, 0xA9, 0x16, 0x8D, 0x18]))
     rom.write_bytes(0x10B440, bytearray([0x01, 0xA9, 0x97, 0x8D, 0x53, 0x00, 0x5C, 0x0A, 0xF5, 0x0B, 0xFA, 0x5C, 0x10, 0xF5, 0x0B]))
 
-def PatchBonusRing(rom):
+def PatchBonusRing_Normal(rom):
     rom.write_bytes(0x127CF, bytearray([0x60, 0x04]))       # SBC #$0460 Subtract larger number from ring animation counter each frame
     rom.write_bytes(0x12815, bytearray([0xA9, 0x00, 0x00])) # LDA #$0000 Force no bonus
     rom.write_bytes(0x12898, bytearray([0xA9, 0x00, 0x00])) # LDA #$0000 Force no bonus
     rom.write_bytes(0x12BF0, bytearray([0xA9, 0x90, 0x00])) # LDA #$0090 Speed up timer for yoshi exiting the stage
+
+def PatchBonusRing_Fast(rom):
+    rom.write_bytes(0x127CF, bytearray([0x60, 0x04]))       # SBC #$0460 Subtract larger number from ring animation counter each frame
+    rom.write_bytes(0x12815, bytearray([0xA9, 0x00, 0x00])) # LDA #$0000 Force no bonus
+    rom.write_bytes(0x12898, bytearray([0xA9, 0x00, 0x00])) # LDA #$0000 Force no bonus
+    rom.write_bytes(0x12BF0, bytearray([0xA9, 0x00, 0x00])) # LDA #$0000 Remove timer for yoshi exiting the stage
+    rom.write_bytes(0x0B5D4, bytearray([0x20, 0x40, 0xEE])) # JSR $EE40
+    rom.write_bytes(0x0EE40, bytearray([0xEE, 0x57, 0x0B,   # INC $0B57
+                                        0xAD, 0x57, 0x0B,   # LDA $0B57
+                                        0xC9, 0x1B,         # CMP #$1B
+                                        0xD0, 0x05,         # BNE $01EE4F
+                                        0xA9, 0x39,         # LDA #$39
+                                        0x8D, 0x57, 0x0B,   # STA $0B57
+                                        0x60]))             # RTS
 
 def patch_rom(world, rom, player: int, multiworld):
     handle_items(rom) #Implement main item functionality
@@ -1173,7 +1187,9 @@ def patch_rom(world, rom, player: int, multiworld):
         rom.write_bytes(0x00C18F, bytearray([0x5C, 0x58, 0xFB, 0x0B])) #R + X Code
     
     if world.options.skip_bonus_ring == 1:
-        PatchBonusRing(rom)
+        PatchBonusRing_Normal(rom)
+    if world.options.skip_bonus_ring == 2:
+        PatchBonusRing_Fast(rom)
     
     if world.options.bowser_door_mode.value != 0:
         rom.write_bytes(0x07891F, bytearray(world.castle_door)) #1 Entry

@@ -52,9 +52,14 @@ class DisableAutoScrollers(Toggle):
     """If enabled, will disable autoscrolling during levels, except during levels which cannot function otherwise."""
     display_name = "Disable Autoscrolling"
 
-class SkipBonusRing(Toggle):
-    """Skips the bonus ring animation at the end of levels and disables the end of level bonuses."""
+class SkipBonusRing(Choice):
+    """Skips the bonus ring animation at the end of levels and disables the end of level bonuses.
+    The faster version also skips the high score screen."""
     display_name = "Skip Bonus Ring"
+    option_none = 0
+    option_normal = 1
+    option_fast = 2
+    default = 0
 
 class ItemLogic(Toggle):
     """This will enable logic to expect consumables to be used from the inventory in place of some major items.
