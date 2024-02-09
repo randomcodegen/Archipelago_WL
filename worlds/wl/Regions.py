@@ -1675,9 +1675,7 @@ def create_regions(world, player: int, active_locations):
         )
         add_rule(
             world.get_location(LocationName.ssteacup_29_block2, player),
-            lambda state: can_climb(player, state)
-            or can_highjump(player, state)
-            or can_jet(player, state),
+            lambda state: can_climb(player, state) or can_jet(player, state),
         )
         add_rule(
             world.get_location(LocationName.ssteacup_29_block3, player),
