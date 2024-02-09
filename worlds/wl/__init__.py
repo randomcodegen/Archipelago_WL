@@ -361,7 +361,8 @@ class WLWorld(World):
         return created_item
 
     def get_filler_item_name(self) -> str:
-        self.multiworld.random.choice(junk_table)
+        junk_list = list(junk_table.keys())
+        return self.multiworld.random.choice(junk_list)
 
     def set_rules(self):
         set_rules(self.multiworld, self.player)
