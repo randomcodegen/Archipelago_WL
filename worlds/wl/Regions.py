@@ -2054,7 +2054,12 @@ def create_regions(world, player: int, active_locations):
             LocationName.stovecanyon_20_region,
             LocationName.stovecanyon_20_treasure,
             lambda state: (
-                can_open_treasure(player, state) and can_climb(player, state)
+                can_climb(player, state)
+                and (
+                    can_jet(player, state)
+                    or can_dash(player, state)
+                    or (can_dragon(player, state) and can_duck(player, state))
+                )
             ),
         )
         add_location_to_region(
@@ -2075,7 +2080,13 @@ def create_regions(world, player: int, active_locations):
             LocationName.ssteacup_26_region,
             LocationName.ssteacup_26_treasure,
             lambda state: (
-                can_open_treasure(player, state) and can_climb(player, state)
+                can_climb(player, state)
+                and (
+                    can_jet(player, state)
+                    or can_bull(player, state)
+                    or can_dash(player, state)
+                    or (can_dragon(player, state) and can_duck(player, state))
+                )
             ),
         )
         add_location_to_region(
@@ -2106,8 +2117,12 @@ def create_regions(world, player: int, active_locations):
             LocationName.parsleywoods_31_region,
             LocationName.parsleywoods_31_treasure,
             lambda state: (
-                can_open_treasure(player, state)
-                and can_climb(player, state)
+                can_climb(player, state)
+                and (
+                    can_jet(player, state)
+                    or can_dash(player, state)
+                    or (can_dragon(player, state) and can_duck(player, state))
+                )
                 and state.can_reach(LocationName.parsleywoods_32_exit_1, "", player)
             ),
         )
