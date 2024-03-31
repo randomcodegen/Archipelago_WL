@@ -45,6 +45,15 @@ class ProgressivePowerup(Toggle):
     default = True
 
 
+class GetPreviousPowerups(Toggle):
+    """
+    If powerups are not progressive, if you find jet, all previous powerups will be acquired as well (e.g. garlic, bull, dragon).
+    """
+
+    display_name = "GetPreviousPowerups"
+    default = False
+
+
 class StartWithHJ(Toggle):
     """
     High-Jump is active from the start. For people who like going fast.
@@ -213,6 +222,7 @@ wl_options: typing.Dict[str, type(Option)] = {
     "goal": Goal,
     "bosses_required": BossesRequired,
     "progressive_powerup": ProgressivePowerup,
+    "get_previous_powerups": GetPreviousPowerups,
     "start_with_hj": StartWithHJ,
     "remove_autoscrollers": RemoveAutoscrollers,
     "boss_unlocks": BossUnlocks,
@@ -229,5 +239,5 @@ wl_options: typing.Dict[str, type(Option)] = {
     "grease_trap_weight": GreaseTrapWeight,
     "music_shuffle": MusicShuffle,
     "starting_life_count": StartingLifeCount,
-    # "death_link": DeathLink,
+    "death_link": DeathLink,
 }

@@ -115,7 +115,10 @@ class WarioLandClient(BizHawkClient):
         ctx.last_block_read = 0xA430
         ctx.block_level_id = 0
         ctx.ow_id = 0x00
-
+        # Deathlink vars
+        ctx.last_deathlink_activated = 0
+        ctx.local_last_death_link = 0
+        ctx.last_lives_count = -1
         return True
 
     async def set_auth(self, ctx: BizHawkClientContext) -> None:
@@ -165,6 +168,14 @@ class WarioLandClient(BizHawkClient):
                     sync_required = True
                     ctx.refresh_connect = False
                 if sync_required:
+                    # Reset Deathlink vars
+                    ctx.local_last_death_link = 0
+                    ctx.last_local_lives = -1
+                    if ctx.slot_data["death_link"]:
+                        await ctx.update_death_link(True)
+                        ctx.local_last_death_link = ctx.last_death_link
+                    else:
+                        ctx.local_last_death_link = 0
                     # Clear trap queue
                     ctx.trap_queue.clear()
                     await bizhawk.write(
@@ -373,6 +384,16 @@ class WarioLandClient(BizHawkClient):
                                     else:
                                         # TODO: Report that something went wrong with progressive powerups?
                                         pass
+                                # Handle retroactive powerup assignment if get_previous_powerups is set
+                                elif ctx.slot_data["get_previous_powerups"]:
+                                    for addr in range(0xA400, item_addr):
+                                        logger.info(
+                                            f"Retroactive write to: {addr} received:({item_addr})"
+                                        )
+                                        await bizhawk.write(
+                                            ctx.bizhawk_ctx,
+                                            [(addr, b"\x01", "System Bus")],
+                                        )
                             # Events
                             if item.item in lookup_eventid_to_name:
                                 # Boss tokens
@@ -474,7 +495,53 @@ class WarioLandClient(BizHawkClient):
                                 )
                             ],
                         )
-
+                # Handle death_link
+                if ctx.slot_data["death_link"]:
+                    await ctx.update_death_link(True)
+                if "DeathLink" in ctx.tags:
+                    # Read lives for deathlink
+                    read_result = await bizhawk.read(
+                        ctx.bizhawk_ctx, [(0xA809, 1, "System Bus")]
+                    )
+                    if ctx.last_local_lives == -1:
+                        # var is still uninitiated
+                        ctx.last_local_lives = read_result[0][0]
+                    if ctx.last_local_lives < read_result[0][0]:
+                        ctx.last_local_lives = read_result[0][0]
+                    # Only handle deathlink send/receive if we are ingame
+                    if ctx.demo_mode == 0 and ctx.game_mode == 3 and ctx.paused == 0:
+                        # Compare lives for deathlink
+                        if read_result[0][0] < ctx.last_local_lives:
+                            # We died :(
+                            await ctx.send_death(
+                                f"{ctx.auth} died from a garlic overdose."
+                            )
+                            while ctx.local_last_death_link < ctx.last_death_link:
+                                ctx.local_last_death_link = ctx.last_death_link
+                            # Update lives counter
+                            updating = True
+                            while updating:
+                                read_result = await bizhawk.read(
+                                    ctx.bizhawk_ctx, [(0xA809, 1, "System Bus")]
+                                )
+                                if ctx.last_local_lives != read_result[0][0]:
+                                    ctx.last_local_lives = read_result[0][0]
+                                    updating = False
+                        if ctx.local_last_death_link < ctx.last_death_link:
+                            # Somebody else died, so we die too
+                            ctx.local_last_death_link = ctx.last_death_link
+                            await bizhawk.write(
+                                ctx.bizhawk_ctx, [(0xA91A, b"\x09", "System Bus")]
+                            )
+                            # Update lives counter
+                            updating = True
+                            while updating:
+                                read_result = await bizhawk.read(
+                                    ctx.bizhawk_ctx, [(0xA809, 1, "System Bus")]
+                                )
+                                if ctx.last_local_lives != read_result[0][0]:
+                                    ctx.last_local_lives = read_result[0][0]
+                                    updating = False
                 # Resync-Loop finished
                 if sync_required:
                     ctx.traps_activated = len(ctx.trap_queue)
