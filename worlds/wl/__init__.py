@@ -211,9 +211,6 @@ class WLWorld(World):
             ).place_locked_item(self.create_item(ItemName.victory))
             totalLocations -= 1
 
-        if __version__ != "0.4.4":
-            totalLocations += 1
-
         junk_count = totalLocations - len(itempool)
         trap_weights = []
         trap_weights += [
