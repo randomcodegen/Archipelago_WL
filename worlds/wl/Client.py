@@ -1,6 +1,7 @@
 from typing import TYPE_CHECKING, Dict, Set
 import time
 
+"""
 # TODO:  Remove this when Archipelago 0.4.4 gets released
 import sys
 
@@ -22,6 +23,7 @@ if "worlds._bizhawk" not in sys.modules:
         importer.exec_module(mod)
     elif not os.path.isdir(os.path.splitext(bh_apworld_path)[0]):
         raise AssertionError("Could not import worlds._bizhawk")
+"""
 
 from NetUtils import ClientStatus
 import worlds._bizhawk as bizhawk
@@ -139,7 +141,7 @@ class WarioLandClient(BizHawkClient):
     async def game_watcher(self, ctx: BizHawkClientContext) -> None:
         from CommonClient import logger
 
-        if ctx.server_version.build > 0:
+        if ctx.auth_status == 3:
             ctx.connected = True
         else:
             ctx.connected = False

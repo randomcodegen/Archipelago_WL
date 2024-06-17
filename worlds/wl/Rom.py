@@ -836,9 +836,9 @@ def blocksanity(rom):
     rom.write_byte(0x3C35, 0x15)  # 0:3c35
 
 
-def patch_rom(world, rom, player):
+def patch_rom(world, options, rom, player):
     # Starting Life Count, hex equals displayed value directly
-    rom.write_byte(0x7B7D, int(str(world.starting_life_count[player].value), 16))
+    rom.write_byte(0x7B7D, int(str(options.starting_life_count.value), 16))
 
     patch_basic_abilities(rom)
     patch_powerups(rom)
@@ -847,11 +847,11 @@ def patch_rom(world, rom, player):
     apply_fixes(rom)
     patch_world_enter(rom)
 
-    if world.blocksanity[player]:
+    if options.blocksanity:
         blocksanity(rom)
-    if world.remove_autoscrollers[player]:
+    if options.remove_autoscrollers:
         remove_autoscrolling(rom)
-    if world.music_shuffle[player]:
+    if options.music_shuffle:
         level_music = [
             0x03,
             0x04,

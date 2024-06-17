@@ -7,7 +7,7 @@ import threading
 from BaseClasses import Item, MultiWorld, Tutorial, ItemClassification
 from .Items import WLItem, ItemData, item_table, junk_table
 from .Locations import WLLocation, all_locations, setup_locations
-from .Options import wl_options
+from .Options import WLOptions
 from .Regions import create_regions, connect_regions
 from .Levels import full_level_list, generate_level_list, location_id_to_level_id
 from .Rules import set_rules
@@ -53,7 +53,8 @@ class WLWorld(World):
     Wario Land: Super Mario Land 3 is a 1994 platform game developed and published by Nintendo for the Game Boy.
     """
     game: str = "Wario Land"
-    option_definitions = wl_options
+    options: WLOptions
+    options_dataclass = WLOptions
     settings: typing.ClassVar[WLSettings]
     topology_present = False
     data_version = 0
@@ -77,34 +78,53 @@ class WLWorld(World):
 
     def _get_slot_data(self):
         return {
-            # "death_link": self.multiworld.death_link[self.player].value,
+            # "death_link": self.options.death_link.value,
             "active_levels": self.active_level_dict,
         }
 
+    """
     def fill_slot_data(self) -> dict:
         slot_data = self._get_slot_data()
-        for option_name in wl_options:
-            option = getattr(self.multiworld, option_name)[self.player]
+        for option_name in WLOptions:
+            option = getattr(self.options, option_name)
             slot_data[option_name] = option.value
         return slot_data
+    """
+
+    def fill_slot_data(self) -> typing.Dict[str, typing.Any]:
+        return {
+            "goal": self.options.goal.value,
+            "bosses_required": self.options.bosses_required.value,
+            "progressive_powerup": self.options.progressive_powerup.value,
+            "boss_unlocks": self.options.boss_unlocks.value,
+            "world_unlocks": self.options.world_unlocks.value,
+            "number_of_garlic_cloves": self.options.number_of_garlic_cloves.value,
+            "percentage_of_garlic_cloves": self.options.percentage_of_garlic_cloves.value,
+            "treasure_checks": self.options.treasure_checks.value,
+            "blocksanity": self.options.blocksanity.value,
+            "death_link": self.options.death_link.value,
+            # "level_shuffle": self.options.level_shuffle.value,
+        }
 
     def create_regions(self):
-        location_table = setup_locations(self.multiworld, self.player)
-        create_regions(self.multiworld, self.player, location_table)
+        location_table = setup_locations(self.options)
+        create_regions(self.multiworld, self.player, self.options, location_table)
 
         itempool: typing.List[WLItem] = []
-        start_inventory = self.multiworld.start_inventory[self.player].value.copy()
+        start_inventory = self.options.start_inventory.value.copy()
         self.active_level_dict = dict(
             zip(generate_level_list(self.multiworld, self.player), full_level_list)
         )
         # TODO: Implement level shuffle
-        # self.topology_present = self.multiworld.level_shuffle[self.player]
+        # self.topology_present = self.options.level_shuffle
         self.topology_present = 0
-        connect_regions(self.multiworld, self.player, self.active_level_dict)
+        connect_regions(
+            self.multiworld, self.player, self.options, self.active_level_dict
+        )
 
         totalLocations = len(location_table.items())
 
-        if self.multiworld.progressive_powerup[self.player]:
+        if self.options.progressive_powerup:
             itempool += [
                 self.create_item(ItemName.progressive_powerup) for _ in range(4)
             ]
@@ -121,7 +141,7 @@ class WLWorld(World):
 
         # Handle start with HJ
         hj = self.create_item(ItemName.wario_highjump)
-        if self.multiworld.start_with_hj[self.player]:
+        if self.options.start_with_hj:
             start_inventory[hj] = 1
             self.multiworld.push_precollected(hj)
         else:
@@ -138,13 +158,10 @@ class WLWorld(World):
             self.create_item(ItemName.syrupcastle),
         ]
 
-        if self.multiworld.world_unlocks[self.player]:
+        if self.options.world_unlocks:
             # Player always starts with a random world unlocked if there is more than one player
             # or if Blocksanity is active
-            if (
-                self.multiworld.players > 1
-                or self.multiworld.blocksanity[self.player] == 1
-            ):
+            if self.multiworld.players > 1 or self.options.blocksanity == 1:
                 self.multiworld.random.shuffle(world_unlocks)
                 list_pick = world_unlocks.pop()
                 start_inventory[list_pick] = 1
@@ -173,7 +190,7 @@ class WLWorld(World):
             self.create_item(ItemName.sherbetland_bossunlock),
         ]
 
-        if self.multiworld.boss_unlocks[self.player]:
+        if self.options.boss_unlocks:
             for unlock in boss_unlocks:
                 itempool += [unlock]
         else:
@@ -195,10 +212,10 @@ class WLWorld(World):
             )
             totalLocations -= 1
 
-        if self.multiworld.goal[self.player] == "garlic_hunt":
+        if self.options.goal == "garlic_hunt":
             itempool += [
                 self.create_item(ItemName.garlic_clove)
-                for _ in range(self.multiworld.number_of_garlic_cloves[self.player])
+                for _ in range(self.options.number_of_garlic_cloves)
             ]
             self.multiworld.get_location(
                 LocationName.garlic_goal, self.player
@@ -215,22 +232,19 @@ class WLWorld(World):
         trap_weights = []
         trap_weights += [
             ItemName.wario_grease_trap
-        ] * self.multiworld.grease_trap_weight[self.player].value
-        trap_weights += [ItemName.wario_stun_trap] * self.multiworld.stun_trap_weight[
-            self.player
-        ].value
-        trap_weights += [ItemName.wario_death_trap] * self.multiworld.death_trap_weight[
-            self.player
-        ].value
-        trap_weights += [ItemName.wario_timer_trap] * self.multiworld.timer_trap_weight[
-            self.player
-        ].value
+        ] * self.options.grease_trap_weight.value
+        trap_weights += [ItemName.wario_stun_trap] * self.options.stun_trap_weight.value
+        trap_weights += [
+            ItemName.wario_death_trap
+        ] * self.options.death_trap_weight.value
+        trap_weights += [
+            ItemName.wario_timer_trap
+        ] * self.options.timer_trap_weight.value
         trap_count = (
             0
             if (len(trap_weights) == 0)
             else math.ceil(
-                junk_count
-                * (self.multiworld.trap_fill_percentage[self.player].value / 100.0)
+                junk_count * (self.options.trap_fill_percentage.value / 100.0)
             )
         )
         junk_count -= trap_count
@@ -257,7 +271,7 @@ class WLWorld(World):
             player = self.player
 
             rom = Rom(get_base_rom_path())
-            patch_rom(self.multiworld, rom, self.player)
+            patch_rom(self.multiworld, self.options, rom, self.player)
 
             rompath = os.path.join(
                 output_directory,
@@ -329,7 +343,7 @@ class WLWorld(World):
                     if level_index >= world_cutoffs[i]:
                         continue
 
-                    if self.multiworld.treasure_checks[self.player].value == 0 and "Treasure" in loc_name:
+                    if self.options.treasure_checks.value == 0 and "Treasure" in loc_name:
                         continue
 
                     location = self.multiworld.get_location(loc_name, self.player)
@@ -362,4 +376,4 @@ class WLWorld(World):
         return self.multiworld.random.choice(junk_list)
 
     def set_rules(self):
-        set_rules(self.multiworld, self.player)
+        set_rules(self.multiworld, self.options, self.player)

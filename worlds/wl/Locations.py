@@ -651,14 +651,14 @@ unlock_locations = {
 location_table = {}
 
 
-def setup_locations(world, player: int):
+def setup_locations(options):
     location_table = {**level_location_table}
     location_table.update({**boss_item_location_table})
-    if world.treasure_checks[player].value:
+    if options.treasure_checks.value:
         location_table.update({**treasure_location_table})
-    if world.blocksanity[player].value:
+    if options.blocksanity.value:
         location_table.update({**block_location_table})
-    if world.goal[player] == "garlic_hunt":
+    if options.goal == "garlic_hunt":
         location_table.update({**garlic_location_table})
     # else:
     #    location_table.update({**genie_location_table})

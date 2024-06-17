@@ -8,8 +8,10 @@ from .Blocks import block_info_dict
 from worlds.generic.Rules import add_rule, set_rule
 
 
-def can_defeat_final_boss(player, state: CollectionState, world: MultiWorld) -> bool:
-    return state.has(ItemName.boss_token, player, world.bosses_required[player].value)
+def can_defeat_final_boss(
+    player, state: CollectionState, world: MultiWorld, options
+) -> bool:
+    return state.has(ItemName.boss_token, player, options.bosses_required.value)
 
 
 def can_garlic(player, state: CollectionState) -> bool:
@@ -87,11 +89,11 @@ def can_grow(player, state: CollectionState) -> bool:
     )
 
 
-def create_regions(world, player: int, active_locations):
+def create_regions(world, player: int, options, active_locations):
     menu_region = create_region(world, player, active_locations, "Menu", None)
 
     overworld_region_locations = []
-    if world.goal[player] == "garlic_hunt":
+    if options.goal == "garlic_hunt":
         overworld_region_locations.append(LocationName.garlic_goal)
     overworld_region = create_region(
         world,
@@ -732,8 +734,8 @@ def create_regions(world, player: int, active_locations):
         world, player, active_locations, LocationName.syrupcastle_40_region, None
     )
     # syrupcastle_40_exit_1 = create_region(world, player, active_locations, LocationName.syrupcastle_40_exit_1,[LocationName.syrupcastle_40_exit_1])
-    syrupcastle_boss_locations = [LocationName.stovecanyon_boss_item]
-    if world.goal[player] == "genie":
+    syrupcastle_boss_locations = [LocationName.syrupcastle_boss_item]
+    if options.goal == "genie":
         syrupcastle_boss_locations += [LocationName.syrupcastle_boss]
     syrupcastle_boss = create_region(
         world,
@@ -887,7 +889,7 @@ def create_regions(world, player: int, active_locations):
         syrupcastle_boss,
     ]
     # Handle blocksanity logic
-    if world.blocksanity[player] == 1:
+    if options.blocksanity == 1:
         for block_index in block_info_dict:
             level_id = block_index >> 16
             block_data = block_info_dict[block_index]
@@ -1979,7 +1981,7 @@ def create_regions(world, player: int, active_locations):
             lambda state: can_climb(player, state),
         )
 
-    if world.treasure_checks[player]:
+    if options.treasure_checks:
         add_location_to_region(
             world,
             player,
@@ -2159,14 +2161,14 @@ def create_regions(world, player: int, active_locations):
         )
 
 
-def connect_regions(world, player, level_to_tile_dict):
+def connect_regions(world, player, options, level_to_tile_dict):
     names: typing.Dict[str, int] = {}
     connect(
         world, player, names, LocationName.menu_region, LocationName.overworld_region
     )
 
     # Overworld -> World
-    if world.world_unlocks[player] == 1:
+    if options.world_unlocks == 1:
         connect(
             world,
             player,
@@ -2658,11 +2660,11 @@ def connect_regions(world, player, level_to_tile_dict):
         names,
         LocationName.syrupcastle_40_region,
         LocationName.syrupcastle_boss,
-        lambda state: (can_defeat_final_boss(player, state, world)),
+        lambda state: (can_defeat_final_boss(player, state, world, options)),
     )
 
     # Connect Worlds -> Tiles for openworld
-    if world.boss_unlocks[player] == 1:
+    if options.boss_unlocks == 1:
         connect(
             world,
             player,
@@ -2987,7 +2989,7 @@ def connect_regions(world, player, level_to_tile_dict):
         names,
         LocationName.syrupcastle_region,
         LocationName.syrupcastle_40_tile,
-        lambda state: (can_defeat_final_boss(player, state, world)),
+        lambda state: (can_defeat_final_boss(player, state, world, options)),
     )
 
     # Connect levels to each other

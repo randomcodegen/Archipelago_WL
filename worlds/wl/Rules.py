@@ -6,12 +6,12 @@ from worlds.AutoWorld import LogicMixin
 from worlds.generic.Rules import add_rule, set_rule
 
 
-def set_rules(world: MultiWorld, player: int):
-    if world.goal[player] == "garlic_hunt":
+def set_rules(world: MultiWorld, options, player: int):
+    if options.goal == "garlic_hunt":
         required_garlic_cloves = max(
             math.floor(
-                world.number_of_garlic_cloves[player].value
-                * (world.percentage_of_garlic_cloves[player].value / 100.0)
+                options.number_of_garlic_cloves.value
+                * (options.percentage_of_garlic_cloves.value / 100.0)
             ),
             1,
         )

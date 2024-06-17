@@ -1,14 +1,14 @@
 import typing
 from BaseClasses import MultiWorld
+from dataclasses import dataclass
 from Options import (
     Choice,
     Range,
     Option,
     Toggle,
     DeathLink,
-    DefaultOnToggle,
-    OptionList,
     StartInventoryPool,
+    PerGameCommonOptions,
 )
 
 
@@ -217,27 +217,27 @@ class StartingLifeCount(Range):
     default = 5
 
 
-wl_options: typing.Dict[str, type(Option)] = {
-    "start_inventory_from_pool": StartInventoryPool,
-    "goal": Goal,
-    "bosses_required": BossesRequired,
-    "progressive_powerup": ProgressivePowerup,
-    "get_previous_powerups": GetPreviousPowerups,
-    "start_with_hj": StartWithHJ,
-    "remove_autoscrollers": RemoveAutoscrollers,
-    "boss_unlocks": BossUnlocks,
-    "world_unlocks": WorldUnlocks,
-    "number_of_garlic_cloves": NumberOfGarlicCloves,
-    "percentage_of_garlic_cloves": PercentageOfGarlicCloves,
-    "treasure_checks": TreasureChecks,
-    "blocksanity": Blocksanity,
-    # "level_shuffle": LevelShuffle,
-    "trap_fill_percentage": TrapFillPercentage,
-    "stun_trap_weight": StunTrapWeight,
-    "timer_trap_weight": TimerTrapWeight,
-    "death_trap_weight": DeathTrapWeight,
-    "grease_trap_weight": GreaseTrapWeight,
-    "music_shuffle": MusicShuffle,
-    "starting_life_count": StartingLifeCount,
-    "death_link": DeathLink,
-}
+@dataclass
+class WLOptions(PerGameCommonOptions):
+    start_inventory_from_pool: StartInventoryPool
+    goal: Goal
+    bosses_required: BossesRequired
+    progressive_powerup: ProgressivePowerup
+    get_previous_powerups: GetPreviousPowerups
+    start_with_hj: StartWithHJ
+    remove_autoscrollers: RemoveAutoscrollers
+    boss_unlocks: BossUnlocks
+    world_unlocks: WorldUnlocks
+    number_of_garlic_cloves: NumberOfGarlicCloves
+    percentage_of_garlic_cloves: PercentageOfGarlicCloves
+    treasure_checks: TreasureChecks
+    blocksanity: Blocksanity
+    # level_shuffle: LevelShuffle
+    trap_fill_percentage: TrapFillPercentage
+    stun_trap_weight: StunTrapWeight
+    timer_trap_weight: TimerTrapWeight
+    death_trap_weight: DeathTrapWeight
+    grease_trap_weight: GreaseTrapWeight
+    music_shuffle: MusicShuffle
+    starting_life_count: StartingLifeCount
+    death_link: DeathLink
