@@ -64,6 +64,7 @@ Output Logs/
 /installdelete.iss
 /data/user.kv
 /datapackage
+/custom_worlds
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -179,6 +180,7 @@ dmypy.json
 cython_debug/
 
 # Cython intermediates
+_speedups.c
 _speedups.cpp
 _speedups.html
 
