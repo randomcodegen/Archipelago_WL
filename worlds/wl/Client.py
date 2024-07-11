@@ -29,9 +29,9 @@ from NetUtils import ClientStatus
 import worlds._bizhawk as bizhawk
 from worlds._bizhawk.client import BizHawkClient
 import time
-from worlds.wl.Locations import checkable_locations, boss_location_dict
-from worlds.wl.Blocks import block_info_dict
-from worlds.wl.Items import (
+from .Locations import checkable_locations, boss_location_dict
+from .Blocks import block_info_dict
+from .Items import (
     lookup_trapid_to_name,
     lookup_eventid_to_name,
     lookup_junkid_to_name,

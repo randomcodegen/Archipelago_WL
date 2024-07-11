@@ -103,7 +103,7 @@ class WLWorld(World):
             "treasure_checks": self.options.treasure_checks.value,
             "blocksanity": self.options.blocksanity.value,
             "death_link": self.options.death_link.value,
-            "get_previous_powerups": self.options.get_previous_powerups,
+            "get_previous_powerups": self.options.get_previous_powerups.value,
             # "level_shuffle": self.options.level_shuffle.value,
         }
 
