@@ -1,0 +1,2367 @@
+{
+  "game": "Quake 1",
+  "name": "Quake 1",
+  "game_id": 1,
+  "checksum": "e84c7c78746089aa4937083b204204b2a332853cf71c05959e10ce211830c259",
+  "episodes": {
+    "E1": {
+      "name": "Doomed Dimension",
+      "volumenum": 0,
+      "levels": {
+        "E1M1": {
+          "name": "The Slipgate Complex",
+          "levelnum": 0,
+          "unlock": 1700,
+          "boss": false
+        },
+        "E1M2": {
+          "name": "Castle Of The Damned",
+          "levelnum": 1,
+          "unlock": 1701,
+          "boss": false
+        },
+        "E1M3": {
+          "name": "The Necropolis",
+          "levelnum": 2,
+          "unlock": 1702,
+          "boss": false
+        },
+        "E1M4": {
+          "name": "The Grisly Grotto",
+          "levelnum": 3,
+          "unlock": 1703,
+          "boss": false
+        },
+        "E1M5": {
+          "name": "Gloom Keep",
+          "levelnum": 4,
+          "unlock": 1704,
+          "boss": false
+        },
+        "E1M6": {
+          "name": "The Door To Chthon",
+          "levelnum": 5,
+          "unlock": 1705,
+          "boss": false
+        },
+        "E1M7": {
+          "name": "The House of Chthon",
+          "levelnum": 6,
+          "unlock": 1706,
+          "boss": true
+        },
+        "E1M8": {
+          "name": "Ziggurat Vertigo",
+          "levelnum": 7,
+          "unlock": 1707,
+          "boss": false
+        }
+      }
+    }
+  },
+  "locations": {
+    "E1M1": {
+      "items": {
+        "11": {
+          "id": 1,
+          "name": "Green Armor (11)"
+        },
+        "31": {
+          "id": 2,
+          "name": "Nailgun (31)"
+        },
+        "35": {
+          "id": 3,
+          "name": "Spikes (35)"
+        },
+        "47": {
+          "id": 4,
+          "name": "Quad Damage (47)"
+        },
+        "55": {
+          "id": 5,
+          "name": "Megahealth (55)"
+        },
+        "57": {
+          "id": 6,
+          "name": "Shells (57)"
+        },
+        "58": {
+          "id": 7,
+          "name": "Small Medkit (58)"
+        },
+        "59": {
+          "id": 8,
+          "name": "Large Medkit (59)"
+        },
+        "60": {
+          "id": 9,
+          "name": "Large Medkit (60)"
+        },
+        "75": {
+          "id": 10,
+          "name": "Spikes (75)"
+        },
+        "76": {
+          "id": 11,
+          "name": "Large Medkit (76)"
+        },
+        "77": {
+          "id": 12,
+          "name": "Small Medkit (77)"
+        },
+        "78": {
+          "id": 13,
+          "name": "Small Medkit (78)"
+        },
+        "85": {
+          "id": 14,
+          "name": "Large Medkit (85)"
+        },
+        "86": {
+          "id": 15,
+          "name": "Large Medkit (86)"
+        },
+        "87": {
+          "id": 16,
+          "name": "Small Medkit (87)"
+        },
+        "91": {
+          "id": 17,
+          "name": "Biosuit (91)"
+        },
+        "92": {
+          "id": 18,
+          "name": "Megahealth (92)"
+        },
+        "106": {
+          "id": 19,
+          "name": "Supershotgun (106)"
+        },
+        "108": {
+          "id": 20,
+          "name": "Shells (108)"
+        },
+        "131": {
+          "id": 21,
+          "name": "Small Medkit (131)"
+        },
+        "133": {
+          "id": 22,
+          "name": "Shells (133)"
+        },
+        "140": {
+          "id": 23,
+          "name": "Small Medkit (140)"
+        },
+        "145": {
+          "id": 24,
+          "name": "Small Medkit (145)"
+        },
+        "149": {
+          "id": 25,
+          "name": "Yellow Armor (149)"
+        }
+      },
+      "secrets": {
+        "134": {
+          "id": 1800,
+          "name": "Secret (134)"
+        },
+        "135": {
+          "id": 1801,
+          "name": "Secret (135)"
+        },
+        "136": {
+          "id": 1802,
+          "name": "Secret (136)"
+        },
+        "137": {
+          "id": 1803,
+          "name": "Secret (137)"
+        },
+        "138": {
+          "id": 1804,
+          "name": "Secret (138)"
+        },
+        "139": {
+          "id": 1805,
+          "name": "Secret (139)"
+        }
+      },
+      "exits": {
+        "144": {
+          "id": 1700,
+          "name": "Exit"
+        }
+      }
+    },
+    "E1M2": {
+      "items": {
+        "10": {
+          "id": 26,
+          "name": "Large Medkit (10)"
+        },
+        "11": {
+          "id": 27,
+          "name": "Shells (11)"
+        },
+        "15": {
+          "id": 28,
+          "name": "Small Medkit (15)"
+        },
+        "16": {
+          "id": 29,
+          "name": "Small Medkit (16)"
+        },
+        "17": {
+          "id": 30,
+          "name": "Shells (17)"
+        },
+        "20": {
+          "id": 31,
+          "name": "Shells (20)"
+        },
+        "21": {
+          "id": 32,
+          "name": "Large Medkit (21)"
+        },
+        "26": {
+          "id": 33,
+          "name": "Shells (26)"
+        },
+        "27": {
+          "id": 34,
+          "name": "Small Medkit (27)"
+        },
+        "28": {
+          "id": 35,
+          "name": "Small Medkit (28)"
+        },
+        "30": {
+          "id": 36,
+          "name": "Large Medkit (30)"
+        },
+        "34": {
+          "id": 37,
+          "name": "Shells (34)"
+        },
+        "35": {
+          "id": 38,
+          "name": "Small Medkit (35)"
+        },
+        "36": {
+          "id": 39,
+          "name": "Small Medkit (36)"
+        },
+        "38": {
+          "id": 40,
+          "name": "Large Medkit (38)"
+        },
+        "40": {
+          "id": 41,
+          "name": "Large Medkit (40)"
+        },
+        "42": {
+          "id": 42,
+          "name": "Silver Key (42)"
+        },
+        "46": {
+          "id": 43,
+          "name": "Yellow Armor (46)"
+        },
+        "100": {
+          "id": 44,
+          "name": "Small Medkit (100)"
+        },
+        "101": {
+          "id": 45,
+          "name": "Small Medkit (101)"
+        },
+        "102": {
+          "id": 46,
+          "name": "Small Medkit (102)"
+        },
+        "114": {
+          "id": 47,
+          "name": "Large Medkit (114)"
+        },
+        "115": {
+          "id": 48,
+          "name": "Large Medkit (115)"
+        },
+        "116": {
+          "id": 49,
+          "name": "Shells (116)"
+        },
+        "117": {
+          "id": 50,
+          "name": "Shells (117)"
+        },
+        "118": {
+          "id": 51,
+          "name": "Large Medkit (118)"
+        },
+        "119": {
+          "id": 52,
+          "name": "Large Medkit (119)"
+        },
+        "120": {
+          "id": 53,
+          "name": "Small Medkit (120)"
+        },
+        "121": {
+          "id": 54,
+          "name": "Small Medkit (121)"
+        },
+        "122": {
+          "id": 55,
+          "name": "Large Medkit (122)"
+        },
+        "123": {
+          "id": 56,
+          "name": "Large Medkit (123)"
+        },
+        "136": {
+          "id": 57,
+          "name": "Shells (136)"
+        },
+        "137": {
+          "id": 58,
+          "name": "Supershotgun (137)"
+        },
+        "138": {
+          "id": 59,
+          "name": "Shells (138)"
+        },
+        "147": {
+          "id": 60,
+          "name": "Small Medkit (147)"
+        },
+        "157": {
+          "id": 61,
+          "name": "Green Armor (157)"
+        },
+        "168": {
+          "id": 62,
+          "name": "Spikes (168)"
+        },
+        "169": {
+          "id": 63,
+          "name": "Spikes (169)"
+        },
+        "170": {
+          "id": 64,
+          "name": "Spikes (170)"
+        },
+        "181": {
+          "id": 65,
+          "name": "Spikes (181)"
+        },
+        "198": {
+          "id": 66,
+          "name": "Quad Damage (198)"
+        },
+        "199": {
+          "id": 67,
+          "name": "Spikes (199)"
+        },
+        "200": {
+          "id": 68,
+          "name": "Large Medkit (200)"
+        }
+      },
+      "secrets": {
+        "165": {
+          "id": 1806,
+          "name": "Secret (165)"
+        },
+        "166": {
+          "id": 1807,
+          "name": "Secret (166)"
+        },
+        "197": {
+          "id": 1808,
+          "name": "Secret (197)"
+        }
+      },
+      "exits": {
+        "142": {
+          "id": 1701,
+          "name": "Exit"
+        }
+      }
+    },
+    "E1M3": {
+      "items": {
+        "76": {
+          "id": 69,
+          "name": "Gold Key (76)"
+        },
+        "136": {
+          "id": 70,
+          "name": "Nailgun (136)"
+        },
+        "142": {
+          "id": 71,
+          "name": "Shells (142)"
+        },
+        "143": {
+          "id": 72,
+          "name": "Large Medkit (143)"
+        },
+        "144": {
+          "id": 73,
+          "name": "Small Medkit (144)"
+        },
+        "145": {
+          "id": 74,
+          "name": "Supershotgun (143)"
+        },
+        "146": {
+          "id": 75,
+          "name": "Shells (146)"
+        },
+        "147": {
+          "id": 76,
+          "name": "Rockets (147)"
+        },
+        "148": {
+          "id": 77,
+          "name": "Spikes (148)"
+        },
+        "149": {
+          "id": 78,
+          "name": "Green Armor (149)"
+        },
+        "150": {
+          "id": 79,
+          "name": "Large Medkit (150)"
+        },
+        "151": {
+          "id": 80,
+          "name": "Spikes (151)"
+        },
+        "152": {
+          "id": 81,
+          "name": "Small Medkit (152)"
+        },
+        "153": {
+          "id": 82,
+          "name": "Small Medkit (153)"
+        },
+        "154": {
+          "id": 83,
+          "name": "Rockets (154)"
+        },
+        "155": {
+          "id": 84,
+          "name": "Large Medkit (155)"
+        },
+        "156": {
+          "id": 85,
+          "name": "Large Medkit (156)"
+        },
+        "157": {
+          "id": 86,
+          "name": "Spikes (157)"
+        },
+        "158": {
+          "id": 87,
+          "name": "Shells (158)"
+        },
+        "159": {
+          "id": 88,
+          "name": "Rockets (159)"
+        },
+        "160": {
+          "id": 89,
+          "name": "Large Medkit (160)"
+        },
+        "161": {
+          "id": 90,
+          "name": "Small Medkit (161)"
+        },
+        "162": {
+          "id": 91,
+          "name": "Small Medkit (162)"
+        },
+        "164": {
+          "id": 92,
+          "name": "Shells (164)"
+        },
+        "165": {
+          "id": 93,
+          "name": "Spikes (165)"
+        },
+        "166": {
+          "id": 94,
+          "name": "Spikes (166)"
+        },
+        "167": {
+          "id": 95,
+          "name": "Shells (167)"
+        },
+        "168": {
+          "id": 96,
+          "name": "Spikes (168)"
+        },
+        "169": {
+          "id": 97,
+          "name": "Small Medkit (169)"
+        },
+        "170": {
+          "id": 98,
+          "name": "Small Medkit (170)"
+        },
+        "171": {
+          "id": 99,
+          "name": "Large Medkit (171)"
+        },
+        "172": {
+          "id": 100,
+          "name": "Rockets (172)"
+        },
+        "173": {
+          "id": 101,
+          "name": "Shells (173)"
+        },
+        "174": {
+          "id": 102,
+          "name": "Shells (174)"
+        },
+        "175": {
+          "id": 103,
+          "name": "Spikes (175)"
+        },
+        "176": {
+          "id": 104,
+          "name": "Rockets (176)"
+        },
+        "179": {
+          "id": 105,
+          "name": "Small Medkit (179)"
+        },
+        "184": {
+          "id": 106,
+          "name": "Large Medkit (184)"
+        },
+        "185": {
+          "id": 107,
+          "name": "Small Medkit (185)"
+        },
+        "186": {
+          "id": 108,
+          "name": "Shells (186)"
+        },
+        "187": {
+          "id": 109,
+          "name": "Large Medkit (187)"
+        },
+        "194": {
+          "id": 110,
+          "name": "Large Medkit (194)"
+        },
+        "196": {
+          "id": 111,
+          "name": "Small Medkit (196)"
+        },
+        "197": {
+          "id": 112,
+          "name": "Small Medkit (197)"
+        },
+        "198": {
+          "id": 113,
+          "name": "Shells (198)"
+        },
+        "221": {
+          "id": 114,
+          "name": "Rockets (221)"
+        },
+        "222": {
+          "id": 115,
+          "name": "Yellow Armor (222)"
+        },
+        "223": {
+          "id": 116,
+          "name": "Grenadelauncher (223)"
+        },
+        "229": {
+          "id": 117,
+          "name": "Large Medkit (229)"
+        },
+        "247": {
+          "id": 118,
+          "name": "Large Medkit (247)"
+        },
+        "253": {
+          "id": 119,
+          "name": "Invisibility (253)"
+        },
+        "256": {
+          "id": 120,
+          "name": "Large Medkit (256)"
+        },
+        "257": {
+          "id": 121,
+          "name": "Rockets (257)"
+        },
+        "261": {
+          "id": 122,
+          "name": "Large Medkit (261)"
+        }
+      },
+      "secrets": {
+        "220": {
+          "id": 1809,
+          "name": "Secret (220)"
+        },
+        "252": {
+          "id": 1810,
+          "name": "Secret (252)"
+        },
+        "255": {
+          "id": 1811,
+          "name": "Secret (255)"
+        }
+      },
+      "exits": {
+        "193": {
+          "id": 1702,
+          "name": "Exit"
+        }
+      }
+    },
+    "E1M4": {
+      "items": {
+        "33": {
+          "id": 123,
+          "name": "Yellow Armor (33)"
+        },
+        "34": {
+          "id": 124,
+          "name": "Large Medkit (34)"
+        },
+        "35": {
+          "id": 125,
+          "name": "Large Medkit (35)"
+        },
+        "46": {
+          "id": 126,
+          "name": "Large Medkit (46)"
+        },
+        "47": {
+          "id": 127,
+          "name": "Silver Key (47)"
+        },
+        "58": {
+          "id": 128,
+          "name": "Large Medkit (58)"
+        },
+        "59": {
+          "id": 129,
+          "name": "Small Medkit (59)"
+        },
+        "60": {
+          "id": 130,
+          "name": "Spikes (60)"
+        },
+        "61": {
+          "id": 131,
+          "name": "Spikes (61)"
+        },
+        "67": {
+          "id": 132,
+          "name": "Large Medkit (67)"
+        },
+        "68": {
+          "id": 133,
+          "name": "Shells (68)"
+        },
+        "87": {
+          "id": 134,
+          "name": "Shells (87)"
+        },
+        "88": {
+          "id": 135,
+          "name": "Large Medkit (88)"
+        },
+        "89": {
+          "id": 136,
+          "name": "Large Medkit (89)"
+        },
+        "90": {
+          "id": 137,
+          "name": "Shells (90)"
+        },
+        "91": {
+          "id": 138,
+          "name": "Large Medkit (91)"
+        },
+        "92": {
+          "id": 139,
+          "name": "Small Medkit (92)"
+        },
+        "106": {
+          "id": 140,
+          "name": "Large Medkit (106)"
+        },
+        "107": {
+          "id": 141,
+          "name": "Large Medkit (107)"
+        },
+        "110": {
+          "id": 142,
+          "name": "Yellow Armor (110)"
+        },
+        "113": {
+          "id": 143,
+          "name": "Small Medkit (113)"
+        },
+        "114": {
+          "id": 144,
+          "name": "Spikes (114)"
+        },
+        "115": {
+          "id": 145,
+          "name": "Small Medkit (115)"
+        },
+        "120": {
+          "id": 146,
+          "name": "Shells (120)"
+        },
+        "121": {
+          "id": 147,
+          "name": "Large Medkit (121)"
+        },
+        "122": {
+          "id": 148,
+          "name": "Rockets (122)"
+        },
+        "123": {
+          "id": 149,
+          "name": "Spikes (123)"
+        },
+        "124": {
+          "id": 150,
+          "name": "Spikes (124)"
+        },
+        "132": {
+          "id": 151,
+          "name": "Shells (132)"
+        },
+        "133": {
+          "id": 152,
+          "name": "Large Medkit (133)"
+        },
+        "134": {
+          "id": 153,
+          "name": "Shells (134)"
+        },
+        "138": {
+          "id": 154,
+          "name": "Supernailgun (138)"
+        },
+        "139": {
+          "id": 155,
+          "name": "Spikes (139)"
+        },
+        "140": {
+          "id": 156,
+          "name": "Shells (140)"
+        },
+        "148": {
+          "id": 157,
+          "name": "Shells (148)"
+        },
+        "149": {
+          "id": 158,
+          "name": "Spikes (149)"
+        },
+        "158": {
+          "id": 159,
+          "name": "Spikes (158)"
+        },
+        "168": {
+          "id": 160,
+          "name": "Large Medkit (168)"
+        },
+        "169": {
+          "id": 161,
+          "name": "Large Medkit (169)"
+        },
+        "176": {
+          "id": 162,
+          "name": "Large Medkit (176)"
+        },
+        "185": {
+          "id": 163,
+          "name": "Spikes (185)"
+        },
+        "216": {
+          "id": 164,
+          "name": "Rockets (216)"
+        },
+        "217": {
+          "id": 165,
+          "name": "Shells (217)"
+        },
+        "218": {
+          "id": 166,
+          "name": "Small Medkit (218)"
+        },
+        "219": {
+          "id": 167,
+          "name": "Spikes (219)"
+        },
+        "220": {
+          "id": 168,
+          "name": "Spikes (220)"
+        },
+        "221": {
+          "id": 169,
+          "name": "Biosuit (221)"
+        },
+        "229": {
+          "id": 170,
+          "name": "Spikes (229)"
+        },
+        "230": {
+          "id": 171,
+          "name": "Spikes (230)"
+        },
+        "231": {
+          "id": 172,
+          "name": "Shells (231)"
+        },
+        "232": {
+          "id": 173,
+          "name": "Shells (232)"
+        },
+        "236": {
+          "id": 174,
+          "name": "Spikes (236)"
+        },
+        "240": {
+          "id": 175,
+          "name": "Grenadelauncher (240)"
+        }
+      },
+      "secrets": {
+        "177": {
+          "id": 1812,
+          "name": "Secret (177)"
+        },
+        "227": {
+          "id": 1813,
+          "name": "Secret (227)"
+        }
+      },
+      "exits": {
+        "11": {
+          "id": 1703,
+          "name": "Exit"
+        },
+        "182": {
+          "id": 1704,
+          "name": "Secret Exit"
+        }
+      }
+    },
+    "E1M5": {
+      "items": {
+        "58": {
+          "id": 176,
+          "name": "Gold Key (58)"
+        },
+        "106": {
+          "id": 177,
+          "name": "Yellow Armor (106)"
+        },
+        "112": {
+          "id": 178,
+          "name": "Large Medkit (112)"
+        },
+        "113": {
+          "id": 179,
+          "name": "Large Medkit (113)"
+        },
+        "114": {
+          "id": 180,
+          "name": "Shells (114)"
+        },
+        "115": {
+          "id": 181,
+          "name": "Small Medkit (115)"
+        },
+        "138": {
+          "id": 182,
+          "name": "Small Medkit (138)"
+        },
+        "139": {
+          "id": 183,
+          "name": "Small Medkit (139)"
+        },
+        "140": {
+          "id": 184,
+          "name": "Small Medkit (140)"
+        },
+        "146": {
+          "id": 185,
+          "name": "Large Medkit (146)"
+        },
+        "147": {
+          "id": 186,
+          "name": "Large Medkit (147)"
+        },
+        "148": {
+          "id": 187,
+          "name": "Large Medkit (148)"
+        },
+        "149": {
+          "id": 188,
+          "name": "Large Medkit (149)"
+        },
+        "150": {
+          "id": 189,
+          "name": "Small Medkit (150)"
+        },
+        "151": {
+          "id": 190,
+          "name": "Shells (151)"
+        },
+        "152": {
+          "id": 191,
+          "name": "Shells (152)"
+        },
+        "153": {
+          "id": 192,
+          "name": "Large Medkit (153)"
+        },
+        "154": {
+          "id": 193,
+          "name": "Large Medkit (154)"
+        },
+        "155": {
+          "id": 194,
+          "name": "Shells (155)"
+        },
+        "156": {
+          "id": 195,
+          "name": "Small Medkit (156)"
+        },
+        "157": {
+          "id": 196,
+          "name": "Spikes (157)"
+        },
+        "158": {
+          "id": 197,
+          "name": "Rockets (158)"
+        },
+        "159": {
+          "id": 198,
+          "name": "Large Medkit (159)"
+        },
+        "160": {
+          "id": 199,
+          "name": "Large Medkit (160)"
+        },
+        "161": {
+          "id": 200,
+          "name": "Shells (161)"
+        },
+        "162": {
+          "id": 201,
+          "name": "Shells (162)"
+        },
+        "163": {
+          "id": 202,
+          "name": "Large Medkit (163)"
+        },
+        "164": {
+          "id": 203,
+          "name": "Large Medkit (164)"
+        },
+        "165": {
+          "id": 204,
+          "name": "Small Medkit (165)"
+        },
+        "166": {
+          "id": 205,
+          "name": "Small Medkit (166)"
+        },
+        "167": {
+          "id": 206,
+          "name": "Large Medkit (167)"
+        },
+        "168": {
+          "id": 207,
+          "name": "Shells (168)"
+        },
+        "169": {
+          "id": 208,
+          "name": "Shells (169)"
+        },
+        "170": {
+          "id": 209,
+          "name": "Rockets (170)"
+        },
+        "171": {
+          "id": 210,
+          "name": "Small Medkit (171)"
+        },
+        "193": {
+          "id": 211,
+          "name": "Small Medkit (193)"
+        },
+        "195": {
+          "id": 212,
+          "name": "Supernailgun (195)"
+        },
+        "196": {
+          "id": 213,
+          "name": "Silver Key (196)"
+        },
+        "197": {
+          "id": 214,
+          "name": "Spikes (197)"
+        },
+        "198": {
+          "id": 215,
+          "name": "Large Medkit (198)"
+        },
+        "199": {
+          "id": 216,
+          "name": "Large Medkit (199)"
+        },
+        "200": {
+          "id": 217,
+          "name": "Spikes (200)"
+        },
+        "201": {
+          "id": 218,
+          "name": "Rocketlauncher (201)"
+        },
+        "216": {
+          "id": 219,
+          "name": "Large Medkit (216)"
+        },
+        "217": {
+          "id": 220,
+          "name": "Large Medkit (217)"
+        },
+        "219": {
+          "id": 221,
+          "name": "Spikes (219)"
+        },
+        "226": {
+          "id": 222,
+          "name": "Shells (226)"
+        },
+        "230": {
+          "id": 223,
+          "name": "Spikes (230)"
+        },
+        "233": {
+          "id": 224,
+          "name": "Megahealth (233)"
+        },
+        "234": {
+          "id": 225,
+          "name": "Shells (234)"
+        },
+        "235": {
+          "id": 226,
+          "name": "Rockets (235)"
+        },
+        "236": {
+          "id": 227,
+          "name": "Spikes (236)"
+        },
+        "237": {
+          "id": 228,
+          "name": "Spikes (237)"
+        },
+        "238": {
+          "id": 229,
+          "name": "Spikes (238)"
+        },
+        "239": {
+          "id": 230,
+          "name": "Green Armor (239)"
+        },
+        "240": {
+          "id": 231,
+          "name": "Quad Damage (240)"
+        },
+        "242": {
+          "id": 232,
+          "name": "Yellow Armor (242)"
+        },
+        "248": {
+          "id": 233,
+          "name": "Small Medkit (248)"
+        },
+        "249": {
+          "id": 234,
+          "name": "Shells (249)"
+        },
+        "250": {
+          "id": 235,
+          "name": "Rockets (250)"
+        },
+        "251": {
+          "id": 236,
+          "name": "Large Medkit (251)"
+        },
+        "252": {
+          "id": 237,
+          "name": "Small Medkit (252)"
+        }
+      },
+      "secrets": {
+        "207": {
+          "id": 1814,
+          "name": "Secret (207)"
+        },
+        "208": {
+          "id": 1815,
+          "name": "Secret (208)"
+        },
+        "232": {
+          "id": 1816,
+          "name": "Secret (232)"
+        },
+        "247": {
+          "id": 1817,
+          "name": "Secret (247)"
+        },
+        "256": {
+          "id": 1818,
+          "name": "Secret (256)"
+        }
+      },
+      "exits": {
+        "215": {
+          "id": 1705,
+          "name": "Exit"
+        }
+      }
+    },
+    "E1M6": {
+      "items": {
+        "10": {
+          "id": 238,
+          "name": "Gold Key (10)"
+        },
+        "25": {
+          "id": 239,
+          "name": "Silver Key (25)"
+        },
+        "43": {
+          "id": 240,
+          "name": "Supernailgun (43)"
+        },
+        "56": {
+          "id": 241,
+          "name": "Large Medkit (56)"
+        },
+        "57": {
+          "id": 242,
+          "name": "Large Medkit (57)"
+        },
+        "58": {
+          "id": 243,
+          "name": "Large Medkit (58)"
+        },
+        "59": {
+          "id": 244,
+          "name": "Large Medkit (59)"
+        },
+        "61": {
+          "id": 245,
+          "name": "Megahealth (61)"
+        },
+        "78": {
+          "id": 246,
+          "name": "Megahealth (78)"
+        },
+        "101": {
+          "id": 247,
+          "name": "Shells (101)"
+        },
+        "105": {
+          "id": 248,
+          "name": "Rockets (105)"
+        },
+        "106": {
+          "id": 249,
+          "name": "Shells (106)"
+        },
+        "117": {
+          "id": 250,
+          "name": "Large Medkit (117)"
+        },
+        "168": {
+          "id": 251,
+          "name": "Rockets (168)"
+        },
+        "175": {
+          "id": 252,
+          "name": "Spikes (175)"
+        },
+        "208": {
+          "id": 253,
+          "name": "Large Medkit (208)"
+        },
+        "209": {
+          "id": 254,
+          "name": "Shells (209)"
+        },
+        "210": {
+          "id": 255,
+          "name": "Spikes (210)"
+        },
+        "211": {
+          "id": 256,
+          "name": "Large Medkit (211)"
+        },
+        "212": {
+          "id": 257,
+          "name": "Large Medkit (212)"
+        },
+        "213": {
+          "id": 258,
+          "name": "Rockets (213)"
+        },
+        "214": {
+          "id": 259,
+          "name": "Large Medkit (214)"
+        },
+        "215": {
+          "id": 260,
+          "name": "Large Medkit 215)"
+        },
+        "219": {
+          "id": 261,
+          "name": "Quad Damage (219)"
+        },
+        "220": {
+          "id": 262,
+          "name": "Megahealth (220)"
+        },
+        "221": {
+          "id": 263,
+          "name": "Yellow Armor (221)"
+        },
+        "225": {
+          "id": 264,
+          "name": "Spikes (225)"
+        },
+        "226": {
+          "id": 265,
+          "name": "Large Medkit (226)"
+        },
+        "227": {
+          "id": 266,
+          "name": "Large Medkit (227)"
+        },
+        "228": {
+          "id": 267,
+          "name": "Large Medkit (228)"
+        },
+        "229": {
+          "id": 268,
+          "name": "Yellow Armor (229)"
+        },
+        "230": {
+          "id": 269,
+          "name": "Shells (230)"
+        },
+        "232": {
+          "id": 270,
+          "name": "Spikes (232)"
+        },
+        "233": {
+          "id": 271,
+          "name": "Spikes (233)"
+        },
+        "235": {
+          "id": 272,
+          "name": "Rockets (235)"
+        },
+        "236": {
+          "id": 273,
+          "name": "Large Medkit (236)"
+        },
+        "237": {
+          "id": 274,
+          "name": "Spikes (237)"
+        },
+        "238": {
+          "id": 275,
+          "name": "Small Medkit (238)"
+        },
+        "239": {
+          "id": 276,
+          "name": "Small Medkit (239)"
+        },
+        "242": {
+          "id": 277,
+          "name": "Rocketlauncher (242)"
+        }
+      },
+      "secrets": {
+        "141": {
+          "id": 1819,
+          "name": "Secret (141)"
+        },
+        "169": {
+          "id": 1820,
+          "name": "Secret (169)"
+        },
+        "174": {
+          "id": 1821,
+          "name": "Secret (174)"
+        },
+        "224": {
+          "id": 1822,
+          "name": "Secret (224)"
+        }
+      },
+      "exits": {
+        "205": {
+          "id": 1706,
+          "name": "Exit"
+        }
+      }
+    },
+    "E1M7": {
+      "items": {
+        "20": {
+          "id": 278,
+          "name": "Sigil (20)"
+        },
+        "26": {
+          "id": 279,
+          "name": "Megahealth (26)"
+        }
+      },
+      "secrets": {},
+      "exits": {
+        "27": {
+          "id": 1707,
+          "name": "Exit"
+        }
+      }
+    },
+    "E1M8": {
+      "items": {
+        "13": {
+          "id": 280,
+          "name": "Rockets (13)"
+        },
+        "14": {
+          "id": 281,
+          "name": "Spikes (14)"
+        },
+        "15": {
+          "id": 282,
+          "name": "Rockets (15)"
+        },
+        "16": {
+          "id": 283,
+          "name": "Yellow Armor (16)"
+        },
+        "17": {
+          "id": 284,
+          "name": "Large Medkit (17)"
+        },
+        "18": {
+          "id": 285,
+          "name": "Large Medkit (18)"
+        },
+        "19": {
+          "id": 286,
+          "name": "Megahealth (19)"
+        },
+        "20": {
+          "id": 287,
+          "name": "Large Medkit (20)"
+        },
+        "21": {
+          "id": 288,
+          "name": "Large Medkit (21)"
+        },
+        "22": {
+          "id": 289,
+          "name": "Large Medkit (22)"
+        },
+        "23": {
+          "id": 290,
+          "name": "Large Medkit (23)"
+        },
+        "24": {
+          "id": 291,
+          "name": "Spikes (24)"
+        },
+        "25": {
+          "id": 292,
+          "name": "Large Medkit (25)"
+        },
+        "26": {
+          "id": 293,
+          "name": "Large Medkit (26)"
+        },
+        "27": {
+          "id": 294,
+          "name": "Large Medkit (27)"
+        },
+        "28": {
+          "id": 295,
+          "name": "Spikes (28)"
+        },
+        "29": {
+          "id": 296,
+          "name": "Megahealth (29)"
+        },
+        "30": {
+          "id": 297,
+          "name": "Large Medkit (30)"
+        },
+        "31": {
+          "id": 298,
+          "name": "Large Medkit (31)"
+        },
+        "38": {
+          "id": 299,
+          "name": "Shells (38)"
+        },
+        "39": {
+          "id": 300,
+          "name": "Shells (39)"
+        },
+        "40": {
+          "id": 301,
+          "name": "Shells (40)"
+        },
+        "41": {
+          "id": 302,
+          "name": "Shells (41)"
+        },
+        "42": {
+          "id": 303,
+          "name": "Shells (42)"
+        },
+        "43": {
+          "id": 304,
+          "name": "Spikes (43)"
+        },
+        "44": {
+          "id": 305,
+          "name": "Rockets (44)"
+        },
+        "45": {
+          "id": 306,
+          "name": "Rockets (45)"
+        },
+        "46": {
+          "id": 307,
+          "name": "Shells (46)"
+        },
+        "70": {
+          "id": 308,
+          "name": "Invulnerability (70)"
+        },
+        "71": {
+          "id": 309,
+          "name": "Invulnerability (71)"
+        },
+        "91": {
+          "id": 310,
+          "name": "Yellow Armor (91)"
+        },
+        "92": {
+          "id": 311,
+          "name": "Spikes (92)"
+        },
+        "93": {
+          "id": 312,
+          "name": "Spikes (93)"
+        },
+        "94": {
+          "id": 313,
+          "name": "Small Medkit (94)"
+        },
+        "95": {
+          "id": 314,
+          "name": "Small Medkit (95)"
+        },
+        "96": {
+          "id": 315,
+          "name": "Spikes (96)"
+        },
+        "97": {
+          "id": 316,
+          "name": "Spikes (97)"
+        },
+        "98": {
+          "id": 317,
+          "name": "Large Medkit (98)"
+        },
+        "99": {
+          "id": 318,
+          "name": "Large Medkit (99)"
+        },
+        "100": {
+          "id": 319,
+          "name": "Spikes (100)"
+        },
+        "101": {
+          "id": 320,
+          "name": "Large Medkit (101)"
+        },
+        "102": {
+          "id": 321,
+          "name": "Large Medkit (102)"
+        },
+        "103": {
+          "id": 322,
+          "name": "Shells (103)"
+        },
+        "104": {
+          "id": 323,
+          "name": "Large Medkit (104)"
+        },
+        "105": {
+          "id": 324,
+          "name": "Large Medkit (105)"
+        },
+        "106": {
+          "id": 325,
+          "name": "Small Medkit (106)"
+        },
+        "107": {
+          "id": 326,
+          "name": "Small Medkit (107)"
+        },
+        "108": {
+          "id": 327,
+          "name": "Large Medkit (108)"
+        },
+        "109": {
+          "id": 328,
+          "name": "Large Medkit (109)"
+        },
+        "110": {
+          "id": 329,
+          "name": "Spikes (110)"
+        },
+        "111": {
+          "id": 330,
+          "name": "Spikes (111)"
+        },
+        "113": {
+          "id": 331,
+          "name": "Rocketlauncher (113)"
+        },
+        "114": {
+          "id": 332,
+          "name": "Spikes (114)"
+        },
+        "117": {
+          "id": 333,
+          "name": "Silver Key (117)"
+        },
+        "127": {
+          "id": 334,
+          "name": "Spikes (127)"
+        },
+        "128": {
+          "id": 335,
+          "name": "Large Medkit (128)"
+        },
+        "142": {
+          "id": 336,
+          "name": "Spikes (142)"
+        },
+        "150": {
+          "id": 337,
+          "name": "Spikes (150)"
+        },
+        "153": {
+          "id": 338,
+          "name": "Spikes (153)"
+        },
+        "155": {
+          "id": 339,
+          "name": "Quad Damage (155)"
+        },
+        "156": {
+          "id": 340,
+          "name": "Large Medkit (156)"
+        },
+        "157": {
+          "id": 341,
+          "name": "Large Medkit (157)"
+        },
+        "169": {
+          "id": 342,
+          "name": "Small Medkit (169)"
+        }
+      },
+      "secrets": {
+        "152": {
+          "id": 1823,
+          "name": "Secret (152)"
+        },
+        "154": {
+          "id": 1824,
+          "name": "Secret (154)"
+        }
+      },
+      "exits": {
+        "83": {
+          "id": 1708,
+          "name": "Exit"
+        }
+      }
+    }
+  },
+  "items": {
+    "0": {
+      "name": "Nothing",
+      "type": "filler",
+      "silent": true
+    },
+    "100": {
+      "name": "Exit",
+      "type": "goal",
+      "persistent": true,
+      "silent": true
+    },
+    "101": {
+      "name": "Secret",
+      "type": "goal",
+      "persistent": true,
+      "silent": true
+    },
+    "102": {
+      "name": "Boss",
+      "type": "goal",
+      "persistent": true,
+      "silent": true
+    },
+    "201": {
+      "name": "Super Shotgun",
+      "type": "weapon",
+      "persistent": true,
+      "unique": true,
+      "weaponnum": 3,
+      "ammo": 30
+    },
+    "202": {
+      "name": "Nailgun",
+      "type": "weapon",
+      "persistent": true,
+      "unique": true,
+      "weaponnum": 4,
+      "ammo": 50
+    },
+    "203": {
+      "name": "Super Nailgun",
+      "type": "weapon",
+      "persistent": true,
+      "unique": true,
+      "weaponnum": 5,
+      "ammo": 50
+    },
+    "204": {
+      "name": "Grenade Launcher",
+      "type": "weapon",
+      "persistent": true,
+      "unique": true,
+      "weaponnum": 6,
+      "ammo": 5
+    },
+    "205": {
+      "name": "Rocket Launcher",
+      "type": "weapon",
+      "persistent": true,
+      "unique": true,
+      "weaponnum": 7,
+      "ammo": 5
+    },
+    "206": {
+      "name": "Thunderbolt",
+      "type": "weapon",
+      "persistent": true,
+      "unique": true,
+      "weaponnum": 8
+    },
+    "221": {
+      "name": "Shells Capacity",
+      "type": "ammo",
+      "persistent": true,
+      "weaponnum": 3,
+      "capacity": 10,
+      "ammo": 10
+    },
+    "222": {
+      "name": "Spikes Capacity",
+      "type": "ammo",
+      "persistent": true,
+      "weaponnum": 5,
+      "capacity": 50,
+      "ammo": 25
+    },
+    "223": {
+      "name": "Rockets Capacity",
+      "type": "ammo",
+      "persistent": true,
+      "weaponnum": 7,
+      "capacity": 5,
+      "ammo": 10
+    },
+    "224": {
+      "name": "Batteries Capacity",
+      "type": "ammo",
+      "persistent": true,
+      "weaponnum": 8,
+      "capacity": 50,
+      "ammo": 25
+    },
+    "241": {
+      "name": "Progressive Shotgun",
+      "type": "progressive",
+      "persistent": true,
+      "silent": true,
+      "items": [
+        221
+      ]
+    },
+    "242": {
+      "name": "Progressive Nailgun",
+      "type": "progressive",
+      "persistent": true,
+      "unique": true,
+      "items": [
+        202,
+        222
+      ]
+    },
+    "243": {
+      "name": "Progressive Super Nailgun",
+      "type": "progressive",
+      "persistent": true,
+      "unique": true,
+      "items": [
+        203,
+        222
+      ]
+    },
+    "244": {
+      "name": "Progressive Grenade Launcher",
+      "type": "progressive",
+      "persistent": true,
+      "silent": true,
+      "items": [
+        204,
+        223
+      ]
+    },
+    "245": {
+      "name": "Progressive Rocket Launcher",
+      "type": "progressive",
+      "persistent": true,
+      "silent": true,
+      "items": [
+        205,
+        223
+      ]
+    },
+    "246": {
+      "name": "Progressive Thunderbolt",
+      "type": "progressive",
+      "persistent": true,
+      "unique": true,
+      "silent": true,
+      "items": [
+        206,
+        224
+      ]
+    },
+    "261": {
+      "name": "Shells Ammo",
+      "type": "ammo",
+      "weaponnum": 3,
+      "ammo": 15
+    },
+    "262": {
+      "name": "Spikes Ammo",
+      "type": "ammo",
+      "weaponnum": 5,
+      "ammo": 100
+    },
+    "263": {
+      "name": "Rockets Ammo",
+      "type": "ammo",
+      "weaponnum": 7,
+      "ammo": 10
+    },
+    "264": {
+      "name": "Batteries Ammo",
+      "type": "ammo",
+      "weaponnum": 8,
+      "ammo": 25
+    },
+    "301": {
+      "name": "Quad Damage",
+      "type": "inventory",
+      "persistent": true,
+      "unique": true,
+      "invnum": 0,
+      "capacity": 1
+    },
+    "302": {
+      "name": "Invulnerability",
+      "type": "inventory",
+      "persistent": true,
+      "unique": true,
+      "invnum": 1,
+      "capacity": 1
+    },
+    "303": {
+      "name": "Biosuit",
+      "type": "inventory",
+      "persistent": true,
+      "unique": true,
+      "invnum": 2,
+      "capacity": 1
+    },
+    "304": {
+      "name": "Invisibility",
+      "type": "inventory",
+      "persistent": true,
+      "unique": true,
+      "invnum": 3,
+      "capacity": 1
+    },
+    "305": {
+      "name": "Backpack",
+      "type": "inventory",
+      "persistent": true,
+      "unique": true,
+      "invnum": 4,
+      "capacity": 1
+    },
+    "321": {
+      "name": "Quad Damage Capacity",
+      "type": "invcapacity",
+      "persistent": true,
+      "invnum": 0,
+      "capacity": 1
+    },
+    "322": {
+      "name": "Invulnerability Capacity",
+      "type": "invcapacity",
+      "persistent": true,
+      "invnum": 1,
+      "capacity": 1
+    },
+    "323": {
+      "name": "Biosuit Capacity",
+      "type": "invcapacity",
+      "persistent": true,
+      "invnum": 2,
+      "capacity": 1
+    },
+    "324": {
+      "name": "Invisibility Capacity",
+      "type": "invcapacity",
+      "persistent": true,
+      "invnum": 3,
+      "capacity": 1
+    },
+    "325": {
+      "name": "Backpack Capacity",
+      "type": "invcapacity",
+      "persistent": true,
+      "invnum": 4,
+      "capacity": 1
+    },
+    "341": {
+      "name": "Progressive Quad Damage",
+      "type": "progressive",
+      "persistent": true,
+      "silent": true,
+      "items": [
+        301,
+        321
+      ]
+    },
+    "342": {
+      "name": "Progressive Invulnerability",
+      "type": "progressive",
+      "persistent": true,
+      "silent": true,
+      "items": [
+        302,
+        322
+      ]
+    },
+    "343": {
+      "name": "Progressive Biosuit",
+      "type": "progressive",
+      "persistent": true,
+      "silent": true,
+      "items": [
+        303,
+        323
+      ]
+    },
+    "344": {
+      "name": "Progressive Invisibility",
+      "type": "progressive",
+      "persistent": true,
+      "silent": true,
+      "items": [
+        304,
+        324
+      ]
+    },
+    "345": {
+      "name": "Progressive Backpack",
+      "type": "progressive",
+      "persistent": true,
+      "silent": true,
+      "items": [
+        305,
+        325
+      ]
+    },
+    "350": {
+      "name": "Jump",
+      "type": "ability",
+      "persistent": true,
+      "unique": true,
+      "enables": "jump"
+    },
+    "351": {
+      "name": "Dive",
+      "type": "ability",
+      "persistent": true,
+      "unique": true,
+      "enables": "dive"
+    },
+    "354": {
+      "name": "Door",
+      "type": "ability",
+      "persistent": true,
+      "unique": true,
+      "enables": "door"
+    },
+    "355": {
+      "name": "Button",
+      "type": "ability",
+      "persistent": true,
+      "unique": true,
+      "enables": "button"
+    },
+    "356": {
+      "name": "Shoot Switch",
+      "type": "ability",
+      "persistent": true,
+      "unique": true,
+      "enables": "shootswitch"
+    },
+    "357": {
+      "name": "Grenade Jump",
+      "type": "ability",
+      "persistent": true,
+      "unique": true,
+      "enables": "grenadejump"
+    },
+    "358": {
+      "name": "Rocket Jump",
+      "type": "ability",
+      "persistent": true,
+      "unique": true,
+      "enables": "rocketjump"
+    },
+    "359": {
+      "name": "Grenade Damage Remover",
+      "type": "ability",
+      "persistent": true,
+      "unique": true,
+      "enables": "grenadedmgremover"
+    },
+    "360": {
+      "name": "Rocket Damage Remover",
+      "type": "ability",
+      "persistent": true,
+      "unique": true,
+      "enables": "rocketdmgremover"
+    },
+    "400": {
+      "name": "Small Medkit",
+      "type": "health",
+      "persistent": true,
+      "silent": true,
+      "heal": 15
+    },
+    "401": {
+      "name": "Large Medkit",
+      "type": "health",
+      "persistent": true,
+      "silent": true,
+      "heal": 25
+    },
+    "402": {
+      "name": "Megahealth",
+      "type": "health",
+      "persistent": true,
+      "silent": true,
+      "heal": 100
+    },
+    "403": {
+      "name": "Mini Heal (+1)",
+      "type": "health",
+      "heal": 1,
+      "overheal": true
+    },
+    "404": {
+      "name": "Green Armor",
+      "type": "armor",
+      "persistent": true,
+      "silent": true,
+      "armor": 100
+    },
+    "405": {
+      "name": "Yellow Armor",
+      "type": "armor",
+      "persistent": true,
+      "silent": true,
+      "armor": 150
+    },
+    "406": {
+      "name": "Red Armor",
+      "type": "armor",
+      "persistent": true,
+      "silent": true,
+      "armor": 200
+    },
+    "500": {
+      "name": "Low Health Trap",
+      "type": "trap",
+      "silent": true,
+      "trap": "lowhealth",
+      "duration": 1,
+      "grace": 1500
+    },
+    "501": {
+      "name": "Death Trap",
+      "type": "trap",
+      "silent": true,
+      "trap": "death",
+      "duration": 1,
+      "grace": 5000
+    },
+    "502": {
+      "name": "Enemy Trap",
+      "type": "trap",
+      "silent": true,
+      "trap": "enemy",
+      "duration": 1,
+      "grace": 200
+    },
+    "503": {
+      "name": "Mouse Trap",
+      "type": "trap",
+      "silent": true,
+      "trap": "mouse",
+      "duration": 200,
+      "grace": 2000
+    },
+    "504": {
+      "name": "Sound Trap",
+      "type": "trap",
+      "silent": true,
+      "trap": "sound",
+      "duration": 200,
+      "grace": 2000
+    },
+    "505": {
+      "name": "Jump Trap",
+      "type": "trap",
+      "silent": true,
+      "trap": "jump",
+      "duration": 200,
+      "grace": 2000
+    },
+    "600": {
+      "name": "Dynamic1",
+      "type": "filler",
+      "silent": true
+    },
+    "601": {
+      "name": "Dynamic2",
+      "type": "filler",
+      "silent": true
+    },
+    "602": {
+      "name": "Dynamic3",
+      "type": "filler",
+      "silent": true
+    },
+    "603": {
+      "name": "Dynamic4",
+      "type": "filler",
+      "silent": true
+    },
+    "604": {
+      "name": "Dynamic5",
+      "type": "filler",
+      "silent": true
+    },
+    "605": {
+      "name": "Dynamic6",
+      "type": "filler",
+      "silent": true
+    },
+    "606": {
+      "name": "Dynamic7",
+      "type": "filler",
+      "silent": true
+    },
+    "607": {
+      "name": "Dynamic8",
+      "type": "filler",
+      "silent": true
+    },
+    "608": {
+      "name": "Dynamic9",
+      "type": "filler",
+      "silent": true
+    },
+    "609": {
+      "name": "Dynamic10",
+      "type": "filler",
+      "silent": true
+    },
+    "610": {
+      "name": "Dynamic11",
+      "type": "filler",
+      "silent": true
+    },
+    "611": {
+      "name": "Dynamic12",
+      "type": "filler",
+      "silent": true
+    },
+    "612": {
+      "name": "Dynamic13",
+      "type": "filler",
+      "silent": true
+    },
+    "613": {
+      "name": "Dynamic14",
+      "type": "filler",
+      "silent": true
+    },
+    "614": {
+      "name": "Dynamic15",
+      "type": "filler",
+      "silent": true
+    },
+    "615": {
+      "name": "Dynamic16",
+      "type": "filler",
+      "silent": true
+    },
+    "1600": {
+      "name": "E1M1 Automap",
+      "type": "automap",
+      "persistent": true,
+      "unique": true,
+      "levelnum": 0,
+      "volumenum": 0
+    },
+    "1601": {
+      "name": "E1M2 Automap",
+      "type": "automap",
+      "persistent": true,
+      "unique": true,
+      "levelnum": 1,
+      "volumenum": 0
+    },
+    "1602": {
+      "name": "E1M3 Automap",
+      "type": "automap",
+      "persistent": true,
+      "unique": true,
+      "levelnum": 2,
+      "volumenum": 0
+    },
+    "1603": {
+      "name": "E1M4 Automap",
+      "type": "automap",
+      "persistent": true,
+      "unique": true,
+      "levelnum": 3,
+      "volumenum": 0
+    },
+    "1604": {
+      "name": "E1M5 Automap",
+      "type": "automap",
+      "persistent": true,
+      "unique": true,
+      "levelnum": 4,
+      "volumenum": 0
+    },
+    "1605": {
+      "name": "E1M6 Automap",
+      "type": "automap",
+      "persistent": true,
+      "unique": true,
+      "levelnum": 5,
+      "volumenum": 0
+    },
+    "1606": {
+      "name": "E1M7 Automap",
+      "type": "automap",
+      "persistent": true,
+      "unique": true,
+      "levelnum": 6,
+      "volumenum": 0
+    },
+    "1607": {
+      "name": "E1M8 Automap",
+      "type": "automap",
+      "persistent": true,
+      "unique": true,
+      "levelnum": 7,
+      "volumenum": 0
+    },
+    "1700": {
+      "name": "E1M1 Unlock",
+      "type": "map",
+      "persistent": true,
+      "unique": true
+    },
+    "1701": {
+      "name": "E1M2 Unlock",
+      "type": "map",
+      "persistent": true,
+      "unique": true
+    },
+    "1702": {
+      "name": "E1M3 Unlock",
+      "type": "map",
+      "persistent": true,
+      "unique": true
+    },
+    "1703": {
+      "name": "E1M4 Unlock",
+      "type": "map",
+      "persistent": true,
+      "unique": true
+    },
+    "1704": {
+      "name": "E1M5 Unlock",
+      "type": "map",
+      "persistent": true,
+      "unique": true
+    },
+    "1705": {
+      "name": "E1M6 Unlock",
+      "type": "map",
+      "persistent": true,
+      "unique": true
+    },
+    "1706": {
+      "name": "E1M7 Unlock",
+      "type": "map",
+      "persistent": true,
+      "unique": true
+    },
+    "1707": {
+      "name": "E1M8 Unlock",
+      "type": "map",
+      "persistent": true,
+      "unique": true
+    },
+    "1800": {
+      "name": "E1M2 Silver Key",
+      "type": "key",
+      "persistent": true,
+      "unique": true,
+      "flags": 1,
+      "levelnum": 1,
+      "volumenum": 0
+    },
+    "1801": {
+      "name": "E1M3 Gold Key",
+      "type": "key",
+      "persistent": true,
+      "unique": true,
+      "flags": 2,
+      "levelnum": 2,
+      "volumenum": 0
+    },
+    "1802": {
+      "name": "E1M4 Silver Key",
+      "type": "key",
+      "persistent": true,
+      "unique": true,
+      "flags": 1,
+      "levelnum": 3,
+      "volumenum": 0
+    },
+    "1803": {
+      "name": "E1M5 Silver Key",
+      "type": "key",
+      "persistent": true,
+      "unique": true,
+      "flags": 1,
+      "levelnum": 4,
+      "volumenum": 0
+    },
+    "1804": {
+      "name": "E1M5 Gold Key",
+      "type": "key",
+      "persistent": true,
+      "unique": true,
+      "flags": 2,
+      "levelnum": 4,
+      "volumenum": 0
+    },
+    "1805": {
+      "name": "E1M6 Silver Key",
+      "type": "key",
+      "persistent": true,
+      "unique": true,
+      "flags": 1,
+      "levelnum": 5,
+      "volumenum": 0
+    },
+    "1806": {
+      "name": "E1M6 Gold Key",
+      "type": "key",
+      "persistent": true,
+      "unique": true,
+      "flags": 2,
+      "levelnum": 5,
+      "volumenum": 0
+    },
+    "1807": {
+      "name": "E1M8 Silver Key",
+      "type": "key",
+      "persistent": true,
+      "unique": true,
+      "flags": 1,
+      "levelnum": 7,
+      "volumenum": 0
+    }
+  }
+}
