@@ -35,7 +35,6 @@ class SM64World(World):
     item_name_to_id = item_table
     location_name_to_id = location_table
 
-    data_version = 9
     required_client_version = (0, 3, 5)
 
     area_connections: typing.Dict[int, int]
@@ -56,7 +55,7 @@ class SM64World(World):
             for action in self.options.move_rando_actions.value:
                 max_stars -= 1
                 self.move_rando_bitvec |= (1 << (action_item_table[action] - action_item_table['Double Jump']))
-        if (self.options.exclamation_boxes > 0):
+        if self.options.exclamation_boxes:
             max_stars += 29
         self.number_of_stars = min(self.options.amount_of_stars, max_stars)
         self.filler_count = max_stars - self.number_of_stars
@@ -134,7 +133,7 @@ class SM64World(World):
             self.multiworld.get_location("THI: Bob-omb Buddy", self.player).place_locked_item(self.create_item("Cannon Unlock THI"))
             self.multiworld.get_location("RR: Bob-omb Buddy", self.player).place_locked_item(self.create_item("Cannon Unlock RR"))
 
-        if (self.options.exclamation_boxes == 0):
+        if not self.options.exclamation_boxes:
             self.multiworld.get_location("CCM: 1Up Block Near Snowman", self.player).place_locked_item(self.create_item("1Up Mushroom"))
             self.multiworld.get_location("CCM: 1Up Block Ice Pillar", self.player).place_locked_item(self.create_item("1Up Mushroom"))
             self.multiworld.get_location("CCM: 1Up Block Secret Slide", self.player).place_locked_item(self.create_item("1Up Mushroom"))
