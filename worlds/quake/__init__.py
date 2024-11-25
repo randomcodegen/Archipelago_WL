@@ -96,6 +96,12 @@ class Q1World(World):
         if location is None:
             return False
         if location.density > self.target_density:
+            print(
+                "Ignoring location ",
+                location.name,
+                " because density is ",
+                location.density,
+            )
             return False
         if (
             location.classname == "trigger_secret"
@@ -139,9 +145,25 @@ class Q1World(World):
                 episode = all_episodes[episode_id - 1]
                 if not shuffle_start and len(self.starting_levels) < start_count:
                     # add the first level to the starting levels, and the rest into the randomize pool
-                    self.starting_levels.append(episode.levels[0])
-                    self.included_levels.append(episode.levels[0])
-                    episode_pool = episode.levels[1 : episode.maxlevel]
+                    # TODO: Test if this works on every generation
+                    # special case for solo worlds and episode 1 only
+                    if (
+                        self.multiworld.players == 1
+                        and episode_id == 1
+                        and self.get_option("episode1")
+                        and not self.get_option("episode2")
+                        and not self.get_option("episode3")
+                        and not self.get_option("episode4")
+                    ):
+                        choice = self.multiworld.random.randrange(1, E1.maxlevel)
+                        self.starting_levels.append(episode.levels[choice])
+                        self.included_levels.append(episode.levels[choice])
+                        episode.levels.pop(choice)
+                        episode_pool = episode.levels[: episode.maxlevel - 1]
+                    else:
+                        self.starting_levels.append(episode.levels[0])
+                        self.included_levels.append(episode.levels[0])
+                        episode_pool = episode.levels[1 : episode.maxlevel]
                 else:
                     episode_pool = episode.levels[: episode.maxlevel]
                 # If our goal is to kill bosses, include the boss levels!

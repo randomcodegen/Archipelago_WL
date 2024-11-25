@@ -446,6 +446,7 @@ class E1M3(Q1Level):
         self.restrict("Secret (255)", r.can_shootswitch)
         self.restrict("Large Medkit (256)", r.can_shootswitch)
         self.restrict("Rockets (257)", r.can_shootswitch)
+        self.restrict("Large Medkit (261)", r.can_door)
 
         underwater_secret = self.region(
             "Underwater Secret",
